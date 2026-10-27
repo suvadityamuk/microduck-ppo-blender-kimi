@@ -1,0 +1,15 @@
+{
+  "specialist": {
+    "ore_to_bay": {
+      "success": 0.31,
+      "episodes": 100,
+      "failures": {
+        "fell": 50,
+        "timeout": 17,
+        "entered": 2
+      },
+      "mean_time": 32.50774193548426
+    },
+    "_mean_success": 0.31
+  }
+}

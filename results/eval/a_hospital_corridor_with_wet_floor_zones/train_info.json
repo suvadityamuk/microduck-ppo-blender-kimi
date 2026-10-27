@@ -1,0 +1,7 @@
+{
+  "world": "/code/worlds_duck/a_hospital_corridor_with_wet_floor_zones",
+  "iters": 1500,
+  "num_envs": 4096,
+  "warm": "checkpoints_cache/duck/policies/velstand.onnx",
+  "seed": 1
+}

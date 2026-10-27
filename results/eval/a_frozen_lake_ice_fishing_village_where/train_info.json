@@ -1,0 +1,7 @@
+{
+  "world": "/code/worlds_duck/a_frozen_lake_ice_fishing_village_where_",
+  "iters": 1500,
+  "num_envs": 4096,
+  "warm": "checkpoints_cache/duck/policies/velstand.onnx",
+  "seed": 1
+}

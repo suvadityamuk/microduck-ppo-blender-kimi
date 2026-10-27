@@ -1,0 +1,111 @@
+{
+  "stock": {
+    "climb_the_packing_deck": {
+      "success": 0.0,
+      "episodes": 20,
+      "failures": {
+        "fell": 20
+      },
+      "mean_time": null
+    },
+    "cross_the_caramel": {
+      "success": 0.0,
+      "episodes": 20,
+      "failures": {
+        "fell": 20
+      },
+      "mean_time": null
+    },
+    "open_the_cooling_room": {
+      "success": 0.0,
+      "episodes": 20,
+      "failures": {
+        "fell": 20
+      },
+      "mean_time": null
+    },
+    "roll_the_truffle": {
+      "success": 0.85,
+      "episodes": 20,
+      "failures": {
+        "fell": 3
+      },
+      "mean_time": 16.763529411764495
+    },
+    "factory_rounds": {
+      "success": 0.0,
+      "episodes": 20,
+      "failures": {
+        "fell": 20
+      },
+      "mean_time": null
+    },
+    "enrober_shift": {
+      "success": 0.0,
+      "episodes": 20,
+      "failures": {
+        "fell": 19,
+        "timeout": 1
+      },
+      "mean_time": null
+    },
+    "_mean_success": 0.14166666666666666
+  },
+  "specialist": {
+    "climb_the_packing_deck": {
+      "success": 0.15,
+      "episodes": 20,
+      "failures": {
+        "fell": 16,
+        "timeout": 1
+      },
+      "mean_time": 25.233333333332883
+    },
+    "cross_the_caramel": {
+      "success": 0.0,
+      "episodes": 20,
+      "failures": {
+        "fell": 19,
+        "timeout": 1
+      },
+      "mean_time": null
+    },
+    "open_the_cooling_room": {
+      "success": 0.25,
+      "episodes": 20,
+      "failures": {
+        "timeout": 4,
+        "fell": 11
+      },
+      "mean_time": 36.03600000000004
+    },
+    "roll_the_truffle": {
+      "success": 0.85,
+      "episodes": 20,
+      "failures": {
+        "fell": 3
+      },
+      "mean_time": 13.5599999999998
+    },
+    "factory_rounds": {
+      "success": 0.05,
+      "episodes": 20,
+      "failures": {
+        "fell": 17,
+        "timeout": 2
+      },
+      "mean_time": 49.96000000000221
+    },
+    "enrober_shift": {
+      "success": 0.05,
+      "episodes": 20,
+      "failures": {
+        "entered": 12,
+        "fell": 4,
+        "timeout": 3
+      },
+      "mean_time": 36.54000000000011
+    },
+    "_mean_success": 0.225
+  }
+}

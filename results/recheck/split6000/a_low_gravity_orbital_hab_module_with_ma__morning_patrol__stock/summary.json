@@ -1,0 +1,15 @@
+{
+  "stock": {
+    "morning_patrol": {
+      "success": 0.0,
+      "episodes": 100,
+      "failures": {
+        "fell": 57,
+        "entered": 16,
+        "timeout": 27
+      },
+      "mean_time": null
+    },
+    "_mean_success": 0.0
+  }
+}

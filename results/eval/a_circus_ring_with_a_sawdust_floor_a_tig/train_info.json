@@ -1,0 +1,7 @@
+{
+  "world": "/code/worlds_duck/a_circus_ring_with_a_sawdust_floor_a_tig",
+  "iters": 1500,
+  "num_envs": 4096,
+  "warm": "checkpoints_cache/duck/policies/velstand.onnx",
+  "seed": 1
+}

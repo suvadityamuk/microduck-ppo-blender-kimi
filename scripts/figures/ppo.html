@@ -1,0 +1,51 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="fig_common.css"><style>
+html,body{width:1600px;height:700px;overflow:hidden}
+.panel{position:absolute;top:30px;bottom:30px;background:#fff;border:3px solid #1d1f24;border-radius:22px;box-shadow:6px 7px 0 #1d1f24}
+.h{position:absolute;left:28px;top:20px;font-weight:700;font-size:32px}
+.node{position:absolute;width:300px;background:#fff;border:3px solid #1d1f24;border-radius:18px;padding:12px 16px 14px}
+.node b{display:block;font-size:27px;margin-bottom:4px}
+.node span{font-size:20px;line-height:1.28;display:block;color:#3b3220}
+.node.y{background:#ffd21e}
+.cap{font-size:21px;line-height:1.3;color:#3b3220}
+</style></head><body>
+<div class="panel" style="left:30px;width:930px">
+ <div class="h">PPO: collect, then improve</div>
+ <svg style="position:absolute;left:0;top:0" width="930" height="640" viewBox="0 0 930 640">
+  <defs><marker id="m" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10z" fill="#1d1f24"/></marker></defs>
+  <g stroke="#1d1f24" stroke-width="4" fill="none" marker-end="url(#m)">
+   <path d="M360 160 C 430 140, 500 140, 560 160"/>
+   <path d="M720 268 C 740 320, 740 360, 720 404"/>
+   <path d="M560 512 C 500 532, 430 532, 360 512"/>
+   <path d="M200 404 C 180 360, 180 320, 200 268"/>
+  </g>
+  <text x="465" y="352" text-anchor="middle" font-family="Fredoka" font-weight="700" font-size="40" fill="#1d1f24">×1500</text>
+  <text x="465" y="384" text-anchor="middle" font-family="Fredoka" font-weight="400" font-size="20" fill="#3b3220">rounds per world</text>
+ </svg>
+ <div class="node y" style="left:50px;top:90px"><b>1 · Act</b><span>The actor network walks 4096 ducks for 24 steps each</span></div>
+ <div class="node" style="left:580px;top:90px"><b>2 · Score</b><span>Each step earns a reward: follow the command, don't fall</span></div>
+ <div class="node" style="left:580px;top:420px"><b>3 · Judge</b><span>The critic predicts the reward. Actual minus predicted is the advantage</span></div>
+ <div class="node" style="left:50px;top:420px"><b>4 · Update</b><span>Make better-than-expected actions more likely, worse ones less</span></div>
+</div>
+<div class="panel" style="left:990px;width:580px">
+ <div class="h">The clip keeps updates small</div>
+ <svg style="position:absolute;left:0;top:70px" width="580" height="420" viewBox="0 0 580 420" font-family="Fredoka">
+  <!-- axes: ratio 0.5..1.5 -> x 70..540 ; objective -> y -->
+  <line x1="70" y1="200" x2="545" y2="200" stroke="#1d1f24" stroke-width="2.5"/>
+  <line x1="70" y1="30" x2="70" y2="380" stroke="#1d1f24" stroke-width="2.5"/>
+  <rect x="211" y="30" width="188" height="350" fill="#ffd21e" opacity=".28"/>
+  <line x1="211" y1="30" x2="211" y2="380" stroke="#1d1f24" stroke-width="1.5" stroke-dasharray="6 6"/>
+  <line x1="399" y1="30" x2="399" y2="380" stroke="#1d1f24" stroke-width="1.5" stroke-dasharray="6 6"/>
+  <line x1="305" y1="194" x2="305" y2="206" stroke="#1d1f24" stroke-width="2.5"/>
+  <!-- A>0: L = A*min(r, 1.2) ; scale: y = 200 - 150*(L) with A=1 normalised over r in .5..1.5 => L-1 ... draw relative -->
+  <polyline points="70,320 399,85 545,85" fill="none" stroke="#2ea050" stroke-width="6" stroke-linejoin="round"/>
+  <polyline points="70,105 211,105 545,345" fill="none" stroke="#cd4034" stroke-width="6" stroke-linejoin="round"/>
+  <text x="211" y="404" text-anchor="middle" font-size="19" fill="#1d1f24">−20 %</text>
+  <text x="305" y="404" text-anchor="middle" font-size="19" fill="#1d1f24">no change</text>
+  <text x="399" y="404" text-anchor="middle" font-size="19" fill="#1d1f24">+20 %</text>
+  <text x="470" y="74" text-anchor="middle" font-size="20" font-weight="600" fill="#2ea050">better than expected</text>
+  <text x="84" y="94" text-anchor="start" font-size="20" font-weight="600" fill="#cd4034">worse than expected</text>
+  <text x="44" y="210" text-anchor="middle" font-size="17" fill="#3b3220" transform="rotate(-90 44 210)">gain from the update</text>
+ </svg>
+ <div class="cap" style="position:absolute;left:28px;right:28px;bottom:22px">Across: how much more or less likely an update makes an action. Past ±20 % the gain goes flat, so one batch can't push the policy far from a walk that already works.</div>
+</div>
+</body></html>

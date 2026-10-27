@@ -1,0 +1,81 @@
+[
+  {
+    "round": 0,
+    "attempt": 0,
+    "build": {
+      "ok": true,
+      "kind": null,
+      "error": null
+    }
+  },
+  {
+    "round": 0,
+    "gate": {
+      "ok": true,
+      "passing": [
+        "wet_round_to_reception",
+        "xray_appointment",
+        "restock_supply_room",
+        "scrub_in",
+        "deliver_supplies",
+        "nurse_rounds"
+      ],
+      "feedback": "",
+      "notes": {
+        "head_brightness": 196.68605324074076
+      },
+      "baseline": {
+        "wet_round_to_reception": {
+          "rate": 0.0,
+          "failures": [
+            "fell",
+            "fell",
+            "fell"
+          ],
+          "max_phase": 0
+        },
+        "xray_appointment": {
+          "rate": 0.0,
+          "failures": [
+            "timeout",
+            "timeout",
+            "timeout"
+          ],
+          "max_phase": 0
+        },
+        "restock_supply_room": {
+          "rate": 0.6666666666666666,
+          "failures": [
+            "timeout"
+          ],
+          "max_phase": 2
+        },
+        "scrub_in": {
+          "rate": 0.0,
+          "failures": [
+            "fell",
+            "fell",
+            "fell"
+          ],
+          "max_phase": 0
+        },
+        "deliver_supplies": {
+          "rate": 0.6666666666666666,
+          "failures": [
+            "fell"
+          ],
+          "max_phase": 1
+        },
+        "nurse_rounds": {
+          "rate": 0.0,
+          "failures": [
+            "fell",
+            "fell",
+            "fell"
+          ],
+          "max_phase": 1
+        }
+      }
+    }
+  }
+]

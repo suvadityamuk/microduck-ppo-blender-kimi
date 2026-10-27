@@ -1,0 +1,113 @@
+{
+  "stock": {
+    "cross_the_glare_ice": {
+      "success": 0.0,
+      "episodes": 20,
+      "failures": {
+        "fell": 20
+      },
+      "mean_time": null
+    },
+    "climb_the_lookout": {
+      "success": 0.0,
+      "episodes": 20,
+      "failures": {
+        "timeout": 20
+      },
+      "mean_time": null
+    },
+    "smokehouse_sluice": {
+      "success": 0.0,
+      "episodes": 20,
+      "failures": {
+        "fell": 20
+      },
+      "mean_time": null
+    },
+    "roll_the_snowball": {
+      "success": 0.0,
+      "episodes": 20,
+      "failures": {
+        "fell": 20
+      },
+      "mean_time": null
+    },
+    "evening_rounds": {
+      "success": 0.0,
+      "episodes": 20,
+      "failures": {
+        "fell": 20
+      },
+      "mean_time": null
+    },
+    "crate_to_the_dock": {
+      "success": 0.0,
+      "episodes": 20,
+      "failures": {
+        "fell": 20
+      },
+      "mean_time": null
+    },
+    "_mean_success": 0.0
+  },
+  "specialist": {
+    "cross_the_glare_ice": {
+      "success": 0.0,
+      "episodes": 20,
+      "failures": {
+        "fell": 17,
+        "timeout": 1,
+        "entered": 2
+      },
+      "mean_time": null
+    },
+    "climb_the_lookout": {
+      "success": 0.0,
+      "episodes": 20,
+      "failures": {
+        "timeout": 18,
+        "fell": 2
+      },
+      "mean_time": null
+    },
+    "smokehouse_sluice": {
+      "success": 0.05,
+      "episodes": 20,
+      "failures": {
+        "fell": 18,
+        "entered": 1
+      },
+      "mean_time": 14.579999999999778
+    },
+    "roll_the_snowball": {
+      "success": 0.0,
+      "episodes": 20,
+      "failures": {
+        "fell": 17,
+        "entered": 2,
+        "timeout": 1
+      },
+      "mean_time": null
+    },
+    "evening_rounds": {
+      "success": 0.0,
+      "episodes": 20,
+      "failures": {
+        "entered": 9,
+        "fell": 10,
+        "timeout": 1
+      },
+      "mean_time": null
+    },
+    "crate_to_the_dock": {
+      "success": 0.0,
+      "episodes": 20,
+      "failures": {
+        "entered": 5,
+        "fell": 15
+      },
+      "mean_time": null
+    },
+    "_mean_success": 0.008333333333333333
+  }
+}

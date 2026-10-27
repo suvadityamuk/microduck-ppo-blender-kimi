@@ -1,0 +1,99 @@
+{
+  "stock": {
+    "into_the_spotlight": {
+      "success": 1.0,
+      "episodes": 20,
+      "failures": {},
+      "mean_time": 11.347999999999846
+    },
+    "walk_the_wire": {
+      "success": 1.0,
+      "episodes": 20,
+      "failures": {},
+      "mean_time": 24.202999999999573
+    },
+    "open_the_cage": {
+      "success": 0.1,
+      "episodes": 20,
+      "failures": {
+        "fell": 18
+      },
+      "mean_time": 53.470000000002756
+    },
+    "push_the_seal_ball": {
+      "success": 0.7,
+      "episodes": 20,
+      "failures": {
+        "fell": 5,
+        "timeout": 1
+      },
+      "mean_time": 23.442857142857058
+    },
+    "grand_parade": {
+      "success": 0.5,
+      "episodes": 20,
+      "failures": {
+        "fell": 10
+      },
+      "mean_time": 75.78600000000205
+    },
+    "cross_the_greasepaint": {
+      "success": 0.0,
+      "episodes": 20,
+      "failures": {
+        "fell": 20
+      },
+      "mean_time": null
+    },
+    "_mean_success": 0.5499999999999999
+  },
+  "specialist": {
+    "into_the_spotlight": {
+      "success": 1.0,
+      "episodes": 20,
+      "failures": {},
+      "mean_time": 10.129999999999873
+    },
+    "walk_the_wire": {
+      "success": 1.0,
+      "episodes": 20,
+      "failures": {},
+      "mean_time": 22.858999999999604
+    },
+    "open_the_cage": {
+      "success": 0.1,
+      "episodes": 20,
+      "failures": {
+        "timeout": 16,
+        "fell": 2
+      },
+      "mean_time": 67.76000000000366
+    },
+    "push_the_seal_ball": {
+      "success": 0.7,
+      "episodes": 20,
+      "failures": {
+        "fell": 4,
+        "timeout": 2
+      },
+      "mean_time": 15.997142857143169
+    },
+    "grand_parade": {
+      "success": 0.05,
+      "episodes": 20,
+      "failures": {
+        "fell": 19
+      },
+      "mean_time": 77.22000000000178
+    },
+    "cross_the_greasepaint": {
+      "success": 0.7,
+      "episodes": 20,
+      "failures": {
+        "timeout": 6
+      },
+      "mean_time": 18.702857142856836
+    },
+    "_mean_success": 0.5916666666666667
+  }
+}

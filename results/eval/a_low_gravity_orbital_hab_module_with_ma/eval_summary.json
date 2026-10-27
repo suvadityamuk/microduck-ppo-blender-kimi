@@ -1,0 +1,108 @@
+{
+  "stock": {
+    "cross_the_coolant": {
+      "success": 0.55,
+      "episodes": 20,
+      "failures": {
+        "entered": 8,
+        "fell": 1
+      },
+      "mean_time": 31.676363636363455
+    },
+    "up_to_the_stars": {
+      "success": 0.0,
+      "episodes": 20,
+      "failures": {
+        "fell": 8,
+        "timeout": 12
+      },
+      "mean_time": null
+    },
+    "cycle_the_airlock": {
+      "success": 0.95,
+      "episodes": 20,
+      "failures": {
+        "timeout": 1
+      },
+      "mean_time": 44.35157894736975
+    },
+    "dock_the_cargo": {
+      "success": 0.95,
+      "episodes": 20,
+      "failures": {
+        "fell": 1
+      },
+      "mean_time": 32.105263157895166
+    },
+    "morning_patrol": {
+      "success": 0.0,
+      "episodes": 20,
+      "failures": {
+        "fell": 5,
+        "entered": 3,
+        "timeout": 12
+      },
+      "mean_time": null
+    },
+    "thread_the_debris": {
+      "success": 0.5,
+      "episodes": 20,
+      "failures": {
+        "timeout": 3,
+        "fell": 7
+      },
+      "mean_time": 38.546000000000575
+    },
+    "_mean_success": 0.4916666666666667
+  },
+  "specialist": {
+    "cross_the_coolant": {
+      "success": 1.0,
+      "episodes": 20,
+      "failures": {},
+      "mean_time": 15.833999999999747
+    },
+    "up_to_the_stars": {
+      "success": 0.0,
+      "episodes": 20,
+      "failures": {
+        "timeout": 20
+      },
+      "mean_time": null
+    },
+    "cycle_the_airlock": {
+      "success": 1.0,
+      "episodes": 20,
+      "failures": {},
+      "mean_time": 21.842999999999623
+    },
+    "dock_the_cargo": {
+      "success": 0.45,
+      "episodes": 20,
+      "failures": {
+        "fell": 6,
+        "entered": 3,
+        "timeout": 2
+      },
+      "mean_time": 8.95333333333323
+    },
+    "morning_patrol": {
+      "success": 0.0,
+      "episodes": 20,
+      "failures": {
+        "fell": 19,
+        "timeout": 1
+      },
+      "mean_time": null
+    },
+    "thread_the_debris": {
+      "success": 0.8,
+      "episodes": 20,
+      "failures": {
+        "entered": 4
+      },
+      "mean_time": 19.789999999999665
+    },
+    "_mean_success": 0.5416666666666666
+  }
+}

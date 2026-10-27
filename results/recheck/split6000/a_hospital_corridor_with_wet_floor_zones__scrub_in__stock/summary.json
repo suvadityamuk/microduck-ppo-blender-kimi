@@ -1,0 +1,14 @@
+{
+  "stock": {
+    "scrub_in": {
+      "success": 0.01,
+      "episodes": 100,
+      "failures": {
+        "fell": 93,
+        "entered": 6
+      },
+      "mean_time": 30.539999999999438
+    },
+    "_mean_success": 0.01
+  }
+}

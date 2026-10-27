@@ -1,0 +1,32 @@
+[
+ {
+  "theme": "a frozen-lake ice-fishing village where the robot crosses glare ice between huts",
+  "split": "train",
+  "seed": 1
+ },
+ {
+  "theme": "an abandoned mine with rubble, rail tracks, a lift cage gate and ore carts",
+  "split": "train",
+  "seed": 11
+ },
+ {
+  "theme": "a low-gravity orbital hab module with magnetic floor tiles and floating-debris hazards",
+  "split": "train",
+  "seed": 12
+ },
+ {
+  "theme": "a hospital corridor with wet-floor zones, sliding doors and supply carts",
+  "split": "train",
+  "seed": 15
+ },
+ {
+  "theme": "a chocolate factory with molten-chocolate channels and caramel-slick floors",
+  "split": "train",
+  "seed": 22
+ },
+ {
+  "theme": "a circus ring with a sawdust floor, a tightrope stage ramp and giant balls",
+  "split": "train",
+  "seed": 27
+ }
+]

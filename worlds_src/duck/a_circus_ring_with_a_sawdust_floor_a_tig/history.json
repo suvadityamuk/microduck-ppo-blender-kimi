@@ -1,0 +1,74 @@
+[
+  {
+    "round": 0,
+    "attempt": 0,
+    "build": {
+      "ok": true,
+      "kind": null,
+      "error": null
+    }
+  },
+  {
+    "round": 0,
+    "gate": {
+      "ok": true,
+      "passing": [
+        "into_the_spotlight",
+        "walk_the_wire",
+        "open_the_cage",
+        "push_the_seal_ball",
+        "grand_parade",
+        "cross_the_greasepaint"
+      ],
+      "feedback": "",
+      "notes": {
+        "head_brightness": 97.36425636574074
+      },
+      "baseline": {
+        "into_the_spotlight": {
+          "rate": 1.0,
+          "failures": [],
+          "max_phase": 1
+        },
+        "walk_the_wire": {
+          "rate": 1.0,
+          "failures": [],
+          "max_phase": 1
+        },
+        "open_the_cage": {
+          "rate": 0.0,
+          "failures": [
+            "fell",
+            "fell",
+            "fell"
+          ],
+          "max_phase": 0
+        },
+        "push_the_seal_ball": {
+          "rate": 0.3333333333333333,
+          "failures": [
+            "timeout",
+            "fell"
+          ],
+          "max_phase": 1
+        },
+        "grand_parade": {
+          "rate": 0.6666666666666666,
+          "failures": [
+            "fell"
+          ],
+          "max_phase": 3
+        },
+        "cross_the_greasepaint": {
+          "rate": 0.0,
+          "failures": [
+            "fell",
+            "fell",
+            "fell"
+          ],
+          "max_phase": 0
+        }
+      }
+    }
+  }
+]

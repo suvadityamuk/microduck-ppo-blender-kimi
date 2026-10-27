@@ -1,0 +1,14 @@
+{
+  "stock": {
+    "dock_the_cargo": {
+      "success": 0.95,
+      "episodes": 100,
+      "failures": {
+        "timeout": 3,
+        "fell": 2
+      },
+      "mean_time": 38.457473684211045
+    },
+    "_mean_success": 0.95
+  }
+}

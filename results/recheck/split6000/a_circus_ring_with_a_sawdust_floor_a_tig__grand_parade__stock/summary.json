@@ -1,0 +1,13 @@
+{
+  "stock": {
+    "grand_parade": {
+      "success": 0.42,
+      "episodes": 100,
+      "failures": {
+        "fell": 58
+      },
+      "mean_time": 76.257619047621
+    },
+    "_mean_success": 0.42
+  }
+}

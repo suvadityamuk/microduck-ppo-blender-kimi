@@ -1,0 +1,6553 @@
+{
+  "name": "a_hospital_corridor_with_wet_floor_zones",
+  "description": "A bright hospital corridor with freshly mopped wet-floor zones under yellow caution signs, frosted-glass sliding doors opened by floor pads, supply carts to steer around, and rounds through the ward, the X-ray bay and the operating theatre.",
+  "theme": "a hospital corridor with wet-floor zones, sliding doors and supply carts",
+  "env": {
+    "sky": {
+      "top": [
+        0.62,
+        0.76,
+        0.92
+      ],
+      "bottom": [
+        0.96,
+        0.97,
+        0.98
+      ]
+    },
+    "light": {
+      "color": [
+        1.0,
+        0.98,
+        0.94
+      ],
+      "azimuth_deg": 120.0,
+      "elevation_deg": 65.0,
+      "ambient": 0.45
+    },
+    "floor": "vinyl_tiles",
+    "gravity": 9.81
+  },
+  "room": {
+    "size": [
+      4.0,
+      3.2
+    ],
+    "wall_height": 0.35
+  },
+  "materials": {
+    "blue_rug": {
+      "name": "blue_rug",
+      "rgba": [
+        0.2,
+        0.45,
+        0.85,
+        1.0
+      ],
+      "color2": [
+        0.13,
+        0.32,
+        0.68
+      ],
+      "pattern": "fabric",
+      "texture": "textures/blue_rug.png",
+      "roughness": 0.6,
+      "metallic": 0.0,
+      "emission": 0.0,
+      "friction": 1.3,
+      "surface": true
+    },
+    "brushed_steel": {
+      "name": "brushed_steel",
+      "rgba": [
+        0.72,
+        0.74,
+        0.78,
+        1.0
+      ],
+      "color2": [
+        0.55,
+        0.58,
+        0.62
+      ],
+      "pattern": "brushed",
+      "texture": "textures/brushed_steel.png",
+      "roughness": 0.3,
+      "metallic": 1.0,
+      "emission": 0.0,
+      "friction": 1.0,
+      "surface": false
+    },
+    "caution_yellow": {
+      "name": "caution_yellow",
+      "rgba": [
+        0.98,
+        0.8,
+        0.06,
+        1.0
+      ],
+      "color2": [
+        0.588,
+        0.48,
+        0.036
+      ],
+      "pattern": "flat",
+      "texture": null,
+      "roughness": 0.5,
+      "metallic": 0.0,
+      "emission": 0.0,
+      "friction": 1.0,
+      "surface": false
+    },
+    "curtain_teal": {
+      "name": "curtain_teal",
+      "rgba": [
+        0.12,
+        0.55,
+        0.52,
+        1.0
+      ],
+      "color2": [
+        0.08,
+        0.42,
+        0.4
+      ],
+      "pattern": "fabric",
+      "texture": "textures/curtain_teal.png",
+      "roughness": 0.7,
+      "metallic": 0.0,
+      "emission": 0.0,
+      "friction": 1.0,
+      "surface": false
+    },
+    "frosted_glass": {
+      "name": "frosted_glass",
+      "rgba": [
+        0.8,
+        0.92,
+        0.96,
+        0.5
+      ],
+      "color2": [
+        0.48,
+        0.552,
+        0.576
+      ],
+      "pattern": "flat",
+      "texture": null,
+      "roughness": 0.15,
+      "metallic": 0.0,
+      "emission": 0.05,
+      "friction": 1.0,
+      "surface": false
+    },
+    "iv_bag": {
+      "name": "iv_bag",
+      "rgba": [
+        0.85,
+        0.95,
+        1.0,
+        0.6
+      ],
+      "color2": [
+        0.51,
+        0.57,
+        0.6
+      ],
+      "pattern": "flat",
+      "texture": null,
+      "roughness": 0.1,
+      "metallic": 0.0,
+      "emission": 0.0,
+      "friction": 1.0,
+      "surface": false
+    },
+    "light_panel": {
+      "name": "light_panel",
+      "rgba": [
+        1.0,
+        1.0,
+        0.98,
+        1.0
+      ],
+      "color2": [
+        0.6,
+        0.6,
+        0.588
+      ],
+      "pattern": "flat",
+      "texture": null,
+      "roughness": 0.6,
+      "metallic": 0.0,
+      "emission": 0.9,
+      "friction": 1.0,
+      "surface": false
+    },
+    "linen_green": {
+      "name": "linen_green",
+      "rgba": [
+        0.65,
+        0.82,
+        0.72,
+        1.0
+      ],
+      "color2": [
+        0.52,
+        0.72,
+        0.6
+      ],
+      "pattern": "fabric",
+      "texture": "textures/linen_green.png",
+      "roughness": 0.6,
+      "metallic": 0.0,
+      "emission": 0.0,
+      "friction": 1.0,
+      "surface": false
+    },
+    "monitor_glow": {
+      "name": "monitor_glow",
+      "rgba": [
+        0.3,
+        0.7,
+        0.9,
+        1.0
+      ],
+      "color2": [
+        0.18,
+        0.42,
+        0.54
+      ],
+      "pattern": "flat",
+      "texture": null,
+      "roughness": 0.6,
+      "metallic": 0.0,
+      "emission": 0.6,
+      "friction": 1.0,
+      "surface": false
+    },
+    "pad_green": {
+      "name": "pad_green",
+      "rgba": [
+        0.2,
+        0.7,
+        0.4,
+        1.0
+      ],
+      "color2": [
+        0.12,
+        0.42,
+        0.24
+      ],
+      "pattern": "flat",
+      "texture": null,
+      "roughness": 0.5,
+      "metallic": 0.0,
+      "emission": 0.0,
+      "friction": 1.0,
+      "surface": false
+    },
+    "plastic_blue": {
+      "name": "plastic_blue",
+      "rgba": [
+        0.2,
+        0.4,
+        0.8,
+        1.0
+      ],
+      "color2": [
+        0.12,
+        0.24,
+        0.48
+      ],
+      "pattern": "flat",
+      "texture": null,
+      "roughness": 0.4,
+      "metallic": 0.0,
+      "emission": 0.0,
+      "friction": 1.0,
+      "surface": false
+    },
+    "red_rug": {
+      "name": "red_rug",
+      "rgba": [
+        0.8,
+        0.22,
+        0.22,
+        1.0
+      ],
+      "color2": [
+        0.62,
+        0.14,
+        0.14
+      ],
+      "pattern": "fabric",
+      "texture": "textures/red_rug.png",
+      "roughness": 0.6,
+      "metallic": 0.0,
+      "emission": 0.0,
+      "friction": 1.2,
+      "surface": true
+    },
+    "rubber_black": {
+      "name": "rubber_black",
+      "rgba": [
+        0.08,
+        0.08,
+        0.1,
+        1.0
+      ],
+      "color2": [
+        0.048,
+        0.048,
+        0.06
+      ],
+      "pattern": "flat",
+      "texture": null,
+      "roughness": 0.9,
+      "metallic": 0.0,
+      "emission": 0.0,
+      "friction": 1.6,
+      "surface": false
+    },
+    "signal_red": {
+      "name": "signal_red",
+      "rgba": [
+        0.85,
+        0.1,
+        0.12,
+        1.0
+      ],
+      "color2": [
+        0.51,
+        0.06,
+        0.072
+      ],
+      "pattern": "flat",
+      "texture": null,
+      "roughness": 0.4,
+      "metallic": 0.0,
+      "emission": 0.0,
+      "friction": 1.0,
+      "surface": false
+    },
+    "vinyl_tiles": {
+      "name": "vinyl_tiles",
+      "rgba": [
+        0.9,
+        0.92,
+        0.94,
+        1.0
+      ],
+      "color2": [
+        0.76,
+        0.83,
+        0.86
+      ],
+      "pattern": "tiles",
+      "texture": "textures/vinyl_tiles.png",
+      "roughness": 0.35,
+      "metallic": 0.0,
+      "emission": 0.0,
+      "friction": 0.7,
+      "surface": true
+    },
+    "wall_paint": {
+      "name": "wall_paint",
+      "rgba": [
+        0.88,
+        0.93,
+        0.9,
+        1.0
+      ],
+      "color2": [
+        0.6,
+        0.75,
+        0.69
+      ],
+      "pattern": "stripes",
+      "texture": "textures/wall_paint.png",
+      "roughness": 0.85,
+      "metallic": 0.0,
+      "emission": 0.0,
+      "friction": 1.0,
+      "surface": true
+    },
+    "wet_vinyl": {
+      "name": "wet_vinyl",
+      "rgba": [
+        0.58,
+        0.79,
+        0.95,
+        1.0
+      ],
+      "color2": [
+        0.85,
+        0.95,
+        1.0
+      ],
+      "pattern": "marble",
+      "texture": "textures/wet_vinyl.png",
+      "roughness": 0.05,
+      "metallic": 0.0,
+      "emission": 0.0,
+      "friction": 0.12,
+      "surface": true
+    },
+    "white_mat": {
+      "name": "white_mat",
+      "rgba": [
+        0.93,
+        0.95,
+        0.96,
+        1.0
+      ],
+      "color2": [
+        0.84,
+        0.88,
+        0.9
+      ],
+      "pattern": "fabric",
+      "texture": "textures/white_mat.png",
+      "roughness": 0.6,
+      "metallic": 0.0,
+      "emission": 0.0,
+      "friction": 1.1,
+      "surface": true
+    },
+    "white_plastic": {
+      "name": "white_plastic",
+      "rgba": [
+        0.96,
+        0.97,
+        0.98,
+        1.0
+      ],
+      "color2": [
+        0.576,
+        0.582,
+        0.588
+      ],
+      "pattern": "flat",
+      "texture": null,
+      "roughness": 0.35,
+      "metallic": 0.0,
+      "emission": 0.0,
+      "friction": 1.0,
+      "surface": false
+    },
+    "yellow_mat": {
+      "name": "yellow_mat",
+      "rgba": [
+        0.95,
+        0.78,
+        0.12,
+        1.0
+      ],
+      "color2": [
+        0.84,
+        0.64,
+        0.08
+      ],
+      "pattern": "dots",
+      "texture": "textures/yellow_mat.png",
+      "roughness": 0.6,
+      "metallic": 0.0,
+      "emission": 0.0,
+      "friction": 1.2,
+      "surface": true
+    }
+  },
+  "bodies": [
+    {
+      "name": "room_walls",
+      "kind": "fixture",
+      "role": "wall",
+      "parent": null,
+      "pos": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "yaw": 0.0,
+      "joint": null,
+      "geoms": [
+        {
+          "kind": "box",
+          "size": [
+            2.06,
+            0.03,
+            0.175
+          ],
+          "name": "north",
+          "pos": [
+            0.0,
+            1.6300000000000001,
+            0.175
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "wall_paint",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            2.06,
+            0.03,
+            0.175
+          ],
+          "name": "south",
+          "pos": [
+            0.0,
+            -1.6300000000000001,
+            0.175
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "wall_paint",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.03,
+            1.6,
+            0.175
+          ],
+          "name": "east",
+          "pos": [
+            2.03,
+            0.0,
+            0.175
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "wall_paint",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.03,
+            1.6,
+            0.175
+          ],
+          "name": "west",
+          "pos": [
+            -2.03,
+            0.0,
+            0.175
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "wall_paint",
+          "collision": true
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "corridor_wall_north",
+      "kind": "fixture",
+      "role": "wall",
+      "parent": null,
+      "pos": [
+        -2.0,
+        0.6,
+        0.0
+      ],
+      "yaw": 0.0,
+      "joint": null,
+      "geoms": [
+        {
+          "kind": "box",
+          "size": [
+            0.32,
+            0.02,
+            0.15
+          ],
+          "name": "seg0",
+          "pos": [
+            0.32,
+            0.0,
+            0.15
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "wall_paint",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.94,
+            0.02,
+            0.15
+          ],
+          "name": "seg1",
+          "pos": [
+            2.0,
+            0.0,
+            0.15
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "wall_paint",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.32000000000000006,
+            0.02,
+            0.15
+          ],
+          "name": "seg2",
+          "pos": [
+            3.6799999999999997,
+            0.0,
+            0.15
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "wall_paint",
+          "collision": true
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "corridor_wall_south",
+      "kind": "fixture",
+      "role": "wall",
+      "parent": null,
+      "pos": [
+        -2.0,
+        -0.6,
+        0.0
+      ],
+      "yaw": 0.0,
+      "joint": null,
+      "geoms": [
+        {
+          "kind": "box",
+          "size": [
+            0.32,
+            0.02,
+            0.15
+          ],
+          "name": "seg0",
+          "pos": [
+            0.32,
+            0.0,
+            0.15
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "wall_paint",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.94,
+            0.02,
+            0.15
+          ],
+          "name": "seg1",
+          "pos": [
+            2.0,
+            0.0,
+            0.15
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "wall_paint",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.32000000000000006,
+            0.02,
+            0.15
+          ],
+          "name": "seg2",
+          "pos": [
+            3.6799999999999997,
+            0.0,
+            0.15
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "wall_paint",
+          "collision": true
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "divider_north",
+      "kind": "fixture",
+      "role": "wall",
+      "parent": null,
+      "pos": [
+        0.0,
+        0.6,
+        0.0
+      ],
+      "yaw": 1.5707963267948966,
+      "joint": null,
+      "geoms": [
+        {
+          "kind": "box",
+          "size": [
+            0.5,
+            0.02,
+            0.15
+          ],
+          "name": "seg0",
+          "pos": [
+            0.5,
+            0.0,
+            0.15
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "wall_paint",
+          "collision": true
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "divider_south",
+      "kind": "fixture",
+      "role": "wall",
+      "parent": null,
+      "pos": [
+        0.0,
+        -0.6,
+        0.0
+      ],
+      "yaw": -1.5707963267948966,
+      "joint": null,
+      "geoms": [
+        {
+          "kind": "box",
+          "size": [
+            0.5,
+            0.02,
+            0.15
+          ],
+          "name": "seg0",
+          "pos": [
+            0.5,
+            0.0,
+            0.15
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "wall_paint",
+          "collision": true
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "supply_door_frame",
+      "kind": "fixture",
+      "role": "gate_frame",
+      "parent": null,
+      "pos": [
+        1.15,
+        0.6,
+        0.0
+      ],
+      "yaw": 1.5707963267948966,
+      "joint": null,
+      "geoms": [
+        {
+          "kind": "box",
+          "size": [
+            0.025,
+            0.02,
+            0.28500000000000003
+          ],
+          "name": "postl",
+          "pos": [
+            0.0,
+            -0.22999999999999998,
+            0.28500000000000003
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "brushed_steel",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.025,
+            0.02,
+            0.28500000000000003
+          ],
+          "name": "postr",
+          "pos": [
+            0.0,
+            0.22999999999999998,
+            0.28500000000000003
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "brushed_steel",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.025,
+            0.25,
+            0.02
+          ],
+          "name": "lintel",
+          "pos": [
+            0.0,
+            0.0,
+            0.5900000000000001
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "brushed_steel",
+          "collision": true
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "supply_door",
+      "kind": "part",
+      "role": "gate",
+      "parent": "supply_door_frame",
+      "pos": [
+        0.0,
+        0.0,
+        0.003
+      ],
+      "yaw": 0.0,
+      "joint": {
+        "type": "slide",
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "range": [
+          0.0,
+          0.31
+        ],
+        "damping": 5.0,
+        "stiffness": 0.0,
+        "frictionloss": 0.0,
+        "springref": 0.0
+      },
+      "geoms": [
+        {
+          "kind": "box",
+          "size": [
+            0.0125,
+            0.21,
+            0.12
+          ],
+          "name": "panel",
+          "pos": [
+            0.0,
+            0.0,
+            0.12
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "frosted_glass",
+          "collision": true
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "theatre_door_frame",
+      "kind": "fixture",
+      "role": "gate_frame",
+      "parent": null,
+      "pos": [
+        1.15,
+        -0.6,
+        0.0
+      ],
+      "yaw": 1.5707963267948966,
+      "joint": null,
+      "geoms": [
+        {
+          "kind": "box",
+          "size": [
+            0.025,
+            0.02,
+            0.28500000000000003
+          ],
+          "name": "postl",
+          "pos": [
+            0.0,
+            -0.22999999999999998,
+            0.28500000000000003
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "brushed_steel",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.025,
+            0.02,
+            0.28500000000000003
+          ],
+          "name": "postr",
+          "pos": [
+            0.0,
+            0.22999999999999998,
+            0.28500000000000003
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "brushed_steel",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.025,
+            0.25,
+            0.02
+          ],
+          "name": "lintel",
+          "pos": [
+            0.0,
+            0.0,
+            0.5900000000000001
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "brushed_steel",
+          "collision": true
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "theatre_door",
+      "kind": "part",
+      "role": "gate",
+      "parent": "theatre_door_frame",
+      "pos": [
+        0.0,
+        0.0,
+        0.003
+      ],
+      "yaw": 0.0,
+      "joint": {
+        "type": "slide",
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "range": [
+          0.0,
+          0.31
+        ],
+        "damping": 5.0,
+        "stiffness": 0.0,
+        "frictionloss": 0.0,
+        "springref": 0.0
+      },
+      "geoms": [
+        {
+          "kind": "box",
+          "size": [
+            0.0125,
+            0.21,
+            0.12
+          ],
+          "name": "panel",
+          "pos": [
+            0.0,
+            0.0,
+            0.12
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "frosted_glass",
+          "collision": true
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "supply_plate",
+      "kind": "fixture",
+      "role": "plate",
+      "parent": null,
+      "pos": [
+        1.25,
+        0.38,
+        0.0
+      ],
+      "yaw": 0.0,
+      "joint": null,
+      "geoms": [
+        {
+          "kind": "box",
+          "size": [
+            0.1,
+            0.1,
+            0.003
+          ],
+          "name": "pad",
+          "pos": [
+            0.0,
+            0.0,
+            0.003
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "plastic_blue",
+          "collision": true
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "theatre_plate",
+      "kind": "fixture",
+      "role": "plate",
+      "parent": null,
+      "pos": [
+        1.25,
+        -0.38,
+        0.0
+      ],
+      "yaw": 0.0,
+      "joint": null,
+      "geoms": [
+        {
+          "kind": "box",
+          "size": [
+            0.1,
+            0.1,
+            0.003
+          ],
+          "name": "pad",
+          "pos": [
+            0.0,
+            0.0,
+            0.003
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "pad_green",
+          "collision": true
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "wet_floor_ward",
+      "kind": "fixture",
+      "role": "patch",
+      "parent": null,
+      "pos": [
+        -1.15,
+        0.32,
+        0.0
+      ],
+      "yaw": 0.0,
+      "joint": null,
+      "geoms": [
+        {
+          "kind": "box",
+          "size": [
+            0.375,
+            0.25,
+            0.001
+          ],
+          "name": "surface",
+          "pos": [
+            0.0,
+            0.0,
+            0.001
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "wet_vinyl",
+          "collision": true
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "wet_floor_mid",
+      "kind": "fixture",
+      "role": "patch",
+      "parent": null,
+      "pos": [
+        0.15,
+        -0.28,
+        0.0
+      ],
+      "yaw": 0.0,
+      "joint": null,
+      "geoms": [
+        {
+          "kind": "box",
+          "size": [
+            0.4,
+            0.22,
+            0.001
+          ],
+          "name": "surface",
+          "pos": [
+            0.0,
+            0.0,
+            0.001
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "wet_vinyl",
+          "collision": true
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "rug_reception",
+      "kind": "fixture",
+      "role": "patch",
+      "parent": null,
+      "pos": [
+        -1.72,
+        0.1,
+        0.0
+      ],
+      "yaw": 0.0,
+      "joint": null,
+      "geoms": [
+        {
+          "kind": "box",
+          "size": [
+            0.17,
+            0.17,
+            0.001
+          ],
+          "name": "surface",
+          "pos": [
+            0.0,
+            0.0,
+            0.001
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "red_rug",
+          "collision": true
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "rug_ward",
+      "kind": "fixture",
+      "role": "patch",
+      "parent": null,
+      "pos": [
+        -0.9,
+        1.05,
+        0.0
+      ],
+      "yaw": 0.0,
+      "joint": null,
+      "geoms": [
+        {
+          "kind": "box",
+          "size": [
+            0.19,
+            0.19,
+            0.001
+          ],
+          "name": "surface",
+          "pos": [
+            0.0,
+            0.0,
+            0.001
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "blue_rug",
+          "collision": true
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "mat_supply",
+      "kind": "fixture",
+      "role": "patch",
+      "parent": null,
+      "pos": [
+        1.2,
+        1.1,
+        0.0
+      ],
+      "yaw": 0.0,
+      "joint": null,
+      "geoms": [
+        {
+          "kind": "box",
+          "size": [
+            0.2,
+            0.2,
+            0.001
+          ],
+          "name": "surface",
+          "pos": [
+            0.0,
+            0.0,
+            0.001
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "yellow_mat",
+          "collision": true
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "mat_theatre",
+      "kind": "fixture",
+      "role": "patch",
+      "parent": null,
+      "pos": [
+        1.3,
+        -1.1,
+        0.0
+      ],
+      "yaw": 0.0,
+      "joint": null,
+      "geoms": [
+        {
+          "kind": "box",
+          "size": [
+            0.2,
+            0.2,
+            0.001
+          ],
+          "name": "surface",
+          "pos": [
+            0.0,
+            0.0,
+            0.001
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "white_mat",
+          "collision": true
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "xray_ramp",
+      "kind": "fixture",
+      "role": "ramp",
+      "parent": null,
+      "pos": [
+        -1.2,
+        -0.7,
+        0.0
+      ],
+      "yaw": -1.5707963267948966,
+      "joint": null,
+      "geoms": [
+        {
+          "name": "wedge",
+          "kind": "mesh",
+          "material": "blue_rug",
+          "collision": true,
+          "uv_scale": 0.4,
+          "pos": [
+            0.15000000596046448,
+            0.0,
+            0.02500000037252903
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/xray_ramp__wedge.obj",
+          "bbox": [
+            [
+              0.0,
+              -0.22499999403953552,
+              0.0
+            ],
+            [
+              0.30000001192092896,
+              0.22499999403953552,
+              0.05000000074505806
+            ]
+          ]
+        }
+      ],
+      "mass": null,
+      "spawn": null,
+      "ramp": {
+        "start": [
+          -1.2,
+          -0.7
+        ],
+        "end": [
+          -1.2,
+          -1.0
+        ],
+        "width": 0.45,
+        "rise": 0.05
+      }
+    },
+    {
+      "name": "xray_platform",
+      "kind": "fixture",
+      "role": "platform",
+      "parent": null,
+      "pos": [
+        -1.2,
+        -1.25,
+        0.0
+      ],
+      "yaw": 0.0,
+      "joint": null,
+      "geoms": [
+        {
+          "kind": "box",
+          "size": [
+            0.35,
+            0.25,
+            0.025
+          ],
+          "name": "deck",
+          "pos": [
+            0.0,
+            0.0,
+            0.025
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "white_mat",
+          "collision": true
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "corridor_cart",
+      "kind": "fixture",
+      "role": null,
+      "parent": null,
+      "pos": [
+        -0.5,
+        -0.42,
+        0.0
+      ],
+      "yaw": 0.08726646259971647,
+      "joint": null,
+      "geoms": [
+        {
+          "name": "m1",
+          "kind": "mesh",
+          "material": "brushed_steel",
+          "collision": true,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            0.0,
+            0.07999999821186066
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/corridor_cart__m1.obj",
+          "bbox": [
+            [
+              -0.17000000178813934,
+              -0.10000000149011612,
+              0.06999999843537807
+            ],
+            [
+              0.17000000178813934,
+              0.10000000149011612,
+              0.08999999798834324
+            ]
+          ]
+        },
+        {
+          "name": "m2",
+          "kind": "mesh",
+          "material": "white_plastic",
+          "collision": true,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            0.0,
+            0.23999999463558197
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/corridor_cart__m2.obj",
+          "bbox": [
+            [
+              -0.17000000178813934,
+              -0.10000000149011612,
+              0.2299999948590994
+            ],
+            [
+              0.17000000178813934,
+              0.10000000149011612,
+              0.24999999441206455
+            ]
+          ]
+        },
+        {
+          "name": "m3",
+          "kind": "mesh",
+          "material": "brushed_steel",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            -0.0949999988079071,
+            0.26499998569488525
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/corridor_cart__m3.obj",
+          "bbox": [
+            [
+              -0.17000000178813934,
+              -0.10099999886006117,
+              0.24999998603016138
+            ],
+            [
+              0.17000000178813934,
+              -0.08899999875575304,
+              0.2799999853596091
+            ]
+          ]
+        },
+        {
+          "name": "m4",
+          "kind": "mesh",
+          "material": "brushed_steel",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            0.0949999988079071,
+            0.26499998569488525
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/corridor_cart__m4.obj",
+          "bbox": [
+            [
+              -0.17000000178813934,
+              0.08899999875575304,
+              0.24999998603016138
+            ],
+            [
+              0.17000000178813934,
+              0.10099999886006117,
+              0.2799999853596091
+            ]
+          ]
+        },
+        {
+          "name": "m5",
+          "kind": "mesh",
+          "material": "brushed_steel",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            -0.16500000655651093,
+            0.0,
+            0.26499998569488525
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/corridor_cart__m5.obj",
+          "bbox": [
+            [
+              -0.171000006608665,
+              -0.10000000149011612,
+              0.24999998603016138
+            ],
+            [
+              -0.15900000650435686,
+              0.10000000149011612,
+              0.2799999853596091
+            ]
+          ]
+        },
+        {
+          "name": "m6",
+          "kind": "mesh",
+          "material": "brushed_steel",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.16500000655651093,
+            0.0,
+            0.26499998569488525
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/corridor_cart__m6.obj",
+          "bbox": [
+            [
+              0.15900000650435686,
+              -0.10000000149011612,
+              0.24999998603016138
+            ],
+            [
+              0.171000006608665,
+              0.10000000149011612,
+              0.2799999853596091
+            ]
+          ]
+        },
+        {
+          "name": "m7",
+          "kind": "mesh",
+          "material": "brushed_steel",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            -0.15000000596046448,
+            -0.08500000089406967,
+            0.1599999964237213
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/corridor_cart__m7.obj",
+          "bbox": [
+            [
+              -0.1580000063404441,
+              -0.09300000127404928,
+              0.04999999701976776
+            ],
+            [
+              -0.14200000558048487,
+              -0.07700000051409006,
+              0.26999999582767487
+            ]
+          ]
+        },
+        {
+          "name": "m8",
+          "kind": "mesh",
+          "material": "brushed_steel",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            -0.15000000596046448,
+            0.08500000089406967,
+            0.1599999964237213
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/corridor_cart__m8.obj",
+          "bbox": [
+            [
+              -0.1580000063404441,
+              0.07700000051409006,
+              0.04999999701976776
+            ],
+            [
+              -0.14200000558048487,
+              0.09300000127404928,
+              0.26999999582767487
+            ]
+          ]
+        },
+        {
+          "name": "m9",
+          "kind": "mesh",
+          "material": "brushed_steel",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.15000000596046448,
+            -0.08500000089406967,
+            0.1599999964237213
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/corridor_cart__m9.obj",
+          "bbox": [
+            [
+              0.14200000558048487,
+              -0.09300000127404928,
+              0.04999999701976776
+            ],
+            [
+              0.1580000063404441,
+              -0.07700000051409006,
+              0.26999999582767487
+            ]
+          ]
+        },
+        {
+          "name": "m10",
+          "kind": "mesh",
+          "material": "brushed_steel",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.15000000596046448,
+            0.08500000089406967,
+            0.1599999964237213
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/corridor_cart__m10.obj",
+          "bbox": [
+            [
+              0.14200000558048487,
+              0.07700000051409006,
+              0.04999999701976776
+            ],
+            [
+              0.1580000063404441,
+              0.09300000127404928,
+              0.26999999582767487
+            ]
+          ]
+        },
+        {
+          "name": "m11",
+          "kind": "mesh",
+          "material": "brushed_steel",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            -0.1899999976158142,
+            0.0,
+            0.30000001192092896
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/corridor_cart__m11.obj",
+          "bbox": [
+            [
+              -0.19799999799579382,
+              -0.10000000149011612,
+              0.29200000688433647
+            ],
+            [
+              -0.1819999972358346,
+              0.10000000149011612,
+              0.30800001695752144
+            ]
+          ]
+        },
+        {
+          "name": "m12",
+          "kind": "mesh",
+          "material": "brushed_steel",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            -0.17499999701976776,
+            -0.08500000089406967,
+            0.30000001192092896
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/corridor_cart__m12.obj",
+          "bbox": [
+            [
+              -0.1999999973922968,
+              -0.09100000094622374,
+              0.2940000109374523
+            ],
+            [
+              -0.14999999664723873,
+              -0.07900000084191561,
+              0.3060000129044056
+            ]
+          ]
+        },
+        {
+          "name": "m13",
+          "kind": "mesh",
+          "material": "brushed_steel",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            -0.17499999701976776,
+            0.08500000089406967,
+            0.30000001192092896
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/corridor_cart__m13.obj",
+          "bbox": [
+            [
+              -0.1999999973922968,
+              0.07900000084191561,
+              0.2940000109374523
+            ],
+            [
+              -0.14999999664723873,
+              0.09100000094622374,
+              0.3060000129044056
+            ]
+          ]
+        },
+        {
+          "name": "m14",
+          "kind": "mesh",
+          "material": "rubber_black",
+          "collision": true,
+          "uv_scale": 0.25,
+          "pos": [
+            -0.14000000059604645,
+            -0.08500000089406967,
+            0.02800000086426735
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/corridor_cart__m14.obj",
+          "bbox": [
+            [
+              -0.1680000014603138,
+              -0.09400000143796206,
+              0.0
+            ],
+            [
+              -0.1119999997317791,
+              -0.07600000035017729,
+              0.0560000017285347
+            ]
+          ]
+        },
+        {
+          "name": "m15",
+          "kind": "mesh",
+          "material": "rubber_black",
+          "collision": true,
+          "uv_scale": 0.25,
+          "pos": [
+            -0.14000000059604645,
+            0.08500000089406967,
+            0.02800000086426735
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/corridor_cart__m15.obj",
+          "bbox": [
+            [
+              -0.1680000014603138,
+              0.07600000035017729,
+              0.0
+            ],
+            [
+              -0.1119999997317791,
+              0.09400000143796206,
+              0.0560000017285347
+            ]
+          ]
+        },
+        {
+          "name": "m16",
+          "kind": "mesh",
+          "material": "rubber_black",
+          "collision": true,
+          "uv_scale": 0.25,
+          "pos": [
+            0.14000000059604645,
+            -0.08500000089406967,
+            0.02800000086426735
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/corridor_cart__m16.obj",
+          "bbox": [
+            [
+              0.1119999997317791,
+              -0.09400000143796206,
+              0.0
+            ],
+            [
+              0.1680000014603138,
+              -0.07600000035017729,
+              0.0560000017285347
+            ]
+          ]
+        },
+        {
+          "name": "m17",
+          "kind": "mesh",
+          "material": "rubber_black",
+          "collision": true,
+          "uv_scale": 0.25,
+          "pos": [
+            0.14000000059604645,
+            0.08500000089406967,
+            0.02800000086426735
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/corridor_cart__m17.obj",
+          "bbox": [
+            [
+              0.1119999997317791,
+              0.07600000035017729,
+              0.0
+            ],
+            [
+              0.1680000014603138,
+              0.09400000143796206,
+              0.0560000017285347
+            ]
+          ]
+        },
+        {
+          "name": "m18",
+          "kind": "mesh",
+          "material": "signal_red",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.05000000074505806,
+            -0.10300000011920929,
+            0.23999999463558197
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/corridor_cart__m18.obj",
+          "bbox": [
+            [
+              0.004999998956918716,
+              -0.10500000021420419,
+              0.2259999942034483
+            ],
+            [
+              0.0950000025331974,
+              -0.10100000002421439,
+              0.25399999506771564
+            ]
+          ]
+        },
+        {
+          "name": "m19",
+          "kind": "mesh",
+          "material": "signal_red",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.05000000074505806,
+            -0.10300000011920929,
+            0.23999999463558197
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/corridor_cart__m19.obj",
+          "bbox": [
+            [
+              0.036000000312924385,
+              -0.10500000021420419,
+              0.19499999284744263
+            ],
+            [
+              0.06400000117719173,
+              -0.10100000002421439,
+              0.2849999964237213
+            ]
+          ]
+        },
+        {
+          "name": "m20",
+          "kind": "mesh",
+          "material": "plastic_blue",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            -0.07999999821186066,
+            0.029999999329447746,
+            0.2800000011920929
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/corridor_cart__m20.obj",
+          "bbox": [
+            [
+              -0.09399999864399433,
+              0.01599999889731407,
+              0.25000000186264515
+            ],
+            [
+              -0.06599999777972698,
+              0.04399999976158142,
+              0.31000000052154064
+            ]
+          ]
+        },
+        {
+          "name": "m21",
+          "kind": "mesh",
+          "material": "signal_red",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            -0.05000000074505806,
+            -0.03999999910593033,
+            0.2750000059604645
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/corridor_cart__m21.obj",
+          "bbox": [
+            [
+              -0.06200000084936619,
+              -0.05199999921023846,
+              0.25000000558793545
+            ],
+            [
+              -0.03800000064074993,
+              -0.0279999990016222,
+              0.3000000063329935
+            ]
+          ]
+        },
+        {
+          "name": "m22",
+          "kind": "mesh",
+          "material": "curtain_teal",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.05999999865889549,
+            0.0,
+            0.11999999731779099
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/corridor_cart__m22.obj",
+          "bbox": [
+            [
+              0.009999997913837433,
+              -0.05999999865889549,
+              0.08999999798834324
+            ],
+            [
+              0.10999999940395355,
+              0.05999999865889549,
+              0.14999999664723873
+            ]
+          ]
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "supply_cart",
+      "kind": "fixture",
+      "role": null,
+      "parent": null,
+      "pos": [
+        0.55,
+        0.9,
+        0.0
+      ],
+      "yaw": -0.20943951023931956,
+      "joint": null,
+      "geoms": [
+        {
+          "name": "m23",
+          "kind": "mesh",
+          "material": "brushed_steel",
+          "collision": true,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            0.0,
+            0.07999999821186066
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/supply_cart__m23.obj",
+          "bbox": [
+            [
+              -0.17000000178813934,
+              -0.10000000149011612,
+              0.06999999843537807
+            ],
+            [
+              0.17000000178813934,
+              0.10000000149011612,
+              0.08999999798834324
+            ]
+          ]
+        },
+        {
+          "name": "m24",
+          "kind": "mesh",
+          "material": "white_plastic",
+          "collision": true,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            0.0,
+            0.23999999463558197
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/supply_cart__m24.obj",
+          "bbox": [
+            [
+              -0.17000000178813934,
+              -0.10000000149011612,
+              0.2299999948590994
+            ],
+            [
+              0.17000000178813934,
+              0.10000000149011612,
+              0.24999999441206455
+            ]
+          ]
+        },
+        {
+          "name": "m25",
+          "kind": "mesh",
+          "material": "brushed_steel",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            -0.0949999988079071,
+            0.26499998569488525
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/supply_cart__m25.obj",
+          "bbox": [
+            [
+              -0.17000000178813934,
+              -0.10099999886006117,
+              0.24999998603016138
+            ],
+            [
+              0.17000000178813934,
+              -0.08899999875575304,
+              0.2799999853596091
+            ]
+          ]
+        },
+        {
+          "name": "m26",
+          "kind": "mesh",
+          "material": "brushed_steel",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            0.0949999988079071,
+            0.26499998569488525
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/supply_cart__m26.obj",
+          "bbox": [
+            [
+              -0.17000000178813934,
+              0.08899999875575304,
+              0.24999998603016138
+            ],
+            [
+              0.17000000178813934,
+              0.10099999886006117,
+              0.2799999853596091
+            ]
+          ]
+        },
+        {
+          "name": "m27",
+          "kind": "mesh",
+          "material": "brushed_steel",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            -0.16500000655651093,
+            0.0,
+            0.26499998569488525
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/supply_cart__m27.obj",
+          "bbox": [
+            [
+              -0.171000006608665,
+              -0.10000000149011612,
+              0.24999998603016138
+            ],
+            [
+              -0.15900000650435686,
+              0.10000000149011612,
+              0.2799999853596091
+            ]
+          ]
+        },
+        {
+          "name": "m28",
+          "kind": "mesh",
+          "material": "brushed_steel",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.16500000655651093,
+            0.0,
+            0.26499998569488525
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/supply_cart__m28.obj",
+          "bbox": [
+            [
+              0.15900000650435686,
+              -0.10000000149011612,
+              0.24999998603016138
+            ],
+            [
+              0.171000006608665,
+              0.10000000149011612,
+              0.2799999853596091
+            ]
+          ]
+        },
+        {
+          "name": "m29",
+          "kind": "mesh",
+          "material": "brushed_steel",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            -0.15000000596046448,
+            -0.08500000089406967,
+            0.1599999964237213
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/supply_cart__m29.obj",
+          "bbox": [
+            [
+              -0.1580000063404441,
+              -0.09300000127404928,
+              0.04999999701976776
+            ],
+            [
+              -0.14200000558048487,
+              -0.07700000051409006,
+              0.26999999582767487
+            ]
+          ]
+        },
+        {
+          "name": "m30",
+          "kind": "mesh",
+          "material": "brushed_steel",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            -0.15000000596046448,
+            0.08500000089406967,
+            0.1599999964237213
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/supply_cart__m30.obj",
+          "bbox": [
+            [
+              -0.1580000063404441,
+              0.07700000051409006,
+              0.04999999701976776
+            ],
+            [
+              -0.14200000558048487,
+              0.09300000127404928,
+              0.26999999582767487
+            ]
+          ]
+        },
+        {
+          "name": "m31",
+          "kind": "mesh",
+          "material": "brushed_steel",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.15000000596046448,
+            -0.08500000089406967,
+            0.1599999964237213
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/supply_cart__m31.obj",
+          "bbox": [
+            [
+              0.14200000558048487,
+              -0.09300000127404928,
+              0.04999999701976776
+            ],
+            [
+              0.1580000063404441,
+              -0.07700000051409006,
+              0.26999999582767487
+            ]
+          ]
+        },
+        {
+          "name": "m32",
+          "kind": "mesh",
+          "material": "brushed_steel",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.15000000596046448,
+            0.08500000089406967,
+            0.1599999964237213
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/supply_cart__m32.obj",
+          "bbox": [
+            [
+              0.14200000558048487,
+              0.07700000051409006,
+              0.04999999701976776
+            ],
+            [
+              0.1580000063404441,
+              0.09300000127404928,
+              0.26999999582767487
+            ]
+          ]
+        },
+        {
+          "name": "m33",
+          "kind": "mesh",
+          "material": "brushed_steel",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            -0.1899999976158142,
+            0.0,
+            0.30000001192092896
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/supply_cart__m33.obj",
+          "bbox": [
+            [
+              -0.19799999799579382,
+              -0.10000000149011612,
+              0.29200000688433647
+            ],
+            [
+              -0.1819999972358346,
+              0.10000000149011612,
+              0.30800001695752144
+            ]
+          ]
+        },
+        {
+          "name": "m34",
+          "kind": "mesh",
+          "material": "brushed_steel",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            -0.17499999701976776,
+            -0.08500000089406967,
+            0.30000001192092896
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/supply_cart__m34.obj",
+          "bbox": [
+            [
+              -0.1999999973922968,
+              -0.09100000094622374,
+              0.2940000109374523
+            ],
+            [
+              -0.14999999664723873,
+              -0.07900000084191561,
+              0.3060000129044056
+            ]
+          ]
+        },
+        {
+          "name": "m35",
+          "kind": "mesh",
+          "material": "brushed_steel",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            -0.17499999701976776,
+            0.08500000089406967,
+            0.30000001192092896
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/supply_cart__m35.obj",
+          "bbox": [
+            [
+              -0.1999999973922968,
+              0.07900000084191561,
+              0.2940000109374523
+            ],
+            [
+              -0.14999999664723873,
+              0.09100000094622374,
+              0.3060000129044056
+            ]
+          ]
+        },
+        {
+          "name": "m36",
+          "kind": "mesh",
+          "material": "rubber_black",
+          "collision": true,
+          "uv_scale": 0.25,
+          "pos": [
+            -0.14000000059604645,
+            -0.08500000089406967,
+            0.02800000086426735
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/supply_cart__m36.obj",
+          "bbox": [
+            [
+              -0.1680000014603138,
+              -0.09400000143796206,
+              0.0
+            ],
+            [
+              -0.1119999997317791,
+              -0.07600000035017729,
+              0.0560000017285347
+            ]
+          ]
+        },
+        {
+          "name": "m37",
+          "kind": "mesh",
+          "material": "rubber_black",
+          "collision": true,
+          "uv_scale": 0.25,
+          "pos": [
+            -0.14000000059604645,
+            0.08500000089406967,
+            0.02800000086426735
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/supply_cart__m37.obj",
+          "bbox": [
+            [
+              -0.1680000014603138,
+              0.07600000035017729,
+              0.0
+            ],
+            [
+              -0.1119999997317791,
+              0.09400000143796206,
+              0.0560000017285347
+            ]
+          ]
+        },
+        {
+          "name": "m38",
+          "kind": "mesh",
+          "material": "rubber_black",
+          "collision": true,
+          "uv_scale": 0.25,
+          "pos": [
+            0.14000000059604645,
+            -0.08500000089406967,
+            0.02800000086426735
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/supply_cart__m38.obj",
+          "bbox": [
+            [
+              0.1119999997317791,
+              -0.09400000143796206,
+              0.0
+            ],
+            [
+              0.1680000014603138,
+              -0.07600000035017729,
+              0.0560000017285347
+            ]
+          ]
+        },
+        {
+          "name": "m39",
+          "kind": "mesh",
+          "material": "rubber_black",
+          "collision": true,
+          "uv_scale": 0.25,
+          "pos": [
+            0.14000000059604645,
+            0.08500000089406967,
+            0.02800000086426735
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/supply_cart__m39.obj",
+          "bbox": [
+            [
+              0.1119999997317791,
+              0.07600000035017729,
+              0.0
+            ],
+            [
+              0.1680000014603138,
+              0.09400000143796206,
+              0.0560000017285347
+            ]
+          ]
+        },
+        {
+          "name": "m40",
+          "kind": "mesh",
+          "material": "signal_red",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.05000000074505806,
+            -0.10300000011920929,
+            0.23999999463558197
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/supply_cart__m40.obj",
+          "bbox": [
+            [
+              0.004999998956918716,
+              -0.10500000021420419,
+              0.2259999942034483
+            ],
+            [
+              0.0950000025331974,
+              -0.10100000002421439,
+              0.25399999506771564
+            ]
+          ]
+        },
+        {
+          "name": "m41",
+          "kind": "mesh",
+          "material": "signal_red",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.05000000074505806,
+            -0.10300000011920929,
+            0.23999999463558197
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/supply_cart__m41.obj",
+          "bbox": [
+            [
+              0.036000000312924385,
+              -0.10500000021420419,
+              0.19499999284744263
+            ],
+            [
+              0.06400000117719173,
+              -0.10100000002421439,
+              0.2849999964237213
+            ]
+          ]
+        },
+        {
+          "name": "m42",
+          "kind": "mesh",
+          "material": "plastic_blue",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            -0.07999999821186066,
+            0.029999999329447746,
+            0.2800000011920929
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/supply_cart__m42.obj",
+          "bbox": [
+            [
+              -0.09399999864399433,
+              0.01599999889731407,
+              0.25000000186264515
+            ],
+            [
+              -0.06599999777972698,
+              0.04399999976158142,
+              0.31000000052154064
+            ]
+          ]
+        },
+        {
+          "name": "m43",
+          "kind": "mesh",
+          "material": "signal_red",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            -0.05000000074505806,
+            -0.03999999910593033,
+            0.2750000059604645
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/supply_cart__m43.obj",
+          "bbox": [
+            [
+              -0.06200000084936619,
+              -0.05199999921023846,
+              0.25000000558793545
+            ],
+            [
+              -0.03800000064074993,
+              -0.0279999990016222,
+              0.3000000063329935
+            ]
+          ]
+        },
+        {
+          "name": "m44",
+          "kind": "mesh",
+          "material": "curtain_teal",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.05999999865889549,
+            0.0,
+            0.11999999731779099
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/supply_cart__m44.obj",
+          "bbox": [
+            [
+              0.009999997913837433,
+              -0.05999999865889549,
+              0.08999999798834324
+            ],
+            [
+              0.10999999940395355,
+              0.05999999865889549,
+              0.14999999664723873
+            ]
+          ]
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "ward_bed",
+      "kind": "fixture",
+      "role": null,
+      "parent": null,
+      "pos": [
+        -1.6,
+        1.18,
+        0.0
+      ],
+      "yaw": 0.0,
+      "joint": null,
+      "geoms": [
+        {
+          "name": "m45",
+          "kind": "mesh",
+          "material": "brushed_steel",
+          "collision": true,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            0.0,
+            0.17000000178813934
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/ward_bed__m45.obj",
+          "bbox": [
+            [
+              -0.3400000035762787,
+              -0.15000000596046448,
+              0.15500000212341547
+            ],
+            [
+              0.3400000035762787,
+              0.15000000596046448,
+              0.18500000145286322
+            ]
+          ]
+        },
+        {
+          "name": "m46",
+          "kind": "mesh",
+          "material": "white_plastic",
+          "collision": true,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            0.0,
+            0.20999999344348907
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/ward_bed__m46.obj",
+          "bbox": [
+            [
+              -0.3199999928474426,
+              -0.14000000059604645,
+              0.18499999307096004
+            ],
+            [
+              0.3199999928474426,
+              0.14000000059604645,
+              0.2349999938160181
+            ]
+          ]
+        },
+        {
+          "name": "m47",
+          "kind": "mesh",
+          "material": "curtain_teal",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.11999999731779099,
+            0.0,
+            0.24500000476837158
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/ward_bed__m47.obj",
+          "bbox": [
+            [
+              -0.05000000447034836,
+              -0.14000000059604645,
+              0.235000004991889
+            ],
+            [
+              0.28999999910593033,
+              0.14000000059604645,
+              0.25500000454485416
+            ]
+          ]
+        },
+        {
+          "name": "m48",
+          "kind": "mesh",
+          "material": "white_plastic",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            -0.23999999463558197,
+            0.0,
+            0.24500000476837158
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/ward_bed__m48.obj",
+          "bbox": [
+            [
+              -0.3099999949336052,
+              -0.10000000149011612,
+              0.22500000521540642
+            ],
+            [
+              -0.16999999433755875,
+              0.10000000149011612,
+              0.26500000432133675
+            ]
+          ]
+        },
+        {
+          "name": "m49",
+          "kind": "mesh",
+          "material": "plastic_blue",
+          "collision": true,
+          "uv_scale": 0.25,
+          "pos": [
+            -0.3499999940395355,
+            0.0,
+            0.25
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/ward_bed__m49.obj",
+          "bbox": [
+            [
+              -0.3599999938160181,
+              -0.15000000596046448,
+              0.17000000178813934
+            ],
+            [
+              -0.33999999426305294,
+              0.15000000596046448,
+              0.32999999821186066
+            ]
+          ]
+        },
+        {
+          "name": "m50",
+          "kind": "mesh",
+          "material": "plastic_blue",
+          "collision": true,
+          "uv_scale": 0.25,
+          "pos": [
+            0.3499999940395355,
+            0.0,
+            0.23000000417232513
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/ward_bed__m50.obj",
+          "bbox": [
+            [
+              0.33999999426305294,
+              -0.15000000596046448,
+              0.17000000551342964
+            ],
+            [
+              0.3599999938160181,
+              0.15000000596046448,
+              0.2900000028312206
+            ]
+          ]
+        },
+        {
+          "name": "m51",
+          "kind": "mesh",
+          "material": "brushed_steel",
+          "collision": true,
+          "uv_scale": 0.25,
+          "pos": [
+            -0.2800000011920929,
+            -0.10999999940395355,
+            0.08500000089406967
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/ward_bed__m51.obj",
+          "bbox": [
+            [
+              -0.292000001296401,
+              -0.12199999950826168,
+              0.0
+            ],
+            [
+              -0.26800000108778477,
+              -0.09799999929964542,
+              0.17000000178813934
+            ]
+          ]
+        },
+        {
+          "name": "m52",
+          "kind": "mesh",
+          "material": "brushed_steel",
+          "collision": true,
+          "uv_scale": 0.25,
+          "pos": [
+            -0.2800000011920929,
+            0.10999999940395355,
+            0.08500000089406967
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/ward_bed__m52.obj",
+          "bbox": [
+            [
+              -0.292000001296401,
+              0.09799999929964542,
+              0.0
+            ],
+            [
+              -0.26800000108778477,
+              0.12199999950826168,
+              0.17000000178813934
+            ]
+          ]
+        },
+        {
+          "name": "m53",
+          "kind": "mesh",
+          "material": "brushed_steel",
+          "collision": true,
+          "uv_scale": 0.25,
+          "pos": [
+            0.2800000011920929,
+            -0.10999999940395355,
+            0.08500000089406967
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/ward_bed__m53.obj",
+          "bbox": [
+            [
+              0.26800000108778477,
+              -0.12199999950826168,
+              0.0
+            ],
+            [
+              0.292000001296401,
+              -0.09799999929964542,
+              0.17000000178813934
+            ]
+          ]
+        },
+        {
+          "name": "m54",
+          "kind": "mesh",
+          "material": "brushed_steel",
+          "collision": true,
+          "uv_scale": 0.25,
+          "pos": [
+            0.2800000011920929,
+            0.10999999940395355,
+            0.08500000089406967
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/ward_bed__m54.obj",
+          "bbox": [
+            [
+              0.26800000108778477,
+              0.09799999929964542,
+              0.0
+            ],
+            [
+              0.292000001296401,
+              0.12199999950826168,
+              0.17000000178813934
+            ]
+          ]
+        },
+        {
+          "name": "m55",
+          "kind": "mesh",
+          "material": "brushed_steel",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.05000000074505806,
+            0.14499999582767487,
+            0.2800000011920929
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/ward_bed__m55.obj",
+          "bbox": [
+            [
+              -0.10000000521540642,
+              0.1389999957755208,
+              0.25500000081956387
+            ],
+            [
+              0.20000000670552254,
+              0.15099999587982893,
+              0.3050000015646219
+            ]
+          ]
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "operating_table",
+      "kind": "fixture",
+      "role": null,
+      "parent": null,
+      "pos": [
+        0.5,
+        -1.15,
+        0.0
+      ],
+      "yaw": 0.0,
+      "joint": null,
+      "geoms": [
+        {
+          "name": "m56",
+          "kind": "mesh",
+          "material": "brushed_steel",
+          "collision": true,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            0.0,
+            0.009999999776482582
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/operating_table__m56.obj",
+          "bbox": [
+            [
+              -0.11999999731779099,
+              -0.11999999731779099,
+              0.0
+            ],
+            [
+              0.11999999731779099,
+              0.11999999731779099,
+              0.019999999552965164
+            ]
+          ]
+        },
+        {
+          "name": "m57",
+          "kind": "mesh",
+          "material": "brushed_steel",
+          "collision": true,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            0.0,
+            0.10499999672174454
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/operating_table__m57.obj",
+          "bbox": [
+            [
+              -0.05000000074505806,
+              -0.05000000074505806,
+              0.009999997913837433
+            ],
+            [
+              0.05000000074505806,
+              0.05000000074505806,
+              0.19999999552965164
+            ]
+          ]
+        },
+        {
+          "name": "m58",
+          "kind": "mesh",
+          "material": "white_plastic",
+          "collision": true,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            0.0,
+            0.20999999344348907
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/operating_table__m58.obj",
+          "bbox": [
+            [
+              -0.2750000059604645,
+              -0.12999999523162842,
+              0.1899999938905239
+            ],
+            [
+              0.2750000059604645,
+              0.12999999523162842,
+              0.22999999299645424
+            ]
+          ]
+        },
+        {
+          "name": "m59",
+          "kind": "mesh",
+          "material": "linen_green",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            0.0,
+            0.23999999463558197
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/operating_table__m59.obj",
+          "bbox": [
+            [
+              -0.25,
+              -0.10999999940395355,
+              0.2299999948590994
+            ],
+            [
+              0.25,
+              0.10999999940395355,
+              0.24999999441206455
+            ]
+          ]
+        },
+        {
+          "name": "m60",
+          "kind": "mesh",
+          "material": "white_plastic",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            -0.18000000715255737,
+            0.0,
+            0.2549999952316284
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/operating_table__m60.obj",
+          "bbox": [
+            [
+              -0.23000000789761543,
+              -0.07999999821186066,
+              0.23999999556690454
+            ],
+            [
+              -0.1300000064074993,
+              0.07999999821186066,
+              0.2699999948963523
+            ]
+          ]
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "nurse_desk",
+      "kind": "fixture",
+      "role": null,
+      "parent": null,
+      "pos": [
+        1.86,
+        0.0,
+        0.0
+      ],
+      "yaw": 0.0,
+      "joint": null,
+      "geoms": [
+        {
+          "name": "m61",
+          "kind": "mesh",
+          "material": "white_plastic",
+          "collision": true,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            0.0,
+            0.10000000149011612
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/nurse_desk__m61.obj",
+          "bbox": [
+            [
+              -0.10999999940395355,
+              -0.23000000417232513,
+              0.0
+            ],
+            [
+              0.10999999940395355,
+              0.23000000417232513,
+              0.20000000298023224
+            ]
+          ]
+        },
+        {
+          "name": "m62",
+          "kind": "mesh",
+          "material": "plastic_blue",
+          "collision": true,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            0.0,
+            0.20999999344348907
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/nurse_desk__m62.obj",
+          "bbox": [
+            [
+              -0.12999999523162842,
+              -0.25,
+              0.1999999936670065
+            ],
+            [
+              0.12999999523162842,
+              0.25,
+              0.21999999321997166
+            ]
+          ]
+        },
+        {
+          "name": "m63",
+          "kind": "mesh",
+          "material": "rubber_black",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            -0.05000000074505806,
+            0.07999999821186066,
+            0.24500000476837158
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/nurse_desk__m63.obj",
+          "bbox": [
+            [
+              -0.06000000052154064,
+              0.06499999854713678,
+              0.22000000439584255
+            ],
+            [
+              -0.04000000096857548,
+              0.09499999787658453,
+              0.2700000051409006
+            ]
+          ]
+        },
+        {
+          "name": "m64",
+          "kind": "mesh",
+          "material": "rubber_black",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            -0.05000000074505806,
+            0.07999999821186066,
+            0.3100000023841858
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/nurse_desk__m64.obj",
+          "bbox": [
+            [
+              -0.057500000577419996,
+              0.004999995231628418,
+              0.255000002682209
+            ],
+            [
+              -0.04250000091269612,
+              0.1550000011920929,
+              0.36500000208616257
+            ]
+          ]
+        },
+        {
+          "name": "m65",
+          "kind": "mesh",
+          "material": "monitor_glow",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            -0.05999999865889549,
+            0.07999999821186066,
+            0.3100000023841858
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/nurse_desk__m65.obj",
+          "bbox": [
+            [
+              -0.061999998753890395,
+              0.015000000596046448,
+              0.26500000059604645
+            ],
+            [
+              -0.05799999856390059,
+              0.14499999582767487,
+              0.35500000417232513
+            ]
+          ]
+        },
+        {
+          "name": "m66",
+          "kind": "mesh",
+          "material": "white_plastic",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            -0.05000000074505806,
+            -0.10000000149011612,
+            0.22499999403953552
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/nurse_desk__m66.obj",
+          "bbox": [
+            [
+              -0.10000000149011612,
+              -0.13000000081956387,
+              0.22099999384954572
+            ],
+            [
+              0.0,
+              -0.07000000216066837,
+              0.22899999422952533
+            ]
+          ]
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "supply_shelf",
+      "kind": "fixture",
+      "role": null,
+      "parent": null,
+      "pos": [
+        1.8,
+        1.2,
+        0.0
+      ],
+      "yaw": 0.0,
+      "joint": null,
+      "geoms": [
+        {
+          "name": "m67",
+          "kind": "mesh",
+          "material": "brushed_steel",
+          "collision": true,
+          "uv_scale": 0.25,
+          "pos": [
+            0.10999999940395355,
+            0.0,
+            0.17000000178813934
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/supply_shelf__m67.obj",
+          "bbox": [
+            [
+              0.09999999962747097,
+              -0.3400000035762787,
+              0.0
+            ],
+            [
+              0.11999999918043613,
+              0.3400000035762787,
+              0.3400000035762787
+            ]
+          ]
+        },
+        {
+          "name": "m68",
+          "kind": "mesh",
+          "material": "brushed_steel",
+          "collision": true,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            -0.3400000035762787,
+            0.17000000178813934
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/supply_shelf__m68.obj",
+          "bbox": [
+            [
+              -0.11999999731779099,
+              -0.35000000335276127,
+              0.0
+            ],
+            [
+              0.11999999731779099,
+              -0.3300000037997961,
+              0.3400000035762787
+            ]
+          ]
+        },
+        {
+          "name": "m69",
+          "kind": "mesh",
+          "material": "brushed_steel",
+          "collision": true,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            0.3400000035762787,
+            0.17000000178813934
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/supply_shelf__m69.obj",
+          "bbox": [
+            [
+              -0.11999999731779099,
+              0.3300000037997961,
+              0.0
+            ],
+            [
+              0.11999999731779099,
+              0.35000000335276127,
+              0.3400000035762787
+            ]
+          ]
+        },
+        {
+          "name": "m70",
+          "kind": "mesh",
+          "material": "white_plastic",
+          "collision": true,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            0.0,
+            0.05999999865889549
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/supply_shelf__m70.obj",
+          "bbox": [
+            [
+              -0.10999999940395355,
+              -0.33000001311302185,
+              0.052499998826533556
+            ],
+            [
+              0.10999999940395355,
+              0.33000001311302185,
+              0.06749999849125743
+            ]
+          ]
+        },
+        {
+          "name": "m71",
+          "kind": "mesh",
+          "material": "white_plastic",
+          "collision": true,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            0.0,
+            0.17000000178813934
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/supply_shelf__m71.obj",
+          "bbox": [
+            [
+              -0.10999999940395355,
+              -0.33000001311302185,
+              0.1625000019557774
+            ],
+            [
+              0.10999999940395355,
+              0.33000001311302185,
+              0.17750000162050128
+            ]
+          ]
+        },
+        {
+          "name": "m72",
+          "kind": "mesh",
+          "material": "white_plastic",
+          "collision": true,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            0.0,
+            0.2800000011920929
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/supply_shelf__m72.obj",
+          "bbox": [
+            [
+              -0.10999999940395355,
+              -0.33000001311302185,
+              0.27250000135973096
+            ],
+            [
+              0.10999999940395355,
+              0.33000001311302185,
+              0.28750000102445483
+            ]
+          ]
+        },
+        {
+          "name": "m73",
+          "kind": "mesh",
+          "material": "white_plastic",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            -0.019999999552965164,
+            -0.18000000715255737,
+            0.09799999743700027
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/supply_shelf__m73.obj",
+          "bbox": [
+            [
+              -0.054999999701976776,
+              -0.22500000894069672,
+              0.06799999810755253
+            ],
+            [
+              0.015000000596046448,
+              -0.13500000536441803,
+              0.12799999676644802
+            ]
+          ]
+        },
+        {
+          "name": "m74",
+          "kind": "mesh",
+          "material": "plastic_blue",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            0.05000000074505806,
+            0.09300000220537186
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/supply_shelf__m74.obj",
+          "bbox": [
+            [
+              -0.029999999329447746,
+              0.010000001639127731,
+              0.06800000183284283
+            ],
+            [
+              0.029999999329447746,
+              0.08999999985098839,
+              0.11800000257790089
+            ]
+          ]
+        },
+        {
+          "name": "m75",
+          "kind": "mesh",
+          "material": "linen_green",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            -0.019999999552965164,
+            0.2199999988079071,
+            0.10300000011920929
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/supply_shelf__m75.obj",
+          "bbox": [
+            [
+              -0.05999999865889549,
+              0.16999999806284904,
+              0.06799999997019768
+            ],
+            [
+              0.019999999552965164,
+              0.26999999955296516,
+              0.1380000002682209
+            ]
+          ]
+        },
+        {
+          "name": "m76",
+          "kind": "mesh",
+          "material": "signal_red",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            -0.10000000149011612,
+            0.2029999941587448
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/supply_shelf__m76.obj",
+          "bbox": [
+            [
+              -0.029999999329447746,
+              -0.14500000327825546,
+              0.17799999378621578
+            ],
+            [
+              0.029999999329447746,
+              -0.054999999701976776,
+              0.22799999453127384
+            ]
+          ]
+        },
+        {
+          "name": "m77",
+          "kind": "mesh",
+          "material": "white_plastic",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            -0.019999999552965164,
+            0.15000000596046448,
+            0.20800000429153442
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/supply_shelf__m77.obj",
+          "bbox": [
+            [
+              -0.054999999701976776,
+              0.11500000581145287,
+              0.17800000496208668
+            ],
+            [
+              0.015000000596046448,
+              0.1850000061094761,
+              0.23800000362098217
+            ]
+          ]
+        },
+        {
+          "name": "m78",
+          "kind": "mesh",
+          "material": "curtain_teal",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            -0.019999999552965164,
+            0.0,
+            0.31299999356269836
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/supply_shelf__m78.obj",
+          "bbox": [
+            [
+              -0.06500000134110451,
+              -0.05999999865889549,
+              0.28799999319016933
+            ],
+            [
+              0.02500000223517418,
+              0.05999999865889549,
+              0.3379999939352274
+            ]
+          ]
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "linen_crates",
+      "kind": "fixture",
+      "role": null,
+      "parent": null,
+      "pos": [
+        0.35,
+        1.42,
+        0.0
+      ],
+      "yaw": 0.20943951023931956,
+      "joint": null,
+      "geoms": [
+        {
+          "name": "m79",
+          "kind": "mesh",
+          "material": "plastic_blue",
+          "collision": true,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            0.0,
+            0.05999999865889549
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/linen_crates__m79.obj",
+          "bbox": [
+            [
+              -0.09000000357627869,
+              -0.09000000357627869,
+              0.0
+            ],
+            [
+              0.09000000357627869,
+              0.09000000357627869,
+              0.11999999731779099
+            ]
+          ]
+        },
+        {
+          "name": "m80",
+          "kind": "mesh",
+          "material": "white_plastic",
+          "collision": true,
+          "uv_scale": 0.25,
+          "pos": [
+            0.009999999776482582,
+            0.009999999776482582,
+            0.17000000178813934
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/linen_crates__m80.obj",
+          "bbox": [
+            [
+              -0.06500000320374966,
+              -0.06500000320374966,
+              0.12000000104308128
+            ],
+            [
+              0.08500000275671482,
+              0.08500000275671482,
+              0.2200000025331974
+            ]
+          ]
+        },
+        {
+          "name": "m81",
+          "kind": "mesh",
+          "material": "curtain_teal",
+          "collision": true,
+          "uv_scale": 0.25,
+          "pos": [
+            -0.009999999776482582,
+            0.0,
+            0.25999999046325684
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/linen_crates__m81.obj",
+          "bbox": [
+            [
+              -0.06499999947845936,
+              -0.054999999701976776,
+              0.2199999913573265
+            ],
+            [
+              0.044999999925494194,
+              0.054999999701976776,
+              0.29999998956918716
+            ]
+          ]
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "biohazard_bin",
+      "kind": "fixture",
+      "role": null,
+      "parent": null,
+      "pos": [
+        0.12,
+        0.48,
+        0.0
+      ],
+      "yaw": 0.0,
+      "joint": null,
+      "geoms": [
+        {
+          "name": "m82",
+          "kind": "mesh",
+          "material": "caution_yellow",
+          "collision": true,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            0.0,
+            0.07500003278255463
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/biohazard_bin__m82.obj",
+          "bbox": [
+            [
+              -0.06499999761581421,
+              -0.06499999761581421,
+              0.0
+            ],
+            [
+              0.06499999761581421,
+              0.06499999761581421,
+              0.15000006556510925
+            ]
+          ]
+        },
+        {
+          "name": "m83",
+          "kind": "mesh",
+          "material": "brushed_steel",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            -0.07000000029802322,
+            0.00800000037997961
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/biohazard_bin__m83.obj",
+          "bbox": [
+            [
+              -0.014999999664723873,
+              -0.08250000048428774,
+              0.0020000003278255463
+            ],
+            [
+              0.014999999664723873,
+              -0.05750000011175871,
+              0.014000000432133675
+            ]
+          ]
+        },
+        {
+          "name": "m84",
+          "kind": "mesh",
+          "material": "signal_red",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            -0.06199999898672104,
+            0.07999999821186066
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/biohazard_bin__m84.obj",
+          "bbox": [
+            [
+              -0.017500000074505806,
+              -0.06399999908171594,
+              0.057499997317790985
+            ],
+            [
+              0.017500000074505806,
+              -0.059999998891726136,
+              0.10249999910593033
+            ]
+          ]
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "wheelchair",
+      "kind": "fixture",
+      "role": null,
+      "parent": null,
+      "pos": [
+        -1.65,
+        -0.3,
+        0.0
+      ],
+      "yaw": 0.4363323129985824,
+      "joint": null,
+      "geoms": [
+        {
+          "name": "m85",
+          "kind": "mesh",
+          "material": "rubber_black",
+          "collision": true,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            -0.12999999523162842,
+            0.08500000089406967
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/wheelchair__m85.obj",
+          "bbox": [
+            [
+              -0.09700000286102295,
+              -0.1419999990514046,
+              -0.012000001966953278
+            ],
+            [
+              0.09700000286102295,
+              -0.11799999141185225,
+              0.18200000375509262
+            ]
+          ]
+        },
+        {
+          "name": "m86",
+          "kind": "mesh",
+          "material": "rubber_black",
+          "collision": true,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            0.12999999523162842,
+            0.08500000089406967
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/wheelchair__m86.obj",
+          "bbox": [
+            [
+              -0.09700000286102295,
+              0.11799999141185225,
+              -0.012000001966953278
+            ],
+            [
+              0.09700000286102295,
+              0.1419999990514046,
+              0.18200000375509262
+            ]
+          ]
+        },
+        {
+          "name": "m87",
+          "kind": "mesh",
+          "material": "curtain_teal",
+          "collision": true,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            0.0,
+            0.13500000536441803
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/wheelchair__m87.obj",
+          "bbox": [
+            [
+              -0.10999999940395355,
+              -0.10999999940395355,
+              0.12250000517815351
+            ],
+            [
+              0.10999999940395355,
+              0.10999999940395355,
+              0.14750000555068254
+            ]
+          ]
+        },
+        {
+          "name": "m88",
+          "kind": "mesh",
+          "material": "curtain_teal",
+          "collision": true,
+          "uv_scale": 0.25,
+          "pos": [
+            -0.10999999940395355,
+            0.0,
+            0.2150000035762787
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/wheelchair__m88.obj",
+          "bbox": [
+            [
+              -0.12249999959021807,
+              -0.10999999940395355,
+              0.14000000059604645
+            ],
+            [
+              -0.09749999921768904,
+              0.10999999940395355,
+              0.2900000065565109
+            ]
+          ]
+        },
+        {
+          "name": "m89",
+          "kind": "mesh",
+          "material": "brushed_steel",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.12999999523162842,
+            -0.07000000029802322,
+            0.029999999329447746
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/wheelchair__m89.obj",
+          "bbox": [
+            [
+              0.08499999344348907,
+              -0.08999999985098839,
+              0.024999999441206455
+            ],
+            [
+              0.17499999701976776,
+              -0.05000000074505806,
+              0.03499999921768904
+            ]
+          ]
+        },
+        {
+          "name": "m90",
+          "kind": "mesh",
+          "material": "brushed_steel",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.12999999523162842,
+            0.07000000029802322,
+            0.029999999329447746
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/wheelchair__m90.obj",
+          "bbox": [
+            [
+              0.08499999344348907,
+              0.05000000074505806,
+              0.024999999441206455
+            ],
+            [
+              0.17499999701976776,
+              0.08999999985098839,
+              0.03499999921768904
+            ]
+          ]
+        },
+        {
+          "name": "m91",
+          "kind": "mesh",
+          "material": "rubber_black",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            -0.019999999552965164,
+            -0.10000000149011612,
+            0.1850000023841858
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/wheelchair__m91.obj",
+          "bbox": [
+            [
+              -0.08999999985098839,
+              -0.11500000115483999,
+              0.17750000255182385
+            ],
+            [
+              0.05000000074505806,
+              -0.08500000182539225,
+              0.19250000221654773
+            ]
+          ]
+        },
+        {
+          "name": "m92",
+          "kind": "mesh",
+          "material": "brushed_steel",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            -0.125,
+            -0.10000000149011612,
+            0.30000001192092896
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/wheelchair__m92.obj",
+          "bbox": [
+            [
+              -0.1299999998882413,
+              -0.12500000186264515,
+              0.2950000111013651
+            ],
+            [
+              -0.12000000011175871,
+              -0.07500000111758709,
+              0.3050000127404928
+            ]
+          ]
+        },
+        {
+          "name": "m93",
+          "kind": "mesh",
+          "material": "rubber_black",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            -0.019999999552965164,
+            0.10000000149011612,
+            0.1850000023841858
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/wheelchair__m93.obj",
+          "bbox": [
+            [
+              -0.08999999985098839,
+              0.08500000182539225,
+              0.17750000255182385
+            ],
+            [
+              0.05000000074505806,
+              0.11500000115483999,
+              0.19250000221654773
+            ]
+          ]
+        },
+        {
+          "name": "m94",
+          "kind": "mesh",
+          "material": "brushed_steel",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            -0.125,
+            0.10000000149011612,
+            0.30000001192092896
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/wheelchair__m94.obj",
+          "bbox": [
+            [
+              -0.1299999998882413,
+              0.07500000111758709,
+              0.2950000111013651
+            ],
+            [
+              -0.12000000011175871,
+              0.12500000186264515,
+              0.3050000127404928
+            ]
+          ]
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "xray_machine",
+      "kind": "fixture",
+      "role": null,
+      "parent": null,
+      "pos": [
+        -1.8,
+        -1.25,
+        0.0
+      ],
+      "yaw": 0.0,
+      "joint": null,
+      "geoms": [
+        {
+          "name": "m95",
+          "kind": "mesh",
+          "material": "white_plastic",
+          "collision": true,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            0.0,
+            0.20999999344348907
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/xray_machine__m95.obj",
+          "bbox": [
+            [
+              -0.05000000074505806,
+              -0.07999999821186066,
+              0.0
+            ],
+            [
+              0.05000000074505806,
+              0.07999999821186066,
+              0.41999998688697815
+            ]
+          ]
+        },
+        {
+          "name": "m96",
+          "kind": "mesh",
+          "material": "brushed_steel",
+          "collision": true,
+          "uv_scale": 0.25,
+          "pos": [
+            0.17000000178813934,
+            0.0,
+            0.3700000047683716
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/xray_machine__m96.obj",
+          "bbox": [
+            [
+              0.019999995827674866,
+              -0.03999999910593033,
+              0.34500000439584255
+            ],
+            [
+              0.3200000077486038,
+              0.03999999910593033,
+              0.3950000051409006
+            ]
+          ]
+        },
+        {
+          "name": "m97",
+          "kind": "mesh",
+          "material": "white_plastic",
+          "collision": true,
+          "uv_scale": 0.25,
+          "pos": [
+            0.30000001192092896,
+            0.0,
+            0.3199999928474426
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/xray_machine__m97.obj",
+          "bbox": [
+            [
+              0.2600000128149986,
+              -0.05000000074505806,
+              0.26999999210238457
+            ],
+            [
+              0.3400000110268593,
+              0.05000000074505806,
+              0.3699999935925007
+            ]
+          ]
+        },
+        {
+          "name": "m98",
+          "kind": "mesh",
+          "material": "rubber_black",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.054999999701976776,
+            0.0,
+            0.23999999463558197
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/xray_machine__m98.obj",
+          "bbox": [
+            [
+              0.04749999986961484,
+              -0.05000000074505806,
+              0.16999999433755875
+            ],
+            [
+              0.06249999953433871,
+              0.05000000074505806,
+              0.3099999949336052
+            ]
+          ]
+        },
+        {
+          "name": "m99",
+          "kind": "mesh",
+          "material": "monitor_glow",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.06499999761581421,
+            0.019999999552965164,
+            0.25999999046325684
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/xray_machine__m99.obj",
+          "bbox": [
+            [
+              0.062499997206032276,
+              0.011999999172985554,
+              0.2519999900832772
+            ],
+            [
+              0.06749999802559614,
+              0.027999999932944775,
+              0.26799999084323645
+            ]
+          ]
+        },
+        {
+          "name": "m100",
+          "kind": "mesh",
+          "material": "signal_red",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.06499999761581421,
+            -0.019999999552965164,
+            0.2199999988079071
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/xray_machine__m100.obj",
+          "bbox": [
+            [
+              0.062499997206032276,
+              -0.027999999932944775,
+              0.2119999984279275
+            ],
+            [
+              0.06749999802559614,
+              -0.011999999172985554,
+              0.22799999918788671
+            ]
+          ]
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "surgeon_stool",
+      "kind": "fixture",
+      "role": null,
+      "parent": null,
+      "pos": [
+        1.78,
+        -0.82,
+        0.0
+      ],
+      "yaw": 0.0,
+      "joint": null,
+      "geoms": [
+        {
+          "name": "m101",
+          "kind": "mesh",
+          "material": "brushed_steel",
+          "collision": true,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            0.0,
+            0.00800000037997961
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/surgeon_stool__m101.obj",
+          "bbox": [
+            [
+              -0.07000000029802322,
+              -0.07000000029802322,
+              0.0005000005476176739
+            ],
+            [
+              0.07000000029802322,
+              0.07000000029802322,
+              0.015500000212341547
+            ]
+          ]
+        },
+        {
+          "name": "m102",
+          "kind": "mesh",
+          "material": "brushed_steel",
+          "collision": true,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            0.0,
+            0.07500000298023224
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/surgeon_stool__m102.obj",
+          "bbox": [
+            [
+              -0.012000000104308128,
+              -0.012000000104308128,
+              0.0
+            ],
+            [
+              0.012000000104308128,
+              0.012000000104308128,
+              0.15000000596046448
+            ]
+          ]
+        },
+        {
+          "name": "m103",
+          "kind": "mesh",
+          "material": "curtain_teal",
+          "collision": true,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            0.0,
+            0.1599999964237213
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/surgeon_stool__m103.obj",
+          "bbox": [
+            [
+              -0.09000000357627869,
+              -0.09000000357627869,
+              0.14999999664723873
+            ],
+            [
+              0.09000000357627869,
+              0.09000000357627869,
+              0.1699999962002039
+            ]
+          ]
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "caution_sign_ward",
+      "kind": "decor",
+      "role": null,
+      "parent": null,
+      "pos": [
+        -1.15,
+        0.02,
+        0.0
+      ],
+      "yaw": 0.0,
+      "joint": null,
+      "geoms": [
+        {
+          "name": "m104",
+          "kind": "mesh",
+          "material": "caution_yellow",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            -0.032999999821186066,
+            0.0,
+            0.09300000220537186
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/caution_sign_ward__m104.obj",
+          "bbox": [
+            [
+              -0.13128017813267334,
+              -0.004000000189989805,
+              -0.018992659870185502
+            ],
+            [
+              0.06528017849030121,
+              0.004000000189989805,
+              0.20499266428092922
+            ]
+          ]
+        },
+        {
+          "name": "m105",
+          "kind": "mesh",
+          "material": "caution_yellow",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.032999999821186066,
+            0.0,
+            0.09300000220537186
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/caution_sign_ward__m105.obj",
+          "bbox": [
+            [
+              -0.06528017849030121,
+              -0.004000000189989805,
+              -0.018992659870185502
+            ],
+            [
+              0.13128017813267334,
+              0.004000000189989805,
+              0.20499266428092922
+            ]
+          ]
+        },
+        {
+          "name": "m106",
+          "kind": "mesh",
+          "material": "brushed_steel",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            0.0,
+            0.1850000023841858
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/caution_sign_ward__m106.obj",
+          "bbox": [
+            [
+              -0.00800000037997961,
+              -0.03500000014901161,
+              0.17700000014156103
+            ],
+            [
+              0.00800000037997961,
+              0.03500000014901161,
+              0.19300000462681055
+            ]
+          ]
+        },
+        {
+          "name": "m107",
+          "kind": "mesh",
+          "material": "white_plastic",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            -0.032999999821186066,
+            -0.007000000216066837,
+            0.09300000220537186
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/caution_sign_ward__m107.obj",
+          "bbox": [
+            [
+              -0.096894886556812,
+              -0.00900000031106174,
+              0.039389480846948155
+            ],
+            [
+              0.030894886914439867,
+              -0.005000000121071935,
+              0.14661052356379556
+            ]
+          ]
+        },
+        {
+          "name": "m108",
+          "kind": "mesh",
+          "material": "white_plastic",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.032999999821186066,
+            0.007000000216066837,
+            0.09300000220537186
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/caution_sign_ward__m108.obj",
+          "bbox": [
+            [
+              -0.030894886914439867,
+              0.005000000121071935,
+              0.039389480846948155
+            ],
+            [
+              0.096894886556812,
+              0.00900000031106174,
+              0.14661052356379556
+            ]
+          ]
+        },
+        {
+          "name": "m109",
+          "kind": "mesh",
+          "material": "rubber_black",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            -0.032999999821186066,
+            -0.009999999776482582,
+            0.09799999743700027
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/caution_sign_ward__m109.obj",
+          "bbox": [
+            [
+              -0.04386339214051446,
+              -0.011499999789521098,
+              0.08165161084579894
+            ],
+            [
+              -0.02213660750185767,
+              -0.008499999763444066,
+              0.1143483840282016
+            ]
+          ]
+        },
+        {
+          "name": "m110",
+          "kind": "mesh",
+          "material": "rubber_black",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            -0.032999999821186066,
+            -0.009999999776482582,
+            0.07199999690055847
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/caution_sign_ward__m110.obj",
+          "bbox": [
+            [
+              -0.041107018617853736,
+              -0.011499999789521098,
+              0.06526422699112774
+            ],
+            [
+              -0.024892981024518396,
+              -0.008499999763444066,
+              0.0787357668099892
+            ]
+          ]
+        },
+        {
+          "name": "m111",
+          "kind": "mesh",
+          "material": "rubber_black",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.032999999821186066,
+            0.009999999776482582,
+            0.09799999743700027
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/caution_sign_ward__m111.obj",
+          "bbox": [
+            [
+              0.02213660750185767,
+              0.008499999763444066,
+              0.08165161084579894
+            ],
+            [
+              0.04386339214051446,
+              0.011499999789521098,
+              0.1143483840282016
+            ]
+          ]
+        },
+        {
+          "name": "m112",
+          "kind": "mesh",
+          "material": "rubber_black",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.032999999821186066,
+            0.009999999776482582,
+            0.07199999690055847
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/caution_sign_ward__m112.obj",
+          "bbox": [
+            [
+              0.024892981024518396,
+              0.008499999763444066,
+              0.06526422699112774
+            ],
+            [
+              0.041107018617853736,
+              0.011499999789521098,
+              0.0787357668099892
+            ]
+          ]
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "caution_sign_mid",
+      "kind": "decor",
+      "role": null,
+      "parent": null,
+      "pos": [
+        0.2,
+        -0.53,
+        0.0
+      ],
+      "yaw": 0.0,
+      "joint": null,
+      "geoms": [
+        {
+          "name": "m113",
+          "kind": "mesh",
+          "material": "caution_yellow",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            -0.032999999821186066,
+            0.0,
+            0.09300000220537186
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/caution_sign_mid__m113.obj",
+          "bbox": [
+            [
+              -0.13128017813267334,
+              -0.004000000189989805,
+              -0.018992659870185502
+            ],
+            [
+              0.06528017849030121,
+              0.004000000189989805,
+              0.20499266428092922
+            ]
+          ]
+        },
+        {
+          "name": "m114",
+          "kind": "mesh",
+          "material": "caution_yellow",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.032999999821186066,
+            0.0,
+            0.09300000220537186
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/caution_sign_mid__m114.obj",
+          "bbox": [
+            [
+              -0.06528017849030121,
+              -0.004000000189989805,
+              -0.018992659870185502
+            ],
+            [
+              0.13128017813267334,
+              0.004000000189989805,
+              0.20499266428092922
+            ]
+          ]
+        },
+        {
+          "name": "m115",
+          "kind": "mesh",
+          "material": "brushed_steel",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            0.0,
+            0.1850000023841858
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/caution_sign_mid__m115.obj",
+          "bbox": [
+            [
+              -0.00800000037997961,
+              -0.03500000014901161,
+              0.17700000014156103
+            ],
+            [
+              0.00800000037997961,
+              0.03500000014901161,
+              0.19300000462681055
+            ]
+          ]
+        },
+        {
+          "name": "m116",
+          "kind": "mesh",
+          "material": "white_plastic",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            -0.032999999821186066,
+            -0.007000000216066837,
+            0.09300000220537186
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/caution_sign_mid__m116.obj",
+          "bbox": [
+            [
+              -0.096894886556812,
+              -0.00900000031106174,
+              0.039389480846948155
+            ],
+            [
+              0.030894886914439867,
+              -0.005000000121071935,
+              0.14661052356379556
+            ]
+          ]
+        },
+        {
+          "name": "m117",
+          "kind": "mesh",
+          "material": "white_plastic",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.032999999821186066,
+            0.007000000216066837,
+            0.09300000220537186
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/caution_sign_mid__m117.obj",
+          "bbox": [
+            [
+              -0.030894886914439867,
+              0.005000000121071935,
+              0.039389480846948155
+            ],
+            [
+              0.096894886556812,
+              0.00900000031106174,
+              0.14661052356379556
+            ]
+          ]
+        },
+        {
+          "name": "m118",
+          "kind": "mesh",
+          "material": "rubber_black",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            -0.032999999821186066,
+            -0.009999999776482582,
+            0.09799999743700027
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/caution_sign_mid__m118.obj",
+          "bbox": [
+            [
+              -0.04386339214051446,
+              -0.011499999789521098,
+              0.08165161084579894
+            ],
+            [
+              -0.02213660750185767,
+              -0.008499999763444066,
+              0.1143483840282016
+            ]
+          ]
+        },
+        {
+          "name": "m119",
+          "kind": "mesh",
+          "material": "rubber_black",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            -0.032999999821186066,
+            -0.009999999776482582,
+            0.07199999690055847
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/caution_sign_mid__m119.obj",
+          "bbox": [
+            [
+              -0.041107018617853736,
+              -0.011499999789521098,
+              0.06526422699112774
+            ],
+            [
+              -0.024892981024518396,
+              -0.008499999763444066,
+              0.0787357668099892
+            ]
+          ]
+        },
+        {
+          "name": "m120",
+          "kind": "mesh",
+          "material": "rubber_black",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.032999999821186066,
+            0.009999999776482582,
+            0.09799999743700027
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/caution_sign_mid__m120.obj",
+          "bbox": [
+            [
+              0.02213660750185767,
+              0.008499999763444066,
+              0.08165161084579894
+            ],
+            [
+              0.04386339214051446,
+              0.011499999789521098,
+              0.1143483840282016
+            ]
+          ]
+        },
+        {
+          "name": "m121",
+          "kind": "mesh",
+          "material": "rubber_black",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.032999999821186066,
+            0.009999999776482582,
+            0.07199999690055847
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/caution_sign_mid__m121.obj",
+          "bbox": [
+            [
+              0.024892981024518396,
+              0.008499999763444066,
+              0.06526422699112774
+            ],
+            [
+              0.041107018617853736,
+              0.011499999789521098,
+              0.0787357668099892
+            ]
+          ]
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "iv_stand",
+      "kind": "decor",
+      "role": null,
+      "parent": null,
+      "pos": [
+        -1.45,
+        1.44,
+        0.0
+      ],
+      "yaw": 0.0,
+      "joint": null,
+      "geoms": [
+        {
+          "name": "m122",
+          "kind": "mesh",
+          "material": "brushed_steel",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            0.0,
+            0.21000002324581146
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/iv_stand__m122.obj",
+          "bbox": [
+            [
+              -0.05000000074505806,
+              -0.05000000074505806,
+              0.0
+            ],
+            [
+              0.05000000074505806,
+              0.05000000074505806,
+              0.4200000464916229
+            ]
+          ]
+        },
+        {
+          "name": "m123",
+          "kind": "mesh",
+          "material": "brushed_steel",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.029999999329447746,
+            0.0,
+            0.4000000059604645
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/iv_stand__m123.obj",
+          "bbox": [
+            [
+              0.0,
+              -0.003000000026077032,
+              0.3970000045374036
+            ],
+            [
+              0.05999999865889549,
+              0.003000000026077032,
+              0.40300000738352537
+            ]
+          ]
+        },
+        {
+          "name": "m124",
+          "kind": "mesh",
+          "material": "iv_bag",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.05000000074505806,
+            0.0,
+            0.3449999988079071
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/iv_stand__m124.obj",
+          "bbox": [
+            [
+              0.02500000037252903,
+              -0.012500000186264515,
+              0.29999999701976776
+            ],
+            [
+              0.07500000111758709,
+              0.012500000186264515,
+              0.39000000059604645
+            ]
+          ]
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "surgical_lamp",
+      "kind": "decor",
+      "role": null,
+      "parent": null,
+      "pos": [
+        0.12,
+        -1.15,
+        0.0
+      ],
+      "yaw": 0.0,
+      "joint": null,
+      "geoms": [
+        {
+          "name": "m125",
+          "kind": "mesh",
+          "material": "brushed_steel",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            0.0,
+            0.28999999165534973
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/surgical_lamp__m125.obj",
+          "bbox": [
+            [
+              -0.03999999910593033,
+              -0.03999999910593033,
+              0.0
+            ],
+            [
+              0.03999999910593033,
+              0.03999999910593033,
+              0.5799999833106995
+            ]
+          ]
+        },
+        {
+          "name": "m126",
+          "kind": "mesh",
+          "material": "brushed_steel",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.17000000178813934,
+            0.0,
+            0.5799999833106995
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/surgical_lamp__m126.obj",
+          "bbox": [
+            [
+              0.019999995827674866,
+              -0.02500000037252903,
+              0.5599999837577343
+            ],
+            [
+              0.3200000077486038,
+              0.02500000037252903,
+              0.5999999828636646
+            ]
+          ]
+        },
+        {
+          "name": "m127",
+          "kind": "mesh",
+          "material": "white_plastic",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.3199999928474426,
+            0.0,
+            0.5200000051409006
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/surgical_lamp__m127.obj",
+          "bbox": [
+            [
+              0.2199999913573265,
+              -0.10000000149011612,
+              0.48000000044703484
+            ],
+            [
+              0.41999999433755875,
+              0.10000000149011612,
+              0.5600000098347664
+            ]
+          ]
+        },
+        {
+          "name": "m128",
+          "kind": "mesh",
+          "material": "light_panel",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.3199999928474426,
+            0.0,
+            0.4819999933242798
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/surgical_lamp__m128.obj",
+          "bbox": [
+            [
+              0.2499999925494194,
+              -0.07000000029802322,
+              0.47949999338015914
+            ],
+            [
+              0.38999999314546585,
+              0.07000000029802322,
+              0.48449999326840043
+            ]
+          ]
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "red_cross_sign",
+      "kind": "decor",
+      "role": null,
+      "parent": null,
+      "pos": [
+        -1.98,
+        0.0,
+        0.0
+      ],
+      "yaw": 0.0,
+      "joint": null,
+      "geoms": [
+        {
+          "name": "m129",
+          "kind": "mesh",
+          "material": "white_plastic",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            0.0,
+            0.3199999928474426
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/red_cross_sign__m129.obj",
+          "bbox": [
+            [
+              -0.009999999776482582,
+              -0.12999999523162842,
+              0.1899999976158142
+            ],
+            [
+              0.009999999776482582,
+              0.12999999523162842,
+              0.44999998807907104
+            ]
+          ]
+        },
+        {
+          "name": "m130",
+          "kind": "mesh",
+          "material": "signal_red",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.014000000432133675,
+            0.0,
+            0.3199999928474426
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/red_cross_sign__m130.obj",
+          "bbox": [
+            [
+              0.00800000037997961,
+              -0.03500000014901161,
+              0.2199999913573265
+            ],
+            [
+              0.02000000048428774,
+              0.03500000014901161,
+              0.41999999433755875
+            ]
+          ]
+        },
+        {
+          "name": "m131",
+          "kind": "mesh",
+          "material": "signal_red",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.014000000432133675,
+            0.0,
+            0.3199999928474426
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/red_cross_sign__m131.obj",
+          "bbox": [
+            [
+              0.00800000037997961,
+              -0.10000000149011612,
+              0.284999992698431
+            ],
+            [
+              0.02000000048428774,
+              0.10000000149011612,
+              0.35499999299645424
+            ]
+          ]
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "fire_extinguisher",
+      "kind": "decor",
+      "role": null,
+      "parent": null,
+      "pos": [
+        0.72,
+        0.52,
+        0.0
+      ],
+      "yaw": 0.0,
+      "joint": null,
+      "geoms": [
+        {
+          "name": "m132",
+          "kind": "mesh",
+          "material": "signal_red",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            0.0,
+            0.09000000357627869
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/fire_extinguisher__m132.obj",
+          "bbox": [
+            [
+              -0.041999999433755875,
+              -0.041999999433755875,
+              0.0
+            ],
+            [
+              0.041999999433755875,
+              0.041999999433755875,
+              0.18000000715255737
+            ]
+          ]
+        },
+        {
+          "name": "m133",
+          "kind": "mesh",
+          "material": "rubber_black",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.03500000014901161,
+            0.0,
+            0.17499999701976776
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/fire_extinguisher__m133.obj",
+          "bbox": [
+            [
+              0.009999999776482582,
+              -0.006000000052154064,
+              0.16899999603629112
+            ],
+            [
+              0.06000000052154064,
+              0.006000000052154064,
+              0.1809999980032444
+            ]
+          ]
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "ceiling_light_0",
+      "kind": "decor",
+      "role": null,
+      "parent": null,
+      "pos": [
+        -1.2,
+        0.0,
+        0.0
+      ],
+      "yaw": 0.0,
+      "joint": null,
+      "geoms": [
+        {
+          "name": "m134",
+          "kind": "mesh",
+          "material": "light_panel",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            0.0,
+            1.149999976158142
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/ceiling_light_0__m134.obj",
+          "bbox": [
+            [
+              -0.25,
+              -0.125,
+              1.1399999763816595
+            ],
+            [
+              0.25,
+              0.125,
+              1.1599999759346247
+            ]
+          ]
+        },
+        {
+          "name": "m135",
+          "kind": "mesh",
+          "material": "brushed_steel",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            0.0,
+            1.1649999618530273
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/ceiling_light_0__m135.obj",
+          "bbox": [
+            [
+              -0.27000001072883606,
+              -0.14499999582767487,
+              1.1574999620206654
+            ],
+            [
+              0.27000001072883606,
+              0.14499999582767487,
+              1.1724999616853893
+            ]
+          ]
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "ceiling_light_1",
+      "kind": "decor",
+      "role": null,
+      "parent": null,
+      "pos": [
+        0.2,
+        0.0,
+        0.0
+      ],
+      "yaw": 0.0,
+      "joint": null,
+      "geoms": [
+        {
+          "name": "m136",
+          "kind": "mesh",
+          "material": "light_panel",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            0.0,
+            1.149999976158142
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/ceiling_light_1__m136.obj",
+          "bbox": [
+            [
+              -0.25,
+              -0.125,
+              1.1399999763816595
+            ],
+            [
+              0.25,
+              0.125,
+              1.1599999759346247
+            ]
+          ]
+        },
+        {
+          "name": "m137",
+          "kind": "mesh",
+          "material": "brushed_steel",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            0.0,
+            1.1649999618530273
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/ceiling_light_1__m137.obj",
+          "bbox": [
+            [
+              -0.27000001072883606,
+              -0.14499999582767487,
+              1.1574999620206654
+            ],
+            [
+              0.27000001072883606,
+              0.14499999582767487,
+              1.1724999616853893
+            ]
+          ]
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "ceiling_light_2",
+      "kind": "decor",
+      "role": null,
+      "parent": null,
+      "pos": [
+        1.5,
+        0.0,
+        0.0
+      ],
+      "yaw": 0.0,
+      "joint": null,
+      "geoms": [
+        {
+          "name": "m138",
+          "kind": "mesh",
+          "material": "light_panel",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            0.0,
+            1.149999976158142
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/ceiling_light_2__m138.obj",
+          "bbox": [
+            [
+              -0.25,
+              -0.125,
+              1.1399999763816595
+            ],
+            [
+              0.25,
+              0.125,
+              1.1599999759346247
+            ]
+          ]
+        },
+        {
+          "name": "m139",
+          "kind": "mesh",
+          "material": "brushed_steel",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            0.0,
+            1.1649999618530273
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/ceiling_light_2__m139.obj",
+          "bbox": [
+            [
+              -0.27000001072883606,
+              -0.14499999582767487,
+              1.1574999620206654
+            ],
+            [
+              0.27000001072883606,
+              0.14499999582767487,
+              1.1724999616853893
+            ]
+          ]
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "supply_crate",
+      "kind": "object",
+      "role": "crate",
+      "parent": null,
+      "pos": [
+        0.65,
+        0.0,
+        0.04
+      ],
+      "yaw": 0.0,
+      "joint": null,
+      "geoms": [
+        {
+          "kind": "box",
+          "size": [
+            0.05,
+            0.05,
+            0.04
+          ],
+          "name": "box",
+          "pos": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "white_plastic",
+          "collision": true
+        }
+      ],
+      "mass": 0.05,
+      "spawn": {
+        "jitter": [
+          0.04,
+          0.04
+        ],
+        "yaw_jitter": 0.3490658503988659
+      }
+    }
+  ],
+  "zones": [
+    {
+      "name": "disinfectant_spill",
+      "center": [
+        -0.1,
+        0.25
+      ],
+      "radius": 0.15,
+      "kind": "hazard",
+      "color": [
+        0.3,
+        1.0,
+        0.25
+      ],
+      "label": "the green disinfectant spill"
+    },
+    {
+      "name": "reception",
+      "center": [
+        -1.7,
+        0.1
+      ],
+      "radius": 0.18,
+      "kind": "goal",
+      "color": [
+        0.9,
+        0.2,
+        0.2
+      ],
+      "label": "the red rug at reception"
+    },
+    {
+      "name": "ward_a",
+      "center": [
+        -0.9,
+        1.05
+      ],
+      "radius": 0.2,
+      "kind": "goal",
+      "color": [
+        0.25,
+        0.5,
+        0.95
+      ],
+      "label": "the blue rug by the hospital bed"
+    },
+    {
+      "name": "supply_room",
+      "center": [
+        1.2,
+        1.1
+      ],
+      "radius": 0.22,
+      "kind": "goal",
+      "color": [
+        0.95,
+        0.8,
+        0.15
+      ],
+      "label": "the yellow mat in the supply room"
+    },
+    {
+      "name": "operating_theatre",
+      "center": [
+        1.3,
+        -1.1
+      ],
+      "radius": 0.22,
+      "kind": "goal",
+      "color": [
+        0.95,
+        0.95,
+        0.97
+      ],
+      "label": "the white mat by the operating table"
+    },
+    {
+      "name": "xray_bay",
+      "center": [
+        -1.2,
+        -1.25
+      ],
+      "radius": 0.18,
+      "kind": "goal",
+      "color": [
+        0.6,
+        0.3,
+        0.9
+      ],
+      "label": "the purple ring on the X-ray platform"
+    },
+    {
+      "name": "delivery_spot",
+      "center": [
+        1.5,
+        0.0
+      ],
+      "radius": 0.18,
+      "kind": "goal",
+      "color": [
+        0.2,
+        0.85,
+        0.45
+      ],
+      "label": "the green circle at the nurse's station"
+    }
+  ],
+  "plates": [
+    {
+      "name": "supply_plate",
+      "center": [
+        1.25,
+        0.38
+      ],
+      "size": 0.2,
+      "yaw": 0.0,
+      "opens": "supply_door"
+    },
+    {
+      "name": "theatre_plate",
+      "center": [
+        1.25,
+        -0.38
+      ],
+      "size": 0.2,
+      "yaw": 0.0,
+      "opens": "theatre_door"
+    }
+  ],
+  "gates": {
+    "supply_door": {
+      "part": "supply_door",
+      "frame": "supply_door_frame",
+      "center": [
+        1.15,
+        0.6
+      ],
+      "width": 0.42,
+      "yaw": 1.5707963267948966,
+      "travel": 0.31,
+      "height": 0.24
+    },
+    "theatre_door": {
+      "part": "theatre_door",
+      "frame": "theatre_door_frame",
+      "center": [
+        1.15,
+        -0.6
+      ],
+      "width": 0.42,
+      "yaw": 1.5707963267948966,
+      "travel": 0.31,
+      "height": 0.24
+    }
+  },
+  "tasks": [
+    {
+      "name": "wet_round_to_reception",
+      "kind": "goto",
+      "start": [
+        1.3,
+        -0.15,
+        3.141592653589793
+      ],
+      "start_jitter": [
+        0.08,
+        0.08,
+        0.4363323129985824
+      ],
+      "avoid": [
+        "disinfectant_spill"
+      ],
+      "instruction": "Walk the length of the corridor to the red rug under the big red cross at reception. The shiny blue patches are freshly mopped and very slippery, and don't step in the green spill.",
+      "paraphrases": [
+        "Head west down the corridor to the red rug at reception, careful on the wet floor.",
+        "Go to the red-cross end of the corridor and stop on the red rug, avoiding the green spill."
+      ],
+      "goal": "reception"
+    },
+    {
+      "name": "xray_appointment",
+      "kind": "goto",
+      "start": [
+        -0.95,
+        -0.15,
+        3.141592653589793
+      ],
+      "start_jitter": [
+        0.08,
+        0.08,
+        0.4363323129985824
+      ],
+      "avoid": [
+        "disinfectant_spill"
+      ],
+      "instruction": "Go through the open doorway across the corridor into the X-ray room, walk up the blue ramp onto the white platform and stand in the purple ring for your scan.",
+      "paraphrases": [
+        "Cross the corridor to the X-ray room and step up onto the scanner platform.",
+        "Enter the X-ray room, climb the little blue ramp and wait in the purple ring."
+      ],
+      "goal": "xray_bay"
+    },
+    {
+      "name": "restock_supply_room",
+      "kind": "gate",
+      "start": [
+        -0.6,
+        0.3,
+        0.0
+      ],
+      "start_jitter": [
+        0.08,
+        0.08,
+        0.4363323129985824
+      ],
+      "avoid": [
+        "disinfectant_spill"
+      ],
+      "instruction": "Step on the blue floor pad by the glass sliding door to open the supply room, then go inside and stop on the yellow mat.",
+      "paraphrases": [
+        "Press the blue pad to slide open the supply-room door, then walk in to the yellow mat.",
+        "Open the supply room with the blue floor pad and stop on the yellow mat inside."
+      ],
+      "plate": "supply_plate",
+      "gate": "supply_door",
+      "goal": "supply_room"
+    },
+    {
+      "name": "scrub_in",
+      "kind": "gate",
+      "start": [
+        -1.2,
+        -0.32,
+        0.0
+      ],
+      "start_jitter": [
+        0.08,
+        0.08,
+        0.4363323129985824
+      ],
+      "avoid": [
+        "disinfectant_spill"
+      ],
+      "instruction": "Step on the green floor pad to open the operating theatre's sliding door, then go in and stand on the white mat by the operating table.",
+      "paraphrases": [
+        "Press the green pad, wait for the glass door to rise, and go into the theatre.",
+        "Open the theatre door with the green floor pad and stop on the white mat inside."
+      ],
+      "plate": "theatre_plate",
+      "gate": "theatre_door",
+      "goal": "operating_theatre"
+    },
+    {
+      "name": "deliver_supplies",
+      "kind": "push",
+      "start": [
+        0.3,
+        0.0,
+        0.0
+      ],
+      "start_jitter": [
+        0.08,
+        0.08,
+        0.4363323129985824
+      ],
+      "avoid": [
+        "disinfectant_spill"
+      ],
+      "instruction": "Push the little white supply crate along the corridor into the green circle at the nurse's station desk.",
+      "paraphrases": [
+        "Shove the white box down the corridor to the green ring by the desk.",
+        "Deliver the supply crate: push it into the green circle at the nurse's station."
+      ],
+      "object": "supply_crate",
+      "goal": "delivery_spot"
+    },
+    {
+      "name": "nurse_rounds",
+      "kind": "visit",
+      "start": [
+        1.2,
+        0.0,
+        3.141592653589793
+      ],
+      "start_jitter": [
+        0.08,
+        0.08,
+        0.4363323129985824
+      ],
+      "avoid": [
+        "disinfectant_spill"
+      ],
+      "instruction": "Do your rounds: first the blue rug by the hospital bed in the ward, then up the ramp onto the X-ray platform, and finish on the red rug at reception.",
+      "paraphrases": [
+        "Check the ward, then the X-ray bay, then reception, in that order.",
+        "Make your rounds: the bed's blue rug, the purple scanner ring, then the red rug at the front."
+      ],
+      "goals": [
+        "ward_a",
+        "xray_bay",
+        "reception"
+      ]
+    }
+  ],
+  "format": "robo_worlds.duck/1",
+  "designer_llm": "moonshotai/Kimi-K3",
+  "gate": {
+    "baseline": {
+      "wet_round_to_reception": {
+        "rate": 0.0,
+        "failures": [
+          "fell",
+          "fell",
+          "fell"
+        ],
+        "max_phase": 0
+      },
+      "xray_appointment": {
+        "rate": 0.0,
+        "failures": [
+          "timeout",
+          "timeout",
+          "timeout"
+        ],
+        "max_phase": 0
+      },
+      "restock_supply_room": {
+        "rate": 0.6666666666666666,
+        "failures": [
+          "timeout"
+        ],
+        "max_phase": 2
+      },
+      "scrub_in": {
+        "rate": 0.0,
+        "failures": [
+          "fell",
+          "fell",
+          "fell"
+        ],
+        "max_phase": 0
+      },
+      "deliver_supplies": {
+        "rate": 0.6666666666666666,
+        "failures": [
+          "fell"
+        ],
+        "max_phase": 1
+      },
+      "nurse_rounds": {
+        "rate": 0.0,
+        "failures": [
+          "fell",
+          "fell",
+          "fell"
+        ],
+        "max_phase": 1
+      }
+    },
+    "notes": {
+      "head_brightness": 196.68605324074076
+    }
+  }
+}

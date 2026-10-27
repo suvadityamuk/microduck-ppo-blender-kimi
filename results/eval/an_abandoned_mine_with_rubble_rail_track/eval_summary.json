@@ -1,0 +1,64 @@
+{
+  "stock": {
+    "ride_the_lift": {
+      "success": 1.0,
+      "episodes": 20,
+      "failures": {},
+      "mean_time": 29.456999999999788
+    },
+    "ore_to_bay": {
+      "success": 0.35,
+      "episodes": 20,
+      "failures": {
+        "timeout": 8,
+        "fell": 5
+      },
+      "mean_time": 48.99428571428715
+    },
+    "seep_crossing": {
+      "success": 0.95,
+      "episodes": 20,
+      "failures": {
+        "timeout": 1
+      },
+      "mean_time": 27.612631578946864
+    },
+    "shaft_watch": {
+      "success": 1.0,
+      "episodes": 20,
+      "failures": {},
+      "mean_time": 13.041999999999812
+    },
+    "_mean_success": 0.825
+  },
+  "specialist": {
+    "ride_the_lift": {
+      "success": 1.0,
+      "episodes": 20,
+      "failures": {},
+      "mean_time": 22.8159999999996
+    },
+    "ore_to_bay": {
+      "success": 0.35,
+      "episodes": 20,
+      "failures": {
+        "timeout": 5,
+        "fell": 8
+      },
+      "mean_time": 29.239999999999913
+    },
+    "seep_crossing": {
+      "success": 1.0,
+      "episodes": 20,
+      "failures": {},
+      "mean_time": 25.63399999999955
+    },
+    "shaft_watch": {
+      "success": 1.0,
+      "episodes": 20,
+      "failures": {},
+      "mean_time": 11.325999999999846
+    },
+    "_mean_success": 0.8375
+  }
+}

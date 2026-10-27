@@ -1,0 +1,74 @@
+[
+  {
+    "round": 0,
+    "attempt": 0,
+    "build": {
+      "ok": true,
+      "kind": null,
+      "error": null
+    }
+  },
+  {
+    "round": 0,
+    "gate": {
+      "ok": true,
+      "passing": [
+        "cross_the_coolant",
+        "up_to_the_stars",
+        "cycle_the_airlock",
+        "dock_the_cargo",
+        "morning_patrol",
+        "thread_the_debris"
+      ],
+      "feedback": "",
+      "notes": {
+        "head_brightness": 90.48322627314815
+      },
+      "baseline": {
+        "cross_the_coolant": {
+          "rate": 0.3333333333333333,
+          "failures": [
+            "entered hazard debris_alpha",
+            "entered hazard debris_alpha"
+          ],
+          "max_phase": 1
+        },
+        "up_to_the_stars": {
+          "rate": 0.0,
+          "failures": [
+            "fell",
+            "timeout",
+            "fell"
+          ],
+          "max_phase": 0
+        },
+        "cycle_the_airlock": {
+          "rate": 1.0,
+          "failures": [],
+          "max_phase": 2
+        },
+        "dock_the_cargo": {
+          "rate": 1.0,
+          "failures": [],
+          "max_phase": 1
+        },
+        "morning_patrol": {
+          "rate": 0.0,
+          "failures": [
+            "entered hazard debris_alpha",
+            "timeout",
+            "fell"
+          ],
+          "max_phase": 2
+        },
+        "thread_the_debris": {
+          "rate": 0.6666666666666666,
+          "failures": [
+            "timeout"
+          ],
+          "max_phase": 1
+        }
+      }
+    }
+  }
+]

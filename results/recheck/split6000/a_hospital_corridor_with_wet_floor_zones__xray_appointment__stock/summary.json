@@ -1,0 +1,13 @@
+{
+  "stock": {
+    "xray_appointment": {
+      "success": 0.01,
+      "episodes": 100,
+      "failures": {
+        "timeout": 99
+      },
+      "mean_time": 33.51999999999964
+    },
+    "_mean_success": 0.01
+  }
+}

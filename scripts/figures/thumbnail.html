@@ -1,0 +1,27 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+*{box-sizing:border-box;margin:0}
+html,body{width:1200px;height:648px;overflow:hidden}
+body{position:relative;background:radial-gradient(circle at 50% 48%,#ffe98a 0,#ffd21e 42%,#f7b215 100%)}
+body:before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(0,0,0,.07) 1.6px,transparent 1.7px);background-size:22px 22px}
+.rays{position:absolute;left:50%;top:52%;width:1600px;height:1600px;margin:-800px 0 0 -800px;
+ background:repeating-conic-gradient(rgba(255,255,255,.16) 0 9deg,transparent 9deg 22.5deg);border-radius:50%;
+ -webkit-mask:radial-gradient(circle,#000 0,#000 30%,transparent 62%)}
+.tile{position:absolute;width:330px;height:186px;border:8px solid #fff;border-radius:14px;background-size:cover;background-position:center;
+ box-shadow:0 12px 26px rgba(80,50,0,.35)}
+.duck{position:absolute;left:478px;top:70px;height:540px;filter:drop-shadow(10px 14px 0 rgba(29,31,36,.22))}
+.ground{position:absolute;left:470px;top:578px;width:260px;height:44px;border-radius:50%;background:rgba(60,40,0,.28);filter:blur(8px)}
+.logo{position:absolute;left:28px;top:24px;width:104px;height:104px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;
+ box-shadow:0 8px 18px rgba(80,50,0,.28);border:4px solid #1d1f24}
+.logo img{width:72px}
+</style></head><body>
+<div class="rays"></div>
+<div class="tile" style="left:40px;top:150px;transform:rotate(-7deg);background-image:url(a_circus_ring_with_a_sawdust_floor_a_tig.jpg)"></div>
+<div class="tile" style="left:70px;top:398px;transform:rotate(5deg);background-image:url(a_low_gravity_orbital_hab_module_with_ma.jpg)"></div>
+<div class="tile" style="left:180px;top:-30px;transform:rotate(4deg);background-image:url(a_chocolate_factory_with_molten_chocolat.jpg)"></div>
+<div class="tile" style="left:830px;top:40px;transform:rotate(6deg);background-image:url(a_hospital_corridor_with_wet_floor_zones.jpg)"></div>
+<div class="tile" style="left:850px;top:262px;transform:rotate(-5deg);background-image:url(a_frozen_lake_ice_fishing_village_where_.jpg)"></div>
+<div class="tile" style="left:760px;top:470px;transform:rotate(4deg);background-image:url(an_abandoned_mine_with_rubble_rail_track.jpg)"></div>
+<div class="ground"></div>
+<img class="duck" src="duck.png" alt="">
+<div class="logo"><img src="hf_logo.svg" alt=""></div>
+</body></html>

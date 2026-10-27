@@ -1,0 +1,2252 @@
+{
+  "name": "a_circus_ring_with_a_sawdust_floor_a_tig",
+  "description": "A big-top circus at duck scale: a sawdust floor around a red centre ring, a narrow plank up to the striped tightrope stage, giant balls, a flaming hoop and a lion's cage behind a steel portcullis.",
+  "theme": "a circus ring with a sawdust floor, a tightrope stage ramp and giant balls",
+  "env": {
+    "sky": {
+      "top": [
+        0.28,
+        0.16,
+        0.42
+      ],
+      "bottom": [
+        0.85,
+        0.55,
+        0.4
+      ]
+    },
+    "light": {
+      "color": [
+        1.0,
+        0.93,
+        0.8
+      ],
+      "azimuth_deg": 120.0,
+      "elevation_deg": 60.0,
+      "ambient": 0.45
+    },
+    "floor": "sawdust",
+    "gravity": 9.81
+  },
+  "room": {
+    "size": [
+      3.4,
+      3.2
+    ],
+    "wall_height": 0.35
+  },
+  "materials": {
+    "cage_iron": {
+      "name": "cage_iron",
+      "rgba": [
+        0.42,
+        0.44,
+        0.48,
+        1.0
+      ],
+      "color2": [
+        0.3,
+        0.32,
+        0.36
+      ],
+      "pattern": "brushed",
+      "texture": "textures/cage_iron.png",
+      "roughness": 0.35,
+      "metallic": 0.9,
+      "emission": 0.0,
+      "friction": 1.0,
+      "surface": true
+    },
+    "chalk_white": {
+      "name": "chalk_white",
+      "rgba": [
+        0.93,
+        0.92,
+        0.88,
+        1.0
+      ],
+      "color2": [
+        0.558,
+        0.552,
+        0.528
+      ],
+      "pattern": "flat",
+      "texture": null,
+      "roughness": 0.7,
+      "metallic": 0.0,
+      "emission": 0.0,
+      "friction": 1.0,
+      "surface": false
+    },
+    "circus_blue": {
+      "name": "circus_blue",
+      "rgba": [
+        0.12,
+        0.35,
+        0.85,
+        1.0
+      ],
+      "color2": [
+        0.072,
+        0.21,
+        0.51
+      ],
+      "pattern": "flat",
+      "texture": null,
+      "roughness": 0.4,
+      "metallic": 0.0,
+      "emission": 0.0,
+      "friction": 1.0,
+      "surface": false
+    },
+    "circus_red": {
+      "name": "circus_red",
+      "rgba": [
+        0.85,
+        0.1,
+        0.12,
+        1.0
+      ],
+      "color2": [
+        0.51,
+        0.06,
+        0.072
+      ],
+      "pattern": "flat",
+      "texture": null,
+      "roughness": 0.4,
+      "metallic": 0.0,
+      "emission": 0.0,
+      "friction": 1.0,
+      "surface": false
+    },
+    "flame": {
+      "name": "flame",
+      "rgba": [
+        1.0,
+        0.35,
+        0.05,
+        1.0
+      ],
+      "color2": [
+        1.0,
+        0.72,
+        0.1
+      ],
+      "pattern": "noise",
+      "texture": "textures/flame.png",
+      "roughness": 0.4,
+      "metallic": 0.0,
+      "emission": 0.9,
+      "friction": 1.0,
+      "surface": false
+    },
+    "greasepaint": {
+      "name": "greasepaint",
+      "rgba": [
+        0.42,
+        0.3,
+        0.62,
+        1.0
+      ],
+      "color2": [
+        0.7,
+        0.58,
+        0.92
+      ],
+      "pattern": "marble",
+      "texture": "textures/greasepaint.png",
+      "roughness": 0.05,
+      "metallic": 0.0,
+      "emission": 0.0,
+      "friction": 0.1,
+      "surface": true
+    },
+    "ring_red": {
+      "name": "ring_red",
+      "rgba": [
+        0.78,
+        0.1,
+        0.12,
+        1.0
+      ],
+      "color2": [
+        0.88,
+        0.22,
+        0.18
+      ],
+      "pattern": "noise",
+      "texture": "textures/ring_red.png",
+      "roughness": 0.6,
+      "metallic": 0.0,
+      "emission": 0.0,
+      "friction": 0.8,
+      "surface": true
+    },
+    "sawdust": {
+      "name": "sawdust",
+      "rgba": [
+        0.8,
+        0.64,
+        0.42,
+        1.0
+      ],
+      "color2": [
+        0.64,
+        0.48,
+        0.3
+      ],
+      "pattern": "noise",
+      "texture": "textures/sawdust.png",
+      "roughness": 0.95,
+      "metallic": 0.0,
+      "emission": 0.0,
+      "friction": 0.9,
+      "surface": true
+    },
+    "show_gold": {
+      "name": "show_gold",
+      "rgba": [
+        0.9,
+        0.7,
+        0.25,
+        1.0
+      ],
+      "color2": [
+        0.65,
+        0.48,
+        0.16
+      ],
+      "pattern": "brushed",
+      "texture": "textures/show_gold.png",
+      "roughness": 0.3,
+      "metallic": 1.0,
+      "emission": 0.0,
+      "friction": 1.0,
+      "surface": false
+    },
+    "star_yellow": {
+      "name": "star_yellow",
+      "rgba": [
+        0.98,
+        0.8,
+        0.1,
+        1.0
+      ],
+      "color2": [
+        0.588,
+        0.48,
+        0.06
+      ],
+      "pattern": "flat",
+      "texture": null,
+      "roughness": 0.4,
+      "metallic": 0.0,
+      "emission": 0.0,
+      "friction": 1.0,
+      "surface": false
+    },
+    "tent_stripes": {
+      "name": "tent_stripes",
+      "rgba": [
+        0.86,
+        0.14,
+        0.16,
+        1.0
+      ],
+      "color2": [
+        0.94,
+        0.88,
+        0.74
+      ],
+      "pattern": "stripes",
+      "texture": "textures/tent_stripes.png",
+      "roughness": 0.7,
+      "metallic": 0.0,
+      "emission": 0.0,
+      "friction": 1.0,
+      "surface": true
+    },
+    "worn_plank": {
+      "name": "worn_plank",
+      "rgba": [
+        0.72,
+        0.52,
+        0.3,
+        1.0
+      ],
+      "color2": [
+        0.55,
+        0.38,
+        0.2
+      ],
+      "pattern": "wood",
+      "texture": "textures/worn_plank.png",
+      "roughness": 0.8,
+      "metallic": 0.0,
+      "emission": 0.0,
+      "friction": 0.7,
+      "surface": true
+    }
+  },
+  "bodies": [
+    {
+      "name": "room_walls",
+      "kind": "fixture",
+      "role": "wall",
+      "parent": null,
+      "pos": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "yaw": 0.0,
+      "joint": null,
+      "geoms": [
+        {
+          "kind": "box",
+          "size": [
+            1.76,
+            0.03,
+            0.175
+          ],
+          "name": "north",
+          "pos": [
+            0.0,
+            1.6300000000000001,
+            0.175
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "tent_stripes",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            1.76,
+            0.03,
+            0.175
+          ],
+          "name": "south",
+          "pos": [
+            0.0,
+            -1.6300000000000001,
+            0.175
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "tent_stripes",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.03,
+            1.6,
+            0.175
+          ],
+          "name": "east",
+          "pos": [
+            1.73,
+            0.0,
+            0.175
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "tent_stripes",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.03,
+            1.6,
+            0.175
+          ],
+          "name": "west",
+          "pos": [
+            -1.73,
+            0.0,
+            0.175
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "tent_stripes",
+          "collision": true
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "cage_side",
+      "kind": "fixture",
+      "role": "wall",
+      "parent": null,
+      "pos": [
+        1.05,
+        -1.6,
+        0.0
+      ],
+      "yaw": 1.5707963267948966,
+      "joint": null,
+      "geoms": [
+        {
+          "kind": "box",
+          "size": [
+            0.42500000000000004,
+            0.02,
+            0.14
+          ],
+          "name": "seg0",
+          "pos": [
+            0.42500000000000004,
+            0.0,
+            0.14
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "cage_iron",
+          "collision": true
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "cage_front",
+      "kind": "fixture",
+      "role": "wall",
+      "parent": null,
+      "pos": [
+        1.05,
+        -0.75,
+        0.0
+      ],
+      "yaw": 0.0,
+      "joint": null,
+      "geoms": [
+        {
+          "kind": "box",
+          "size": [
+            0.06,
+            0.02,
+            0.14
+          ],
+          "name": "seg0",
+          "pos": [
+            0.06,
+            0.0,
+            0.14
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "cage_iron",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.08499999999999996,
+            0.02,
+            0.14
+          ],
+          "name": "seg1",
+          "pos": [
+            0.565,
+            0.0,
+            0.14
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "cage_iron",
+          "collision": true
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "cage_gate_frame",
+      "kind": "fixture",
+      "role": "gate_frame",
+      "parent": null,
+      "pos": [
+        1.35,
+        -0.75,
+        0.0
+      ],
+      "yaw": 1.5707963267948966,
+      "joint": null,
+      "geoms": [
+        {
+          "kind": "box",
+          "size": [
+            0.025,
+            0.02,
+            0.28500000000000003
+          ],
+          "name": "postl",
+          "pos": [
+            0.0,
+            -0.19999999999999998,
+            0.28500000000000003
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "circus_red",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.025,
+            0.02,
+            0.28500000000000003
+          ],
+          "name": "postr",
+          "pos": [
+            0.0,
+            0.19999999999999998,
+            0.28500000000000003
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "circus_red",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.025,
+            0.22,
+            0.02
+          ],
+          "name": "lintel",
+          "pos": [
+            0.0,
+            0.0,
+            0.5900000000000001
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "circus_red",
+          "collision": true
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "cage_gate",
+      "kind": "part",
+      "role": "gate",
+      "parent": "cage_gate_frame",
+      "pos": [
+        0.0,
+        0.0,
+        0.003
+      ],
+      "yaw": 0.0,
+      "joint": {
+        "type": "slide",
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "range": [
+          0.0,
+          0.31
+        ],
+        "damping": 5.0,
+        "stiffness": 0.0,
+        "frictionloss": 0.0,
+        "springref": 0.0
+      },
+      "geoms": [
+        {
+          "kind": "box",
+          "size": [
+            0.0125,
+            0.18,
+            0.12
+          ],
+          "name": "panel",
+          "pos": [
+            0.0,
+            0.0,
+            0.12
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "cage_iron",
+          "collision": true
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "star_plate",
+      "kind": "fixture",
+      "role": "plate",
+      "parent": null,
+      "pos": [
+        -0.85,
+        1.0,
+        0.0
+      ],
+      "yaw": 0.0,
+      "joint": null,
+      "geoms": [
+        {
+          "kind": "box",
+          "size": [
+            0.1,
+            0.1,
+            0.003
+          ],
+          "name": "pad",
+          "pos": [
+            0.0,
+            0.0,
+            0.003
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "star_yellow",
+          "collision": true
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "centre_ring_floor",
+      "kind": "fixture",
+      "role": "patch",
+      "parent": null,
+      "pos": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "yaw": 0.0,
+      "joint": null,
+      "geoms": [
+        {
+          "kind": "box",
+          "size": [
+            0.65,
+            0.65,
+            0.001
+          ],
+          "name": "surface",
+          "pos": [
+            0.0,
+            0.0,
+            0.001
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "ring_red",
+          "collision": true
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "grease_patch",
+      "kind": "fixture",
+      "role": "patch",
+      "parent": null,
+      "pos": [
+        -1.03,
+        -0.35,
+        0.0
+      ],
+      "yaw": 0.0,
+      "joint": null,
+      "geoms": [
+        {
+          "kind": "box",
+          "size": [
+            0.35,
+            0.325,
+            0.001
+          ],
+          "name": "surface",
+          "pos": [
+            0.0,
+            0.0,
+            0.001
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "greasepaint",
+          "collision": true
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "tightrope_plank",
+      "kind": "fixture",
+      "role": "ramp",
+      "parent": null,
+      "pos": [
+        0.95,
+        0.55,
+        0.0
+      ],
+      "yaw": 1.5707963267948966,
+      "joint": null,
+      "geoms": [
+        {
+          "name": "wedge",
+          "kind": "mesh",
+          "material": "worn_plank",
+          "collision": true,
+          "uv_scale": 0.4,
+          "pos": [
+            0.20000000298023224,
+            0.0,
+            0.029999999329447746
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/tightrope_plank__wedge.obj",
+          "bbox": [
+            [
+              0.0,
+              -0.18000000715255737,
+              0.0
+            ],
+            [
+              0.4000000059604645,
+              0.18000000715255737,
+              0.05999999865889549
+            ]
+          ]
+        }
+      ],
+      "mass": null,
+      "spawn": null,
+      "ramp": {
+        "start": [
+          0.95,
+          0.55
+        ],
+        "end": [
+          0.95,
+          0.95
+        ],
+        "width": 0.36,
+        "rise": 0.06
+      }
+    },
+    {
+      "name": "tightrope_stage",
+      "kind": "fixture",
+      "role": "platform",
+      "parent": null,
+      "pos": [
+        0.95,
+        1.25,
+        0.0
+      ],
+      "yaw": 0.0,
+      "joint": null,
+      "geoms": [
+        {
+          "kind": "box",
+          "size": [
+            0.45,
+            0.3,
+            0.03
+          ],
+          "name": "deck",
+          "pos": [
+            0.0,
+            0.0,
+            0.03
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "tent_stripes",
+          "collision": true
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "flaming_hoop",
+      "kind": "decor",
+      "role": null,
+      "parent": null,
+      "pos": [
+        -0.3,
+        0.75,
+        0.0
+      ],
+      "yaw": 0.0,
+      "joint": null,
+      "geoms": [
+        {
+          "name": "hoop",
+          "kind": "mesh",
+          "material": "flame",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            0.0,
+            0.17000000178813934
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/flaming_hoop__hoop.obj",
+          "bbox": [
+            [
+              -0.14800000190734863,
+              -0.018000004907619886,
+              0.02199999988079071
+            ],
+            [
+              0.14800000190734863,
+              0.018000004907619886,
+              0.318000003695488
+            ]
+          ]
+        },
+        {
+          "name": "pole",
+          "kind": "mesh",
+          "material": "cage_iron",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            0.0,
+            0.08500000089406967
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/flaming_hoop__pole.obj",
+          "bbox": [
+            [
+              -0.012000000104308128,
+              -0.012000000104308128,
+              0.0
+            ],
+            [
+              0.012000000104308128,
+              0.012000000104308128,
+              0.17000000178813934
+            ]
+          ]
+        },
+        {
+          "name": "base",
+          "kind": "mesh",
+          "material": "cage_iron",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            0.0,
+            0.009999999776482582
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/flaming_hoop__base.obj",
+          "bbox": [
+            [
+              -0.05999999865889549,
+              -0.05999999865889549,
+              0.0
+            ],
+            [
+              0.05999999865889549,
+              0.05999999865889549,
+              0.019999999552965164
+            ]
+          ]
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "ringmaster_podium",
+      "kind": "fixture",
+      "role": null,
+      "parent": null,
+      "pos": [
+        0.62,
+        -0.05,
+        0.0
+      ],
+      "yaw": 0.0,
+      "joint": null,
+      "geoms": [
+        {
+          "name": "body",
+          "kind": "mesh",
+          "material": "circus_red",
+          "collision": true,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            0.0,
+            0.13000008463859558
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/ringmaster_podium__body.obj",
+          "bbox": [
+            [
+              -0.15000000596046448,
+              -0.15000000596046448,
+              0.0
+            ],
+            [
+              0.15000000596046448,
+              0.15000000596046448,
+              0.26000016927719116
+            ]
+          ]
+        },
+        {
+          "name": "gold_band",
+          "kind": "mesh",
+          "material": "show_gold",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            0.0,
+            0.24500000476837158
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/ringmaster_podium__gold_band.obj",
+          "bbox": [
+            [
+              -0.13500000536441803,
+              -0.13500000536441803,
+              0.2300000051036477
+            ],
+            [
+              0.13500000536441803,
+              0.13500000536441803,
+              0.26000000443309546
+            ]
+          ]
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "giant_red_ball",
+      "kind": "fixture",
+      "role": null,
+      "parent": null,
+      "pos": [
+        -1.35,
+        1.3,
+        0.0
+      ],
+      "yaw": 0.0,
+      "joint": null,
+      "geoms": [
+        {
+          "name": "ball",
+          "kind": "mesh",
+          "material": "circus_red",
+          "collision": true,
+          "uv_scale": 0.25,
+          "pos": [
+            5.21540641784668e-08,
+            7.450580596923828e-08,
+            0.20000000298023224
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/giant_red_ball__ball.obj",
+          "bbox": [
+            [
+              -0.19999980926513672,
+              -0.1999998539686203,
+              0.0
+            ],
+            [
+              0.19999991357326508,
+              0.20000000298023224,
+              0.4000000059604645
+            ]
+          ]
+        },
+        {
+          "name": "stripe",
+          "kind": "mesh",
+          "material": "chalk_white",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            0.0,
+            0.20000000298023224
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/giant_red_ball__stripe.obj",
+          "bbox": [
+            [
+              -0.2160000056028366,
+              -0.2160000056028366,
+              0.18400000222027302
+            ],
+            [
+              0.2160000056028366,
+              0.2160000056028366,
+              0.21600000374019146
+            ]
+          ]
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "giant_blue_ball",
+      "kind": "fixture",
+      "role": null,
+      "parent": null,
+      "pos": [
+        0.5,
+        -1.3,
+        0.0
+      ],
+      "yaw": 0.0,
+      "joint": null,
+      "geoms": [
+        {
+          "name": "ball",
+          "kind": "mesh",
+          "material": "circus_blue",
+          "collision": true,
+          "uv_scale": 0.25,
+          "pos": [
+            7.450580596923828e-09,
+            2.2351741790771484e-08,
+            0.18000000715255737
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/giant_blue_ball__ball.obj",
+          "bbox": [
+            [
+              -0.1799999624490738,
+              -0.1799999624490738,
+              0.0
+            ],
+            [
+              0.17999997735023499,
+              0.18000000715255737,
+              0.36000001430511475
+            ]
+          ]
+        },
+        {
+          "name": "stripe",
+          "kind": "mesh",
+          "material": "star_yellow",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            0.0,
+            0.18000000715255737
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/giant_blue_ball__stripe.obj",
+          "bbox": [
+            [
+              -0.19600000977516174,
+              -0.016000008628009425,
+              -0.01600000262260437
+            ],
+            [
+              0.19600000977516174,
+              0.016000008628009425,
+              0.3760000169277191
+            ]
+          ]
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "chalk_circle",
+      "kind": "decor",
+      "role": null,
+      "parent": null,
+      "pos": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "yaw": 0.0,
+      "joint": null,
+      "geoms": [
+        {
+          "name": "circle",
+          "kind": "mesh",
+          "material": "chalk_white",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            0.0,
+            0.014999999664723873
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/chalk_circle__circle.obj",
+          "bbox": [
+            [
+              -0.6399999856948853,
+              -0.6399999856948853,
+              -0.004999999888241291
+            ],
+            [
+              0.6399999856948853,
+              0.6399999856948853,
+              0.03499999921768904
+            ]
+          ]
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "tent_pole_0",
+      "kind": "decor",
+      "role": null,
+      "parent": null,
+      "pos": [
+        -1.62,
+        -1.52,
+        0.0
+      ],
+      "yaw": 0.0,
+      "joint": null,
+      "geoms": [
+        {
+          "name": "column",
+          "kind": "mesh",
+          "material": "tent_stripes",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            0.0,
+            0.559999942779541
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/tent_pole_0__column.obj",
+          "bbox": [
+            [
+              -0.05000000074505806,
+              -0.05000000074505806,
+              0.0
+            ],
+            [
+              0.05000000074505806,
+              0.05000000074505806,
+              1.119999885559082
+            ]
+          ]
+        },
+        {
+          "name": "finial",
+          "kind": "mesh",
+          "material": "show_gold",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            1.862645149230957e-09,
+            5.587935447692871e-09,
+            1.1399999856948853
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/tent_pole_0__finial.obj",
+          "bbox": [
+            [
+              -0.04499999061226845,
+              -0.04499999061226845,
+              1.094999983906746
+            ],
+            [
+              0.044999994337558746,
+              0.04500000178813934,
+              1.1849999874830246
+            ]
+          ]
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "tent_pole_1",
+      "kind": "decor",
+      "role": null,
+      "parent": null,
+      "pos": [
+        1.62,
+        -1.52,
+        0.0
+      ],
+      "yaw": 0.0,
+      "joint": null,
+      "geoms": [
+        {
+          "name": "column",
+          "kind": "mesh",
+          "material": "tent_stripes",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            0.0,
+            0.559999942779541
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/tent_pole_1__column.obj",
+          "bbox": [
+            [
+              -0.05000000074505806,
+              -0.05000000074505806,
+              0.0
+            ],
+            [
+              0.05000000074505806,
+              0.05000000074505806,
+              1.119999885559082
+            ]
+          ]
+        },
+        {
+          "name": "finial",
+          "kind": "mesh",
+          "material": "show_gold",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            1.862645149230957e-09,
+            5.587935447692871e-09,
+            1.1399999856948853
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/tent_pole_1__finial.obj",
+          "bbox": [
+            [
+              -0.04499999061226845,
+              -0.04499999061226845,
+              1.094999983906746
+            ],
+            [
+              0.044999994337558746,
+              0.04500000178813934,
+              1.1849999874830246
+            ]
+          ]
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "tent_pole_2",
+      "kind": "decor",
+      "role": null,
+      "parent": null,
+      "pos": [
+        -1.62,
+        1.52,
+        0.0
+      ],
+      "yaw": 0.0,
+      "joint": null,
+      "geoms": [
+        {
+          "name": "column",
+          "kind": "mesh",
+          "material": "tent_stripes",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            0.0,
+            0.559999942779541
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/tent_pole_2__column.obj",
+          "bbox": [
+            [
+              -0.05000000074505806,
+              -0.05000000074505806,
+              0.0
+            ],
+            [
+              0.05000000074505806,
+              0.05000000074505806,
+              1.119999885559082
+            ]
+          ]
+        },
+        {
+          "name": "finial",
+          "kind": "mesh",
+          "material": "show_gold",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            1.862645149230957e-09,
+            5.587935447692871e-09,
+            1.1399999856948853
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/tent_pole_2__finial.obj",
+          "bbox": [
+            [
+              -0.04499999061226845,
+              -0.04499999061226845,
+              1.094999983906746
+            ],
+            [
+              0.044999994337558746,
+              0.04500000178813934,
+              1.1849999874830246
+            ]
+          ]
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "tent_pole_3",
+      "kind": "decor",
+      "role": null,
+      "parent": null,
+      "pos": [
+        1.62,
+        1.52,
+        0.0
+      ],
+      "yaw": 0.0,
+      "joint": null,
+      "geoms": [
+        {
+          "name": "column",
+          "kind": "mesh",
+          "material": "tent_stripes",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            0.0,
+            0.559999942779541
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/tent_pole_3__column.obj",
+          "bbox": [
+            [
+              -0.05000000074505806,
+              -0.05000000074505806,
+              0.0
+            ],
+            [
+              0.05000000074505806,
+              0.05000000074505806,
+              1.119999885559082
+            ]
+          ]
+        },
+        {
+          "name": "finial",
+          "kind": "mesh",
+          "material": "show_gold",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            1.862645149230957e-09,
+            5.587935447692871e-09,
+            1.1399999856948853
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/tent_pole_3__finial.obj",
+          "bbox": [
+            [
+              -0.04499999061226845,
+              -0.04499999061226845,
+              1.094999983906746
+            ],
+            [
+              0.044999994337558746,
+              0.04500000178813934,
+              1.1849999874830246
+            ]
+          ]
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "tightrope_wire",
+      "kind": "decor",
+      "role": null,
+      "parent": null,
+      "pos": [
+        0.95,
+        1.5,
+        0.0
+      ],
+      "yaw": 0.0,
+      "joint": null,
+      "geoms": [
+        {
+          "name": "pole__0_35",
+          "kind": "mesh",
+          "material": "show_gold",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            -0.3499999940395355,
+            0.0,
+            0.25999999046325684
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/tightrope_wire__pole__0_35.obj",
+          "bbox": [
+            [
+              -0.3649999937042594,
+              -0.014999999664723873,
+              0.0599999874830246
+            ],
+            [
+              -0.33499999437481165,
+              0.014999999664723873,
+              0.4599999934434891
+            ]
+          ]
+        },
+        {
+          "name": "pole_0_35",
+          "kind": "mesh",
+          "material": "show_gold",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.3499999940395355,
+            0.0,
+            0.25999999046325684
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/tightrope_wire__pole_0_35.obj",
+          "bbox": [
+            [
+              0.33499999437481165,
+              -0.014999999664723873,
+              0.0599999874830246
+            ],
+            [
+              0.3649999937042594,
+              0.014999999664723873,
+              0.4599999934434891
+            ]
+          ]
+        },
+        {
+          "name": "wire",
+          "kind": "mesh",
+          "material": "cage_iron",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            0.0,
+            0.46000000834465027
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/tightrope_wire__wire.obj",
+          "bbox": [
+            [
+              -0.36000001430511475,
+              -0.006000000052154064,
+              0.45399999246001244
+            ],
+            [
+              0.36000001430511475,
+              0.006000000052154064,
+              0.4660000242292881
+            ]
+          ]
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "clown_barrel",
+      "kind": "fixture",
+      "role": null,
+      "parent": null,
+      "pos": [
+        -1.55,
+        -1.45,
+        0.0
+      ],
+      "yaw": 0.0,
+      "joint": null,
+      "geoms": [
+        {
+          "name": "staves",
+          "kind": "mesh",
+          "material": "worn_plank",
+          "collision": true,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            0.0,
+            0.15000006556510925
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/clown_barrel__staves.obj",
+          "bbox": [
+            [
+              -0.125,
+              -0.125,
+              0.0
+            ],
+            [
+              0.125,
+              0.125,
+              0.3000001311302185
+            ]
+          ]
+        },
+        {
+          "name": "hoop_0_06",
+          "kind": "mesh",
+          "material": "cage_iron",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            0.0,
+            0.05999999865889549
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/clown_barrel__hoop_0_06.obj",
+          "bbox": [
+            [
+              -0.11800000071525574,
+              -0.11800000071525574,
+              0.04999999888241291
+            ],
+            [
+              0.11800000071525574,
+              0.11800000071525574,
+              0.06999999843537807
+            ]
+          ]
+        },
+        {
+          "name": "hoop_0_24",
+          "kind": "mesh",
+          "material": "cage_iron",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            0.0,
+            0.23999999463558197
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/clown_barrel__hoop_0_24.obj",
+          "bbox": [
+            [
+              -0.11800000071525574,
+              -0.11800000071525574,
+              0.2299999948590994
+            ],
+            [
+              0.11800000071525574,
+              0.11800000071525574,
+              0.24999999441206455
+            ]
+          ]
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "lion_pedestal",
+      "kind": "fixture",
+      "role": null,
+      "parent": null,
+      "pos": [
+        1.52,
+        -1.42,
+        0.0
+      ],
+      "yaw": 0.0,
+      "joint": null,
+      "geoms": [
+        {
+          "name": "pedestal",
+          "kind": "mesh",
+          "material": "circus_red",
+          "collision": true,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            0.0,
+            0.05000000074505806
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/lion_pedestal__pedestal.obj",
+          "bbox": [
+            [
+              -0.09000000357627869,
+              -0.09000000357627869,
+              0.0
+            ],
+            [
+              0.09000000357627869,
+              0.09000000357627869,
+              0.10000000149011612
+            ]
+          ]
+        },
+        {
+          "name": "trim",
+          "kind": "mesh",
+          "material": "show_gold",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            0.0,
+            0.09000000357627869
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/lion_pedestal__trim.obj",
+          "bbox": [
+            [
+              -0.10200000554323196,
+              -0.10200000554323196,
+              0.07800000347197056
+            ],
+            [
+              0.10200000554323196,
+              0.10200000554323196,
+              0.10200000368058681
+            ]
+          ]
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "seal_ball",
+      "kind": "object",
+      "role": "ball",
+      "parent": null,
+      "pos": [
+        -0.2,
+        -1.1,
+        0.05
+      ],
+      "yaw": 0.0,
+      "joint": null,
+      "geoms": [
+        {
+          "kind": "sphere",
+          "size": [
+            0.05
+          ],
+          "name": "ball",
+          "pos": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "star_yellow",
+          "collision": true
+        }
+      ],
+      "mass": 0.03,
+      "spawn": {
+        "jitter": [
+          0.05,
+          0.05
+        ],
+        "yaw_jitter": 3.141592653589793
+      }
+    },
+    {
+      "name": "popcorn_crate",
+      "kind": "object",
+      "role": "crate",
+      "parent": null,
+      "pos": [
+        -1.0,
+        -0.95,
+        0.04
+      ],
+      "yaw": 0.0,
+      "joint": null,
+      "geoms": [
+        {
+          "kind": "box",
+          "size": [
+            0.045,
+            0.045,
+            0.04
+          ],
+          "name": "box",
+          "pos": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "circus_red",
+          "collision": true
+        }
+      ],
+      "mass": 0.04,
+      "spawn": {
+        "jitter": [
+          0.04,
+          0.04
+        ],
+        "yaw_jitter": 0.3490658503988659
+      }
+    }
+  ],
+  "zones": [
+    {
+      "name": "fire_hoop",
+      "center": [
+        -0.3,
+        0.75
+      ],
+      "radius": 0.16,
+      "kind": "hazard",
+      "color": [
+        1.0,
+        0.4,
+        0.05
+      ],
+      "label": "the flaming hoop"
+    },
+    {
+      "name": "centre_ring",
+      "center": [
+        0.0,
+        0.0
+      ],
+      "radius": 0.2,
+      "kind": "goal",
+      "color": [
+        1.0,
+        0.85,
+        0.2
+      ],
+      "label": "the gold circle in the centre ring"
+    },
+    {
+      "name": "stage_top",
+      "center": [
+        0.95,
+        1.3
+      ],
+      "radius": 0.2,
+      "kind": "goal",
+      "color": [
+        0.3,
+        0.8,
+        1.0
+      ],
+      "label": "the tightrope stage"
+    },
+    {
+      "name": "lion_cage",
+      "center": [
+        1.3,
+        -1.15
+      ],
+      "radius": 0.18,
+      "kind": "goal",
+      "color": [
+        0.95,
+        0.55,
+        0.15
+      ],
+      "label": "the lion's cage"
+    },
+    {
+      "name": "clown_corner",
+      "center": [
+        -1.25,
+        -1.25
+      ],
+      "radius": 0.2,
+      "kind": "goal",
+      "color": [
+        0.9,
+        0.3,
+        0.8
+      ],
+      "label": "the clown corner"
+    }
+  ],
+  "plates": [
+    {
+      "name": "star_plate",
+      "center": [
+        -0.85,
+        1.0
+      ],
+      "size": 0.2,
+      "yaw": 0.0,
+      "opens": "cage_gate"
+    }
+  ],
+  "gates": {
+    "cage_gate": {
+      "part": "cage_gate",
+      "frame": "cage_gate_frame",
+      "center": [
+        1.35,
+        -0.75
+      ],
+      "width": 0.36,
+      "yaw": 1.5707963267948966,
+      "travel": 0.31,
+      "height": 0.24
+    }
+  },
+  "tasks": [
+    {
+      "name": "into_the_spotlight",
+      "kind": "goto",
+      "start": [
+        -1.2,
+        0.4,
+        -0.3490658503988659
+      ],
+      "start_jitter": [
+        0.08,
+        0.08,
+        0.4363323129985824
+      ],
+      "avoid": [
+        "fire_hoop"
+      ],
+      "instruction": "Waddle into the big red ring and stand in the gold circle at its centre.",
+      "paraphrases": [
+        "Go stand in the middle of the circus ring.",
+        "Walk to the gold circle in the centre ring."
+      ],
+      "goal": "centre_ring"
+    },
+    {
+      "name": "walk_the_wire",
+      "kind": "goto",
+      "start": [
+        0.95,
+        -0.4,
+        1.5707963267948966
+      ],
+      "start_jitter": [
+        0.08,
+        0.08,
+        0.4363323129985824
+      ],
+      "avoid": [
+        "fire_hoop"
+      ],
+      "instruction": "Cross the sawdust and climb the narrow wooden plank onto the striped tightrope stage, keeping clear of the flaming hoop.",
+      "paraphrases": [
+        "Walk up the little plank to the tightrope stage.",
+        "Go up the ramp onto the striped stage, minding the fire hoop."
+      ],
+      "goal": "stage_top"
+    },
+    {
+      "name": "open_the_cage",
+      "kind": "gate",
+      "start": [
+        -0.7,
+        -1.2,
+        1.5707963267948966
+      ],
+      "start_jitter": [
+        0.08,
+        0.08,
+        0.4363323129985824
+      ],
+      "avoid": [
+        "fire_hoop"
+      ],
+      "instruction": "Step on the yellow star plate by the giant red ball to lift the cage gate, then walk into the lion's cage.",
+      "paraphrases": [
+        "Press the yellow plate near the big red ball, then go into the lion's cage.",
+        "Stand on the star plate to open the steel gate and enter the cage."
+      ],
+      "plate": "star_plate",
+      "gate": "cage_gate",
+      "goal": "lion_cage"
+    },
+    {
+      "name": "push_the_seal_ball",
+      "kind": "push",
+      "start": [
+        0.35,
+        -0.85,
+        3.141592653589793
+      ],
+      "start_jitter": [
+        0.08,
+        0.08,
+        0.4363323129985824
+      ],
+      "avoid": [
+        "fire_hoop"
+      ],
+      "instruction": "Push the little yellow ball across the sawdust into the pink clown corner by the barrel.",
+      "paraphrases": [
+        "Shove the yellow ball into the clown corner.",
+        "Roll the little ball over to the pink circle."
+      ],
+      "object": "seal_ball",
+      "goal": "clown_corner"
+    },
+    {
+      "name": "grand_parade",
+      "kind": "visit",
+      "start": [
+        1.35,
+        0.3,
+        3.141592653589793
+      ],
+      "start_jitter": [
+        0.08,
+        0.08,
+        0.4363323129985824
+      ],
+      "avoid": [
+        "fire_hoop"
+      ],
+      "instruction": "Do a grand parade: stand in the gold circle in the centre ring, climb the plank to the tightrope stage, then finish in the clown corner.",
+      "paraphrases": [
+        "Visit the centre ring, then the stage, then the clown corner.",
+        "Parade through the ring, up to the stage, and end in the clown corner."
+      ],
+      "goals": [
+        "centre_ring",
+        "stage_top",
+        "clown_corner"
+      ]
+    },
+    {
+      "name": "cross_the_greasepaint",
+      "kind": "goto",
+      "start": [
+        -1.43,
+        -0.9,
+        0.5235987755982988
+      ],
+      "start_jitter": [
+        0.08,
+        0.08,
+        0.4363323129985824
+      ],
+      "avoid": [
+        "fire_hoop"
+      ],
+      "instruction": "Cross the shiny purple greasepaint slick the clowns spilled \u2014 it is very slippery \u2014 and stop in the gold circle in the centre ring.",
+      "paraphrases": [
+        "Skate over the slippery purple patch to the centre ring.",
+        "Carefully cross the spilled greasepaint to the middle of the ring."
+      ],
+      "goal": "centre_ring"
+    }
+  ],
+  "format": "robo_worlds.duck/1",
+  "designer_llm": "moonshotai/Kimi-K3",
+  "gate": {
+    "baseline": {
+      "into_the_spotlight": {
+        "rate": 1.0,
+        "failures": [],
+        "max_phase": 1
+      },
+      "walk_the_wire": {
+        "rate": 1.0,
+        "failures": [],
+        "max_phase": 1
+      },
+      "open_the_cage": {
+        "rate": 0.0,
+        "failures": [
+          "fell",
+          "fell",
+          "fell"
+        ],
+        "max_phase": 0
+      },
+      "push_the_seal_ball": {
+        "rate": 0.3333333333333333,
+        "failures": [
+          "timeout",
+          "fell"
+        ],
+        "max_phase": 1
+      },
+      "grand_parade": {
+        "rate": 0.6666666666666666,
+        "failures": [
+          "fell"
+        ],
+        "max_phase": 3
+      },
+      "cross_the_greasepaint": {
+        "rate": 0.0,
+        "failures": [
+          "fell",
+          "fell",
+          "fell"
+        ],
+        "max_phase": 0
+      }
+    },
+    "notes": {
+      "head_brightness": 97.36425636574074
+    }
+  }
+}

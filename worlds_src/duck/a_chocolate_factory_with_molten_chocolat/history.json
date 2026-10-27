@@ -1,0 +1,81 @@
+[
+  {
+    "round": 0,
+    "attempt": 0,
+    "build": {
+      "ok": true,
+      "kind": null,
+      "error": null
+    }
+  },
+  {
+    "round": 0,
+    "gate": {
+      "ok": true,
+      "passing": [
+        "climb_the_packing_deck",
+        "cross_the_caramel",
+        "open_the_cooling_room",
+        "roll_the_truffle",
+        "factory_rounds",
+        "enrober_shift"
+      ],
+      "feedback": "",
+      "notes": {
+        "head_brightness": 142.52477141203704
+      },
+      "baseline": {
+        "climb_the_packing_deck": {
+          "rate": 0.0,
+          "failures": [
+            "fell",
+            "fell",
+            "fell"
+          ],
+          "max_phase": 0
+        },
+        "cross_the_caramel": {
+          "rate": 0.0,
+          "failures": [
+            "fell",
+            "fell",
+            "fell"
+          ],
+          "max_phase": 0
+        },
+        "open_the_cooling_room": {
+          "rate": 0.0,
+          "failures": [
+            "fell",
+            "fell",
+            "fell"
+          ],
+          "max_phase": 0
+        },
+        "roll_the_truffle": {
+          "rate": 1.0,
+          "failures": [],
+          "max_phase": 1
+        },
+        "factory_rounds": {
+          "rate": 0.0,
+          "failures": [
+            "fell",
+            "fell",
+            "fell"
+          ],
+          "max_phase": 1
+        },
+        "enrober_shift": {
+          "rate": 0.0,
+          "failures": [
+            "fell",
+            "fell",
+            "fell"
+          ],
+          "max_phase": 0
+        }
+      }
+    }
+  }
+]

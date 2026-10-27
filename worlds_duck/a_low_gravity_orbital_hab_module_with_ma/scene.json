@@ -1,0 +1,3827 @@
+{
+  "name": "a_low_gravity_orbital_hab_module_with_ma",
+  "description": "A low-gravity orbital habitat module: glowing hex magnetic floor tiles, a slick of spilled coolant, slowly drifting debris clouds, an airlock behind a pressure gate and a raised observation deck under the stars.",
+  "theme": "a low-gravity orbital hab module with magnetic floor tiles and floating-debris hazards",
+  "env": {
+    "sky": {
+      "top": [
+        0.05,
+        0.06,
+        0.14
+      ],
+      "bottom": [
+        0.15,
+        0.18,
+        0.3
+      ]
+    },
+    "light": {
+      "color": [
+        0.95,
+        0.97,
+        1.0
+      ],
+      "azimuth_deg": 110.0,
+      "elevation_deg": 60.0,
+      "ambient": 0.5
+    },
+    "floor": "mag_hex_tiles",
+    "gravity": 1.62
+  },
+  "room": {
+    "size": [
+      3.4,
+      3.2
+    ],
+    "wall_height": 0.3
+  },
+  "materials": {
+    "coolant": {
+      "name": "coolant",
+      "rgba": [
+        0.3,
+        0.92,
+        1.0,
+        1.0
+      ],
+      "color2": [
+        0.85,
+        1.0,
+        1.0
+      ],
+      "pattern": "marble",
+      "texture": "textures/coolant.png",
+      "roughness": 0.05,
+      "metallic": 0.0,
+      "emission": 0.25,
+      "friction": 0.1,
+      "surface": true
+    },
+    "copper": {
+      "name": "copper",
+      "rgba": [
+        0.75,
+        0.5,
+        0.25,
+        1.0
+      ],
+      "color2": [
+        0.5,
+        0.3,
+        0.12
+      ],
+      "pattern": "brushed",
+      "texture": "textures/copper.png",
+      "roughness": 0.3,
+      "metallic": 1.0,
+      "emission": 0.0,
+      "friction": 1.0,
+      "surface": false
+    },
+    "dark_trim": {
+      "name": "dark_trim",
+      "rgba": [
+        0.12,
+        0.13,
+        0.17,
+        1.0
+      ],
+      "color2": [
+        0.072,
+        0.078,
+        0.10200000000000001
+      ],
+      "pattern": "flat",
+      "texture": null,
+      "roughness": 0.8,
+      "metallic": 0.0,
+      "emission": 0.0,
+      "friction": 1.4,
+      "surface": false
+    },
+    "debris_rust": {
+      "name": "debris_rust",
+      "rgba": [
+        0.55,
+        0.38,
+        0.22,
+        1.0
+      ],
+      "color2": [
+        0.3,
+        0.18,
+        0.1
+      ],
+      "pattern": "rust",
+      "texture": "textures/debris_rust.png",
+      "roughness": 0.9,
+      "metallic": 0.0,
+      "emission": 0.0,
+      "friction": 1.0,
+      "surface": false
+    },
+    "deck_grate": {
+      "name": "deck_grate",
+      "rgba": [
+        0.95,
+        0.75,
+        0.15,
+        1.0
+      ],
+      "color2": [
+        0.75,
+        0.55,
+        0.1
+      ],
+      "pattern": "brushed",
+      "texture": "textures/deck_grate.png",
+      "roughness": 0.5,
+      "metallic": 0.6,
+      "emission": 0.0,
+      "friction": 1.1,
+      "surface": true
+    },
+    "grow_pink": {
+      "name": "grow_pink",
+      "rgba": [
+        1.0,
+        0.25,
+        0.55,
+        1.0
+      ],
+      "color2": [
+        0.6,
+        0.15,
+        0.33
+      ],
+      "pattern": "flat",
+      "texture": null,
+      "roughness": 0.3,
+      "metallic": 0.0,
+      "emission": 0.9,
+      "friction": 1.0,
+      "surface": false
+    },
+    "hull_white": {
+      "name": "hull_white",
+      "rgba": [
+        0.92,
+        0.93,
+        0.96,
+        1.0
+      ],
+      "color2": [
+        0.552,
+        0.558,
+        0.576
+      ],
+      "pattern": "flat",
+      "texture": null,
+      "roughness": 0.35,
+      "metallic": 0.15,
+      "emission": 0.0,
+      "friction": 1.0,
+      "surface": false
+    },
+    "mag_hex_tiles": {
+      "name": "mag_hex_tiles",
+      "rgba": [
+        0.58,
+        0.64,
+        0.72,
+        1.0
+      ],
+      "color2": [
+        0.16,
+        0.62,
+        0.72
+      ],
+      "pattern": "hex",
+      "texture": "textures/mag_hex_tiles.png",
+      "roughness": 0.35,
+      "metallic": 0.35,
+      "emission": 0.0,
+      "friction": 1.3,
+      "surface": true
+    },
+    "plant_green": {
+      "name": "plant_green",
+      "rgba": [
+        0.25,
+        0.75,
+        0.3,
+        1.0
+      ],
+      "color2": [
+        0.1,
+        0.5,
+        0.15
+      ],
+      "pattern": "noise",
+      "texture": "textures/plant_green.png",
+      "roughness": 0.7,
+      "metallic": 0.0,
+      "emission": 0.0,
+      "friction": 1.0,
+      "surface": false
+    },
+    "pod_glass": {
+      "name": "pod_glass",
+      "rgba": [
+        0.55,
+        0.85,
+        1.0,
+        0.35
+      ],
+      "color2": [
+        0.33,
+        0.51,
+        0.6
+      ],
+      "pattern": "flat",
+      "texture": null,
+      "roughness": 0.05,
+      "metallic": 0.0,
+      "emission": 0.0,
+      "friction": 1.0,
+      "surface": false
+    },
+    "screen_glow": {
+      "name": "screen_glow",
+      "rgba": [
+        0.1,
+        0.85,
+        1.0,
+        1.0
+      ],
+      "color2": [
+        0.06,
+        0.51,
+        0.6
+      ],
+      "pattern": "flat",
+      "texture": null,
+      "roughness": 0.2,
+      "metallic": 0.0,
+      "emission": 0.9,
+      "friction": 1.0,
+      "surface": false
+    },
+    "sign_glow": {
+      "name": "sign_glow",
+      "rgba": [
+        1.0,
+        0.6,
+        0.1,
+        1.0
+      ],
+      "color2": [
+        0.6,
+        0.36,
+        0.06
+      ],
+      "pattern": "flat",
+      "texture": null,
+      "roughness": 0.6,
+      "metallic": 0.0,
+      "emission": 0.8,
+      "friction": 1.0,
+      "surface": false
+    },
+    "space_window": {
+      "name": "space_window",
+      "rgba": [
+        0.02,
+        0.03,
+        0.1,
+        1.0
+      ],
+      "color2": [
+        0.012,
+        0.018,
+        0.06
+      ],
+      "pattern": "flat",
+      "texture": null,
+      "roughness": 0.1,
+      "metallic": 0.0,
+      "emission": 0.2,
+      "friction": 1.0,
+      "surface": false
+    },
+    "star": {
+      "name": "star",
+      "rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "color2": [
+        0.6,
+        0.6,
+        0.6
+      ],
+      "pattern": "flat",
+      "texture": null,
+      "roughness": 0.6,
+      "metallic": 0.0,
+      "emission": 1.0,
+      "friction": 1.0,
+      "surface": false
+    },
+    "wall_panels": {
+      "name": "wall_panels",
+      "rgba": [
+        0.8,
+        0.82,
+        0.86,
+        1.0
+      ],
+      "color2": [
+        0.55,
+        0.6,
+        0.68
+      ],
+      "pattern": "tiles",
+      "texture": "textures/wall_panels.png",
+      "roughness": 0.45,
+      "metallic": 0.5,
+      "emission": 0.0,
+      "friction": 1.0,
+      "surface": true
+    },
+    "warn_orange": {
+      "name": "warn_orange",
+      "rgba": [
+        1.0,
+        0.55,
+        0.08,
+        1.0
+      ],
+      "color2": [
+        0.6,
+        0.33,
+        0.048
+      ],
+      "pattern": "flat",
+      "texture": null,
+      "roughness": 0.5,
+      "metallic": 0.0,
+      "emission": 0.0,
+      "friction": 1.0,
+      "surface": false
+    }
+  },
+  "bodies": [
+    {
+      "name": "room_walls",
+      "kind": "fixture",
+      "role": "wall",
+      "parent": null,
+      "pos": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "yaw": 0.0,
+      "joint": null,
+      "geoms": [
+        {
+          "kind": "box",
+          "size": [
+            1.76,
+            0.03,
+            0.15
+          ],
+          "name": "north",
+          "pos": [
+            0.0,
+            1.6300000000000001,
+            0.15
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "wall_panels",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            1.76,
+            0.03,
+            0.15
+          ],
+          "name": "south",
+          "pos": [
+            0.0,
+            -1.6300000000000001,
+            0.15
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "wall_panels",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.03,
+            1.6,
+            0.15
+          ],
+          "name": "east",
+          "pos": [
+            1.73,
+            0.0,
+            0.15
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "wall_panels",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.03,
+            1.6,
+            0.15
+          ],
+          "name": "west",
+          "pos": [
+            -1.73,
+            0.0,
+            0.15
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "wall_panels",
+          "collision": true
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "eva_wall",
+      "kind": "fixture",
+      "role": "wall",
+      "parent": null,
+      "pos": [
+        0.9,
+        -1.6,
+        0.0
+      ],
+      "yaw": 1.5707963267948966,
+      "joint": null,
+      "geoms": [
+        {
+          "kind": "box",
+          "size": [
+            0.175,
+            0.02,
+            0.15
+          ],
+          "name": "seg0",
+          "pos": [
+            0.175,
+            0.0,
+            0.15
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "wall_panels",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.52,
+            0.02,
+            0.15
+          ],
+          "name": "seg1",
+          "pos": [
+            1.37,
+            0.0,
+            0.15
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "wall_panels",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.44500000000000006,
+            0.02,
+            0.15
+          ],
+          "name": "seg2",
+          "pos": [
+            2.755,
+            0.0,
+            0.15
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "wall_panels",
+          "collision": true
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "hydro_wall",
+      "kind": "fixture",
+      "role": "wall",
+      "parent": null,
+      "pos": [
+        0.9,
+        -0.4,
+        0.0
+      ],
+      "yaw": 0.0,
+      "joint": null,
+      "geoms": [
+        {
+          "kind": "box",
+          "size": [
+            0.39999999999999997,
+            0.02,
+            0.15
+          ],
+          "name": "seg0",
+          "pos": [
+            0.39999999999999997,
+            0.0,
+            0.15
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "wall_panels",
+          "collision": true
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "airlock_gate_frame",
+      "kind": "fixture",
+      "role": "gate_frame",
+      "parent": null,
+      "pos": [
+        0.9,
+        0.5,
+        0.0
+      ],
+      "yaw": 0.0,
+      "joint": null,
+      "geoms": [
+        {
+          "kind": "box",
+          "size": [
+            0.025,
+            0.02,
+            0.28500000000000003
+          ],
+          "name": "postl",
+          "pos": [
+            0.0,
+            -0.22999999999999998,
+            0.28500000000000003
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "warn_orange",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.025,
+            0.02,
+            0.28500000000000003
+          ],
+          "name": "postr",
+          "pos": [
+            0.0,
+            0.22999999999999998,
+            0.28500000000000003
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "warn_orange",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.025,
+            0.25,
+            0.02
+          ],
+          "name": "lintel",
+          "pos": [
+            0.0,
+            0.0,
+            0.5900000000000001
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "warn_orange",
+          "collision": true
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "airlock_gate",
+      "kind": "part",
+      "role": "gate",
+      "parent": "airlock_gate_frame",
+      "pos": [
+        0.0,
+        0.0,
+        0.003
+      ],
+      "yaw": 0.0,
+      "joint": {
+        "type": "slide",
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "range": [
+          0.0,
+          0.31
+        ],
+        "damping": 5.0,
+        "stiffness": 0.0,
+        "frictionloss": 0.0,
+        "springref": 0.0
+      },
+      "geoms": [
+        {
+          "kind": "box",
+          "size": [
+            0.0125,
+            0.21,
+            0.12
+          ],
+          "name": "panel",
+          "pos": [
+            0.0,
+            0.0,
+            0.12
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "hull_white",
+          "collision": true
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "airlock_plate",
+      "kind": "fixture",
+      "role": "plate",
+      "parent": null,
+      "pos": [
+        -0.55,
+        1.2,
+        0.0
+      ],
+      "yaw": 0.0,
+      "joint": null,
+      "geoms": [
+        {
+          "kind": "box",
+          "size": [
+            0.1,
+            0.1,
+            0.003
+          ],
+          "name": "pad",
+          "pos": [
+            0.0,
+            0.0,
+            0.003
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "warn_orange",
+          "collision": true
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "coolant_spill",
+      "kind": "fixture",
+      "role": "patch",
+      "parent": null,
+      "pos": [
+        -0.1,
+        -0.6,
+        0.0
+      ],
+      "yaw": 0.0,
+      "joint": null,
+      "geoms": [
+        {
+          "kind": "box",
+          "size": [
+            0.5,
+            0.3,
+            0.001
+          ],
+          "name": "surface",
+          "pos": [
+            0.0,
+            0.0,
+            0.001
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "coolant",
+          "collision": true
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "obs_ramp",
+      "kind": "fixture",
+      "role": "ramp",
+      "parent": null,
+      "pos": [
+        -1.35,
+        -0.4,
+        0.0
+      ],
+      "yaw": -1.5707963267948966,
+      "joint": null,
+      "geoms": [
+        {
+          "name": "wedge",
+          "kind": "mesh",
+          "material": "deck_grate",
+          "collision": true,
+          "uv_scale": 0.4,
+          "pos": [
+            0.20000000298023224,
+            0.0,
+            0.029999999329447746
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/obs_ramp__wedge.obj",
+          "bbox": [
+            [
+              0.0,
+              -0.22499999403953552,
+              0.0
+            ],
+            [
+              0.4000000059604645,
+              0.22499999403953552,
+              0.05999999865889549
+            ]
+          ]
+        }
+      ],
+      "mass": null,
+      "spawn": null,
+      "ramp": {
+        "start": [
+          -1.35,
+          -0.4
+        ],
+        "end": [
+          -1.35,
+          -0.8
+        ],
+        "width": 0.45,
+        "rise": 0.06
+      }
+    },
+    {
+      "name": "obs_deck_platform",
+      "kind": "fixture",
+      "role": "platform",
+      "parent": null,
+      "pos": [
+        -1.35,
+        -1.15,
+        0.0
+      ],
+      "yaw": 0.0,
+      "joint": null,
+      "geoms": [
+        {
+          "kind": "box",
+          "size": [
+            0.35,
+            0.35,
+            0.03
+          ],
+          "name": "deck",
+          "pos": [
+            0.0,
+            0.0,
+            0.03
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "deck_grate",
+          "collision": true
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "cable_clutter",
+      "kind": "fixture",
+      "role": "bumps",
+      "parent": null,
+      "pos": [
+        -0.1,
+        -0.05,
+        0.0
+      ],
+      "yaw": 0.0,
+      "joint": null,
+      "geoms": [
+        {
+          "kind": "box",
+          "size": [
+            0.03375286399814001,
+            0.055374621043630896,
+            0.005057879899029812
+          ],
+          "name": "b0",
+          "pos": [
+            -0.13739640500470407,
+            -0.0699418002810711,
+            0.005057879899029812
+          ],
+          "quat": [
+            0.197318434715271,
+            0.0,
+            0.0,
+            0.9803394675254822
+          ],
+          "material": "dark_trim",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.015157959136967242,
+            0.051955278827224484,
+            0.005147691600758593
+          ],
+          "name": "b1",
+          "pos": [
+            -0.016032523578139612,
+            -0.06893865061324025,
+            0.005147691600758593
+          ],
+          "quat": [
+            0.9058772325515747,
+            0.0,
+            0.0,
+            0.42354029417037964
+          ],
+          "material": "dark_trim",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.022646087629623737,
+            0.03502843376471909,
+            0.003919102687623404
+          ],
+          "name": "b2",
+          "pos": [
+            0.026748676037246233,
+            0.1734250992020374,
+            0.003919102687623404
+          ],
+          "quat": [
+            0.31995874643325806,
+            0.0,
+            0.0,
+            0.9474315047264099
+          ],
+          "material": "dark_trim",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.03366537688323488,
+            0.05950320664568482,
+            0.0027042965325895156
+          ],
+          "name": "b3",
+          "pos": [
+            -0.16989398307107773,
+            0.03938886149556077,
+            0.0027042965325895156
+          ],
+          "quat": [
+            0.9976187944412231,
+            0.0,
+            0.0,
+            0.06896914541721344
+          ],
+          "material": "dark_trim",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.016070408363207885,
+            0.03816999691221166,
+            0.003758065306366214
+          ],
+          "name": "b4",
+          "pos": [
+            0.20858388659642613,
+            0.04522918907185365,
+            0.003758065306366214
+          ],
+          "quat": [
+            0.6912534832954407,
+            0.0,
+            0.0,
+            0.7226123809814453
+          ],
+          "material": "dark_trim",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.029906203061805126,
+            0.026138171491229885,
+            0.0018495349072785246
+          ],
+          "name": "b5",
+          "pos": [
+            -0.15379892800734468,
+            0.06721124230864371,
+            0.0018495349072785246
+          ],
+          "quat": [
+            0.9507615566253662,
+            0.0,
+            0.0,
+            0.3099232316017151
+          ],
+          "material": "dark_trim",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.0260860893180662,
+            0.015168040892343417,
+            0.005286200465167331
+          ],
+          "name": "b6",
+          "pos": [
+            -0.17276945946928007,
+            -0.0813402434026751,
+            0.005286200465167331
+          ],
+          "quat": [
+            0.1868687868118286,
+            0.0,
+            0.0,
+            0.9823848605155945
+          ],
+          "material": "dark_trim",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.030293724296052694,
+            0.05312176108646412,
+            0.00448681210115861
+          ],
+          "name": "b7",
+          "pos": [
+            0.12088547368092856,
+            -0.14297653822793402,
+            0.00448681210115861
+          ],
+          "quat": [
+            0.659963071346283,
+            0.0,
+            0.0,
+            0.7512980699539185
+          ],
+          "material": "dark_trim",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.0302331670890105,
+            0.054210271951179625,
+            0.003317309047859462
+          ],
+          "name": "b8",
+          "pos": [
+            0.04909203360360653,
+            -0.15426192517907372,
+            0.003317309047859462
+          ],
+          "quat": [
+            0.820283055305481,
+            0.0,
+            0.0,
+            0.5719577670097351
+          ],
+          "material": "dark_trim",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.0246910903877462,
+            0.021758987808170333,
+            0.005228620036040118
+          ],
+          "name": "b9",
+          "pos": [
+            -0.06027691422484377,
+            0.16756175954392755,
+            0.005228620036040118
+          ],
+          "quat": [
+            0.6004306674003601,
+            0.0,
+            0.0,
+            0.7996768355369568
+          ],
+          "material": "dark_trim",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.033151687614895536,
+            0.04370984613547495,
+            0.004641091024013711
+          ],
+          "name": "b10",
+          "pos": [
+            -0.17460599041581565,
+            -0.020890286484134362,
+            0.004641091024013711
+          ],
+          "quat": [
+            0.9300283789634705,
+            0.0,
+            0.0,
+            0.3674876391887665
+          ],
+          "material": "dark_trim",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.02707494894311945,
+            0.019351684226928553,
+            0.00586487781440505
+          ],
+          "name": "b11",
+          "pos": [
+            -0.14249798132205999,
+            0.060117806913949724,
+            0.00586487781440505
+          ],
+          "quat": [
+            0.8907067775726318,
+            0.0,
+            0.0,
+            0.45457834005355835
+          ],
+          "material": "dark_trim",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.041222310784485135,
+            0.04479966322523042,
+            0.0023527864263948838
+          ],
+          "name": "b12",
+          "pos": [
+            0.17253716043727646,
+            0.15573185990074281,
+            0.0023527864263948838
+          ],
+          "quat": [
+            0.15035480260849,
+            0.0,
+            0.0,
+            0.988632082939148
+          ],
+          "material": "dark_trim",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.032091574435778314,
+            0.02154569791924171,
+            0.002608346678866996
+          ],
+          "name": "b13",
+          "pos": [
+            0.2139528423722622,
+            0.01831427068354232,
+            0.002608346678866996
+          ],
+          "quat": [
+            0.9600511789321899,
+            0.0,
+            0.0,
+            0.2798244059085846
+          ],
+          "material": "dark_trim",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.041521706825894095,
+            0.043870726735011634,
+            0.004192715952789993
+          ],
+          "name": "b14",
+          "pos": [
+            -0.06185608193503994,
+            -0.031165651245004554,
+            0.004192715952789993
+          ],
+          "quat": [
+            0.9300715327262878,
+            0.0,
+            0.0,
+            0.36737844347953796
+          ],
+          "material": "dark_trim",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.01614171860073717,
+            0.05442984636491719,
+            0.003764466910619204
+          ],
+          "name": "b15",
+          "pos": [
+            0.023817599606867634,
+            -0.062242841576921205,
+            0.003764466910619204
+          ],
+          "quat": [
+            0.3807598650455475,
+            0.0,
+            0.0,
+            0.9246739745140076
+          ],
+          "material": "dark_trim",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.01575590612405281,
+            0.031748337265434176,
+            0.0019274712364132688
+          ],
+          "name": "b16",
+          "pos": [
+            -0.18855394889749533,
+            0.1635018823890787,
+            0.0019274712364132688
+          ],
+          "quat": [
+            0.5120658874511719,
+            0.0,
+            0.0,
+            0.8589462041854858
+          ],
+          "material": "dark_trim",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.027846607391684437,
+            0.03856830485597161,
+            0.005465798675972053
+          ],
+          "name": "b17",
+          "pos": [
+            -0.0778946665019869,
+            0.03160184380140013,
+            0.005465798675972053
+          ],
+          "quat": [
+            0.47667405009269714,
+            0.0,
+            0.0,
+            0.8790801167488098
+          ],
+          "material": "dark_trim",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.025662413310705363,
+            0.03835943189231955,
+            0.005014039009769795
+          ],
+          "name": "b18",
+          "pos": [
+            0.2045896569952751,
+            -0.12212820267311457,
+            0.005014039009769795
+          ],
+          "quat": [
+            0.10439398139715195,
+            0.0,
+            0.0,
+            0.9945360422134399
+          ],
+          "material": "dark_trim",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.015155365974462964,
+            0.04888398766189893,
+            0.005204212687332429
+          ],
+          "name": "b19",
+          "pos": [
+            -0.18161797422870923,
+            -0.028383722180385193,
+            0.005204212687332429
+          ],
+          "quat": [
+            0.2861388027667999,
+            0.0,
+            0.0,
+            0.9581881761550903
+          ],
+          "material": "dark_trim",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.015428135690538318,
+            0.043280787653983084,
+            0.005130699364011743
+          ],
+          "name": "b20",
+          "pos": [
+            0.006501791411104241,
+            0.07904729719288049,
+            0.005130699364011743
+          ],
+          "quat": [
+            0.9374150633811951,
+            0.0,
+            0.0,
+            0.3482140004634857
+          ],
+          "material": "dark_trim",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.020955634439780185,
+            0.03134071277476582,
+            0.0025535053157820153
+          ],
+          "name": "b21",
+          "pos": [
+            -0.07696928044376078,
+            0.15684342149378513,
+            0.0025535053157820153
+          ],
+          "quat": [
+            0.6211485266685486,
+            0.0,
+            0.0,
+            0.7836928367614746
+          ],
+          "material": "dark_trim",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.025202042022625194,
+            0.02721860789139534,
+            0.005798565860971594
+          ],
+          "name": "b22",
+          "pos": [
+            -0.027760895176443368,
+            0.16813816280820632,
+            0.005798565860971594
+          ],
+          "quat": [
+            0.6896569132804871,
+            0.0,
+            0.0,
+            0.724136233329773
+          ],
+          "material": "dark_trim",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.030634983870786718,
+            0.055344323567220036,
+            0.004919623156503166
+          ],
+          "name": "b23",
+          "pos": [
+            0.04032643192641128,
+            -0.025672673657309585,
+            0.004919623156503166
+          ],
+          "quat": [
+            0.19017665088176727,
+            0.0,
+            0.0,
+            0.9817498922348022
+          ],
+          "material": "dark_trim",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.027349384497206652,
+            0.05652418092758103,
+            0.002088604478911818
+          ],
+          "name": "b24",
+          "pos": [
+            -0.03500156904941848,
+            0.006830186957250638,
+            0.002088604478911818
+          ],
+          "quat": [
+            0.07698987424373627,
+            0.0,
+            0.0,
+            0.9970318675041199
+          ],
+          "material": "dark_trim",
+          "collision": true
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "nav_console",
+      "kind": "fixture",
+      "role": null,
+      "parent": null,
+      "pos": [
+        -1.42,
+        1.34,
+        0.0
+      ],
+      "yaw": 0.7853981633974483,
+      "joint": null,
+      "geoms": [
+        {
+          "name": "base",
+          "kind": "mesh",
+          "material": "hull_white",
+          "collision": true,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            0.0,
+            0.15000000596046448
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/nav_console__base.obj",
+          "bbox": [
+            [
+              -0.20000000298023224,
+              -0.11999999731779099,
+              0.0
+            ],
+            [
+              0.20000000298023224,
+              0.11999999731779099,
+              0.30000001192092896
+            ]
+          ]
+        },
+        {
+          "name": "screen_frame",
+          "kind": "mesh",
+          "material": "dark_trim",
+          "collision": true,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            0.09000000357627869,
+            0.4000000059604645
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/nav_console__screen_frame.obj",
+          "bbox": [
+            [
+              -0.1899999976158142,
+              0.024180955752932443,
+              0.2930673546875884
+            ],
+            [
+              0.1899999976158142,
+              0.15581905139962493,
+              0.5069326572333406
+            ]
+          ]
+        },
+        {
+          "name": "screen",
+          "kind": "mesh",
+          "material": "screen_glow",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            0.07500000298023224,
+            0.4320000112056732
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/nav_console__screen.obj",
+          "bbox": [
+            [
+              -0.17000000178813934,
+              0.0295646061732609,
+              0.347869449465064
+            ],
+            [
+              0.17000000178813934,
+              0.12043539978720358,
+              0.5161305729462824
+            ]
+          ]
+        },
+        {
+          "name": "btn0",
+          "kind": "mesh",
+          "material": "screen_glow",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            -0.10999999940395355,
+            -0.07000000029802322,
+            0.3100000023841858
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/nav_console__btn0.obj",
+          "bbox": [
+            [
+              -0.13250000029802322,
+              -0.08750000037252903,
+              0.3000000026077032
+            ],
+            [
+              -0.08749999850988388,
+              -0.05250000022351742,
+              0.3200000021606684
+            ]
+          ]
+        },
+        {
+          "name": "btn1",
+          "kind": "mesh",
+          "material": "warn_orange",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            -0.07000000029802322,
+            0.3100000023841858
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/nav_console__btn1.obj",
+          "bbox": [
+            [
+              -0.02250000089406967,
+              -0.08750000037252903,
+              0.3000000026077032
+            ],
+            [
+              0.02250000089406967,
+              -0.05250000022351742,
+              0.3200000021606684
+            ]
+          ]
+        },
+        {
+          "name": "btn2",
+          "kind": "mesh",
+          "material": "grow_pink",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.10999999940395355,
+            -0.07000000029802322,
+            0.3100000023841858
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/nav_console__btn2.obj",
+          "bbox": [
+            [
+              0.08749999850988388,
+              -0.08750000037252903,
+              0.3000000026077032
+            ],
+            [
+              0.13250000029802322,
+              -0.05250000022351742,
+              0.3200000021606684
+            ]
+          ]
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "cryo_pod_1",
+      "kind": "fixture",
+      "role": null,
+      "parent": null,
+      "pos": [
+        1.5,
+        1.42,
+        0.0
+      ],
+      "yaw": 0.0,
+      "joint": null,
+      "geoms": [
+        {
+          "name": "shell",
+          "kind": "mesh",
+          "material": "hull_white",
+          "collision": true,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            0.0,
+            0.35999995470046997
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/cryo_pod_1__shell.obj",
+          "bbox": [
+            [
+              -0.1550000011920929,
+              -0.1550000011920929,
+              0.0
+            ],
+            [
+              0.1550000011920929,
+              0.1550000011920929,
+              0.7199999094009399
+            ]
+          ]
+        },
+        {
+          "name": "base_ring",
+          "kind": "mesh",
+          "material": "warn_orange",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            0.0,
+            0.05999999865889549
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/cryo_pod_1__base_ring.obj",
+          "bbox": [
+            [
+              -0.1730000078678131,
+              -0.1730000078678131,
+              0.041999999433755875
+            ],
+            [
+              0.1730000078678131,
+              0.1730000078678131,
+              0.07799999788403511
+            ]
+          ]
+        },
+        {
+          "name": "window",
+          "kind": "mesh",
+          "material": "pod_glass",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            -0.125,
+            0.36000001430511475
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/cryo_pod_1__window.obj",
+          "bbox": [
+            [
+              -0.06499999761581421,
+              -0.15000000037252903,
+              0.17000001668930054
+            ],
+            [
+              0.06499999761581421,
+              -0.09999999962747097,
+              0.550000011920929
+            ]
+          ]
+        },
+        {
+          "name": "status",
+          "kind": "mesh",
+          "material": "screen_glow",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            -0.13500000536441803,
+            0.6000000238418579
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/cryo_pod_1__status.obj",
+          "bbox": [
+            [
+              -0.08500000089406967,
+              -0.1500000050291419,
+              0.5825000237673521
+            ],
+            [
+              0.08500000089406967,
+              -0.12000000569969416,
+              0.6175000239163637
+            ]
+          ]
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "cryo_pod_2",
+      "kind": "fixture",
+      "role": null,
+      "parent": null,
+      "pos": [
+        1.15,
+        1.42,
+        0.0
+      ],
+      "yaw": 0.0,
+      "joint": null,
+      "geoms": [
+        {
+          "name": "shell",
+          "kind": "mesh",
+          "material": "hull_white",
+          "collision": true,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            0.0,
+            0.35999995470046997
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/cryo_pod_2__shell.obj",
+          "bbox": [
+            [
+              -0.1550000011920929,
+              -0.1550000011920929,
+              0.0
+            ],
+            [
+              0.1550000011920929,
+              0.1550000011920929,
+              0.7199999094009399
+            ]
+          ]
+        },
+        {
+          "name": "base_ring",
+          "kind": "mesh",
+          "material": "warn_orange",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            0.0,
+            0.05999999865889549
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/cryo_pod_2__base_ring.obj",
+          "bbox": [
+            [
+              -0.1730000078678131,
+              -0.1730000078678131,
+              0.041999999433755875
+            ],
+            [
+              0.1730000078678131,
+              0.1730000078678131,
+              0.07799999788403511
+            ]
+          ]
+        },
+        {
+          "name": "window",
+          "kind": "mesh",
+          "material": "pod_glass",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            -0.125,
+            0.36000001430511475
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/cryo_pod_2__window.obj",
+          "bbox": [
+            [
+              -0.06499999761581421,
+              -0.15000000037252903,
+              0.17000001668930054
+            ],
+            [
+              0.06499999761581421,
+              -0.09999999962747097,
+              0.550000011920929
+            ]
+          ]
+        },
+        {
+          "name": "status",
+          "kind": "mesh",
+          "material": "screen_glow",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            -0.13500000536441803,
+            0.6000000238418579
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/cryo_pod_2__status.obj",
+          "bbox": [
+            [
+              -0.08500000089406967,
+              -0.1500000050291419,
+              0.5825000237673521
+            ],
+            [
+              0.08500000089406967,
+              -0.12000000569969416,
+              0.6175000239163637
+            ]
+          ]
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "porthole",
+      "kind": "decor",
+      "role": null,
+      "parent": null,
+      "pos": [
+        -0.55,
+        1.57,
+        0.0
+      ],
+      "yaw": 0.0,
+      "joint": null,
+      "geoms": [
+        {
+          "name": "rim",
+          "kind": "mesh",
+          "material": "copper",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            0.0,
+            0.18000000715255737
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/porthole__rim.obj",
+          "bbox": [
+            [
+              -0.1599999964237213,
+              -0.030000005011928014,
+              0.02000001072883606
+            ],
+            [
+              0.1599999964237213,
+              0.030000005011928014,
+              0.3400000035762787
+            ]
+          ]
+        },
+        {
+          "name": "glass",
+          "kind": "mesh",
+          "material": "space_window",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            0.004999999888241291,
+            0.18000000715255737
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/porthole__glass.obj",
+          "bbox": [
+            [
+              -0.125,
+              -0.005000005352164827,
+              0.0550000067154435
+            ],
+            [
+              0.125,
+              0.015000005128647409,
+              0.3050000075896713
+            ]
+          ]
+        },
+        {
+          "name": "star0",
+          "kind": "mesh",
+          "material": "star",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            -0.04999999958090484,
+            -0.009999998612329364,
+            0.2199999988079071
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/porthole__star0.obj",
+          "bbox": [
+            [
+              -0.05599999753758311,
+              -0.01599999750033021,
+              0.21399999875575304
+            ],
+            [
+              -0.04400000162422657,
+              -0.003999999724328518,
+              0.22599999886006117
+            ]
+          ]
+        },
+        {
+          "name": "star1",
+          "kind": "mesh",
+          "material": "star",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.030000000493600965,
+            -0.009999998612329364,
+            0.15000000596046448
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/porthole__star1.obj",
+          "bbox": [
+            [
+              0.024000002536922693,
+              -0.01599999750033021,
+              0.1440000059083104
+            ],
+            [
+              0.035999998450279236,
+              -0.003999999724328518,
+              0.15600000601261854
+            ]
+          ]
+        },
+        {
+          "name": "star2",
+          "kind": "mesh",
+          "material": "star",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.05999999982304871,
+            -0.009999998612329364,
+            0.23999999463558197
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/porthole__star2.obj",
+          "bbox": [
+            [
+              0.05400000186637044,
+              -0.01599999750033021,
+              0.2339999945834279
+            ],
+            [
+              0.06599999777972698,
+              -0.003999999724328518,
+              0.24599999468773603
+            ]
+          ]
+        },
+        {
+          "name": "star3",
+          "kind": "mesh",
+          "material": "star",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            -0.019999998388811946,
+            -0.009999998612329364,
+            0.11999999731779099
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/porthole__star3.obj",
+          "bbox": [
+            [
+              -0.025999996345490217,
+              -0.01599999750033021,
+              0.11399999726563692
+            ],
+            [
+              -0.014000000432133675,
+              -0.003999999724328518,
+              0.12599999736994505
+            ]
+          ]
+        },
+        {
+          "name": "star4",
+          "kind": "mesh",
+          "material": "star",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            1.1641532182693481e-09,
+            -0.009999998612329364,
+            0.1899999976158142
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/porthole__star4.obj",
+          "bbox": [
+            [
+              -0.005999996792525053,
+              -0.01599999750033021,
+              0.18399999756366014
+            ],
+            [
+              0.0059999991208314896,
+              -0.003999999724328518,
+              0.19599999766796827
+            ]
+          ]
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "o2_tanks",
+      "kind": "fixture",
+      "role": null,
+      "parent": null,
+      "pos": [
+        0.7,
+        1.46,
+        0.0
+      ],
+      "yaw": 0.0,
+      "joint": null,
+      "geoms": [
+        {
+          "kind": "cylinder",
+          "size": [
+            0.045,
+            0.15
+          ],
+          "name": "tank0",
+          "pos": [
+            -0.07,
+            0.0,
+            0.17
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "warn_orange",
+          "collision": true
+        },
+        {
+          "kind": "sphere",
+          "size": [
+            0.045
+          ],
+          "name": "cap0",
+          "pos": [
+            -0.07,
+            0.0,
+            0.32
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "warn_orange",
+          "collision": true
+        },
+        {
+          "name": "band0",
+          "kind": "mesh",
+          "material": "dark_trim",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            -0.07000000029802322,
+            0.0,
+            0.20000000298023224
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/o2_tanks__band0.obj",
+          "bbox": [
+            [
+              -0.12600000202655792,
+              -0.0560000017285347,
+              0.19200000260025263
+            ],
+            [
+              -0.013999998569488525,
+              0.0560000017285347,
+              0.20800000336021185
+            ]
+          ]
+        },
+        {
+          "kind": "cylinder",
+          "size": [
+            0.045,
+            0.15
+          ],
+          "name": "tank1",
+          "pos": [
+            0.07,
+            0.0,
+            0.17
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "hull_white",
+          "collision": true
+        },
+        {
+          "kind": "sphere",
+          "size": [
+            0.045
+          ],
+          "name": "cap1",
+          "pos": [
+            0.07,
+            0.0,
+            0.32
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "hull_white",
+          "collision": true
+        },
+        {
+          "name": "band1",
+          "kind": "mesh",
+          "material": "dark_trim",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.07000000029802322,
+            0.0,
+            0.20000000298023224
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/o2_tanks__band1.obj",
+          "bbox": [
+            [
+              0.013999998569488525,
+              -0.0560000017285347,
+              0.19200000260025263
+            ],
+            [
+              0.12600000202655792,
+              0.0560000017285347,
+              0.20800000336021185
+            ]
+          ]
+        },
+        {
+          "name": "valve",
+          "kind": "mesh",
+          "material": "copper",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            -0.07000000029802322,
+            0.0,
+            0.3700000047683716
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/o2_tanks__valve.obj",
+          "bbox": [
+            [
+              -0.08200000040233135,
+              -0.012000000104308128,
+              0.34500000439584255
+            ],
+            [
+              -0.058000000193715096,
+              0.012000000104308128,
+              0.3950000051409006
+            ]
+          ]
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "hydro_rack",
+      "kind": "fixture",
+      "role": null,
+      "parent": null,
+      "pos": [
+        1.32,
+        -1.48,
+        0.0
+      ],
+      "yaw": 0.0,
+      "joint": null,
+      "geoms": [
+        {
+          "kind": "box",
+          "size": [
+            0.02,
+            0.1,
+            0.25
+          ],
+          "name": "post0",
+          "pos": [
+            -0.23,
+            0.0,
+            0.25
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "dark_trim",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.02,
+            0.1,
+            0.25
+          ],
+          "name": "post1",
+          "pos": [
+            0.23,
+            0.0,
+            0.25
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "dark_trim",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.25,
+            0.1,
+            0.01
+          ],
+          "name": "shelf0",
+          "pos": [
+            0.0,
+            0.0,
+            0.08
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "hull_white",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.25,
+            0.1,
+            0.01
+          ],
+          "name": "shelf1",
+          "pos": [
+            0.0,
+            0.0,
+            0.24
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "hull_white",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.25,
+            0.1,
+            0.01
+          ],
+          "name": "shelf2",
+          "pos": [
+            0.0,
+            0.0,
+            0.4
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "hull_white",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.25,
+            0.1,
+            0.015
+          ],
+          "name": "top",
+          "pos": [
+            0.0,
+            0.0,
+            0.5
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "dark_trim",
+          "collision": true
+        },
+        {
+          "name": "light0",
+          "kind": "mesh",
+          "material": "grow_pink",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            0.0,
+            0.2150000035762787
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/hydro_rack__light0.obj",
+          "bbox": [
+            [
+              -0.23000000417232513,
+              -0.02500000037252903,
+              0.20750000374391675
+            ],
+            [
+              0.23000000417232513,
+              0.02500000037252903,
+              0.22250000340864062
+            ]
+          ]
+        },
+        {
+          "name": "light1",
+          "kind": "mesh",
+          "material": "grow_pink",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            0.0,
+            0.375
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/hydro_rack__light1.obj",
+          "bbox": [
+            [
+              -0.23000000417232513,
+              -0.02500000037252903,
+              0.36750000016763806
+            ],
+            [
+              0.23000000417232513,
+              0.02500000037252903,
+              0.38249999983236194
+            ]
+          ]
+        },
+        {
+          "kind": "sphere",
+          "size": [
+            0.032
+          ],
+          "name": "plant0_0",
+          "pos": [
+            -0.15,
+            0.0,
+            0.115
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "plant_green",
+          "collision": false
+        },
+        {
+          "kind": "sphere",
+          "size": [
+            0.032
+          ],
+          "name": "plant0_1",
+          "pos": [
+            0.0,
+            0.0,
+            0.115
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "plant_green",
+          "collision": false
+        },
+        {
+          "kind": "sphere",
+          "size": [
+            0.032
+          ],
+          "name": "plant0_2",
+          "pos": [
+            0.15,
+            0.0,
+            0.115
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "plant_green",
+          "collision": false
+        },
+        {
+          "kind": "sphere",
+          "size": [
+            0.032
+          ],
+          "name": "plant1_0",
+          "pos": [
+            -0.15,
+            0.0,
+            0.275
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "plant_green",
+          "collision": false
+        },
+        {
+          "kind": "sphere",
+          "size": [
+            0.032
+          ],
+          "name": "plant1_1",
+          "pos": [
+            0.0,
+            0.0,
+            0.275
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "plant_green",
+          "collision": false
+        },
+        {
+          "kind": "sphere",
+          "size": [
+            0.032
+          ],
+          "name": "plant1_2",
+          "pos": [
+            0.15,
+            0.0,
+            0.275
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "plant_green",
+          "collision": false
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "crate_stack",
+      "kind": "fixture",
+      "role": null,
+      "parent": null,
+      "pos": [
+        -1.5,
+        0.8,
+        0.0
+      ],
+      "yaw": 0.0,
+      "joint": null,
+      "geoms": [
+        {
+          "kind": "box",
+          "size": [
+            0.14,
+            0.14,
+            0.09
+          ],
+          "name": "c1",
+          "pos": [
+            0.0,
+            0.0,
+            0.09
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "warn_orange",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.12,
+            0.12,
+            0.075
+          ],
+          "name": "c2",
+          "pos": [
+            0.02,
+            0.0,
+            0.255
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "hull_white",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.09,
+            0.09,
+            0.065
+          ],
+          "name": "c3",
+          "pos": [
+            -0.01,
+            0.0,
+            0.395
+          ],
+          "quat": [
+            0.9876883625984192,
+            0.0,
+            0.0,
+            0.15643447637557983
+          ],
+          "material": "dark_trim",
+          "collision": true
+        },
+        {
+          "name": "strap",
+          "kind": "mesh",
+          "material": "dark_trim",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            0.0,
+            0.09000000357627869
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/crate_stack__strap.obj",
+          "bbox": [
+            [
+              -0.15000000596046448,
+              -0.019999999552965164,
+              -0.004999995231628418
+            ],
+            [
+              0.15000000596046448,
+              0.019999999552965164,
+              0.1850000023841858
+            ]
+          ]
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "telescope",
+      "kind": "decor",
+      "role": null,
+      "parent": null,
+      "pos": [
+        -1.62,
+        -1.42,
+        0.0
+      ],
+      "yaw": 0.0,
+      "joint": null,
+      "geoms": [
+        {
+          "name": "base",
+          "kind": "mesh",
+          "material": "dark_trim",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            0.0,
+            0.07999998889863491
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/telescope__base.obj",
+          "bbox": [
+            [
+              -0.05000000074505806,
+              -0.05000000074505806,
+              0.0599999837577343
+            ],
+            [
+              0.05000000074505806,
+              0.05000000074505806,
+              0.09999999403953552
+            ]
+          ]
+        },
+        {
+          "name": "pole",
+          "kind": "mesh",
+          "material": "copper",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            0.0,
+            0.18000000715255737
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/telescope__pole.obj",
+          "bbox": [
+            [
+              -0.00800000037997961,
+              -0.00800000037997961,
+              0.10000000894069672
+            ],
+            [
+              0.00800000037997961,
+              0.00800000037997961,
+              0.26000000536441803
+            ]
+          ]
+        },
+        {
+          "name": "tube",
+          "kind": "mesh",
+          "material": "hull_white",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            0.0,
+            0.23999999463558197
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/telescope__tube.obj",
+          "bbox": [
+            [
+              -0.10444613727291419,
+              -0.02500000037252903,
+              0.1564277837047615
+            ],
+            [
+              0.10444613727291419,
+              0.02500000037252903,
+              0.3235722055664024
+            ]
+          ]
+        },
+        {
+          "name": "lens",
+          "kind": "mesh",
+          "material": "pod_glass",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0949999988079071,
+            0.0,
+            0.3059999942779541
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/telescope__lens.obj",
+          "bbox": [
+            [
+              0.07459852186105959,
+              -0.027000000700354576,
+              0.28044142942864203
+            ],
+            [
+              0.11540147575475462,
+              0.027000000700354576,
+              0.3315585591272662
+            ]
+          ]
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "debris_cloud_a",
+      "kind": "decor",
+      "role": null,
+      "parent": null,
+      "pos": [
+        -0.55,
+        0.5,
+        0.0
+      ],
+      "yaw": 0.0,
+      "joint": null,
+      "geoms": [
+        {
+          "name": "rock0",
+          "kind": "mesh",
+          "material": "debris_rust",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.015479478985071182,
+            0.0014738857965750363,
+            0.34347666606549776
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/debris_cloud_a__rock0.obj",
+          "bbox": [
+            [
+              -0.057800162583589554,
+              -0.0478647000769481,
+              0.24760244456757796
+            ],
+            [
+              0.08875912055373192,
+              0.05081247167009817,
+              0.43935088756341756
+            ]
+          ]
+        },
+        {
+          "name": "rock1",
+          "kind": "mesh",
+          "material": "debris_rust",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            -0.09976701951291878,
+            0.057888253710985035,
+            0.5009145921902558
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/debris_cloud_a__rock1.obj",
+          "bbox": [
+            [
+              -0.15447757892103942,
+              0.018273463974526172,
+              0.4545564994425064
+            ],
+            [
+              -0.04505646010479812,
+              0.0975030434474439,
+              0.5472726849380052
+            ]
+          ]
+        },
+        {
+          "name": "rock2",
+          "kind": "mesh",
+          "material": "debris_rust",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.09448621035593968,
+            -0.07467349080950755,
+            0.6156795719510136
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/debris_cloud_a__rock2.obj",
+          "bbox": [
+            [
+              0.04569110137167924,
+              -0.11502740394857056,
+              0.5719997764611163
+            ],
+            [
+              0.1432813193402001,
+              -0.03431957767044455,
+              0.659359367440911
+            ]
+          ]
+        },
+        {
+          "name": "rock3",
+          "kind": "mesh",
+          "material": "debris_rust",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            -0.04696037210529854,
+            -0.04195371651990032,
+            0.7508067540700276
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/debris_cloud_a__rock3.obj",
+          "bbox": [
+            [
+              -0.08342544796457785,
+              -0.07518474221221622,
+              0.7162712970356205
+            ],
+            [
+              -0.010495296246019234,
+              -0.008722690827584423,
+              0.7853422111044346
+            ]
+          ]
+        },
+        {
+          "name": "shard",
+          "kind": "mesh",
+          "material": "hull_white",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.05999999866588471,
+            0.07999999821186066,
+            0.41999998688697815
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/debris_cloud_a__shard.obj",
+          "bbox": [
+            [
+              -0.03246300094261075,
+              0.053203435615670536,
+              0.3368182826764426
+            ],
+            [
+              0.15246299827438017,
+              0.10679656080805078,
+              0.5031816910975138
+            ]
+          ]
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "debris_cloud_b",
+      "kind": "decor",
+      "role": null,
+      "parent": null,
+      "pos": [
+        0.45,
+        -1.1,
+        0.0
+      ],
+      "yaw": 0.0,
+      "joint": null,
+      "geoms": [
+        {
+          "name": "rock0",
+          "kind": "mesh",
+          "material": "debris_rust",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            -0.0040126749252769045,
+            0.02505155788002633,
+            0.29495569318532944
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/debris_cloud_b__rock0.obj",
+          "bbox": [
+            [
+              -0.06503838925959604,
+              -0.027872173154537716,
+              0.22025588154792786
+            ],
+            [
+              0.05701303940904223,
+              0.07797528891459038,
+              0.369655504822731
+            ]
+          ]
+        },
+        {
+          "name": "rock1",
+          "kind": "mesh",
+          "material": "debris_rust",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0857716388787913,
+            -0.05322672565598315,
+            0.44384013875168327
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/debris_cloud_b__rock1.obj",
+          "bbox": [
+            [
+              0.04477506177108108,
+              -0.08962194658392855,
+              0.39376744501890243
+            ],
+            [
+              0.1267682159865015,
+              -0.016831504728037752,
+              0.49391283248446405
+            ]
+          ]
+        },
+        {
+          "name": "rock2",
+          "kind": "mesh",
+          "material": "debris_rust",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            -0.06804108735082873,
+            0.05231993854089488,
+            0.5516612820931137
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/debris_cloud_b__rock2.obj",
+          "bbox": [
+            [
+              -0.10220921535403643,
+              0.0262279580410891,
+              0.5032982553491746
+            ],
+            [
+              -0.03387295934762102,
+              0.07841191904070066,
+              0.6000243088370527
+            ]
+          ]
+        },
+        {
+          "name": "shard",
+          "kind": "mesh",
+          "material": "warn_orange",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            -0.050000000645949255,
+            -0.0599999985688672,
+            0.3799999952316284
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/debris_cloud_b__shard.obj",
+          "bbox": [
+            [
+              -0.11473188130613676,
+              -0.10524484305857956,
+              0.3269613475736656
+            ],
+            [
+              0.014731880014238252,
+              -0.014755154079154842,
+              0.43303864288959126
+            ]
+          ]
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "airlock_sign",
+      "kind": "decor",
+      "role": null,
+      "parent": null,
+      "pos": [
+        0.875,
+        1.05,
+        0.0
+      ],
+      "yaw": 0.0,
+      "joint": null,
+      "geoms": [
+        {
+          "name": "letters",
+          "kind": "mesh",
+          "material": "sign_glow",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            -7.308546849313369e-10,
+            2.7496367692947388e-05,
+            0.2787549913628027
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/airlock_sign__letters.obj",
+          "bbox": [
+            [
+              -0.004000006697960198,
+              -0.1153900029023541,
+              0.25950499024452733
+            ],
+            [
+              0.004000005236250828,
+              0.11544499563774,
+              0.29800499248107803
+            ]
+          ]
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "guide_0",
+      "kind": "decor",
+      "role": null,
+      "parent": null,
+      "pos": [
+        0.05,
+        0.45,
+        0.0
+      ],
+      "yaw": 0.0,
+      "joint": null,
+      "geoms": [
+        {
+          "name": "s",
+          "kind": "mesh",
+          "material": "screen_glow",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            0.0,
+            0.004000000189989805
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/guide_0__s.obj",
+          "bbox": [
+            [
+              -0.20000000298023224,
+              -0.014999999664723873,
+              0.0
+            ],
+            [
+              0.20000000298023224,
+              0.014999999664723873,
+              0.00800000037997961
+            ]
+          ]
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "guide_1",
+      "kind": "decor",
+      "role": null,
+      "parent": null,
+      "pos": [
+        0.55,
+        0.45,
+        0.0
+      ],
+      "yaw": 0.0,
+      "joint": null,
+      "geoms": [
+        {
+          "name": "s",
+          "kind": "mesh",
+          "material": "screen_glow",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            0.0,
+            0.004000000189989805
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/guide_1__s.obj",
+          "bbox": [
+            [
+              -0.20000000298023224,
+              -0.014999999664723873,
+              0.0
+            ],
+            [
+              0.20000000298023224,
+              0.014999999664723873,
+              0.00800000037997961
+            ]
+          ]
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "cargo_canister",
+      "kind": "object",
+      "role": "crate",
+      "parent": null,
+      "pos": [
+        0.2,
+        0.7,
+        0.045
+      ],
+      "yaw": 0.0,
+      "joint": null,
+      "geoms": [
+        {
+          "kind": "box",
+          "size": [
+            0.05,
+            0.05,
+            0.045
+          ],
+          "name": "box",
+          "pos": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "hull_white",
+          "collision": true
+        }
+      ],
+      "mass": 0.05,
+      "spawn": {
+        "jitter": [
+          0.04,
+          0.04
+        ],
+        "yaw_jitter": 0.3490658503988659
+      }
+    }
+  ],
+  "zones": [
+    {
+      "name": "debris_alpha",
+      "center": [
+        -0.55,
+        0.5
+      ],
+      "radius": 0.2,
+      "kind": "hazard",
+      "color": [
+        1.0,
+        0.5,
+        0.1
+      ],
+      "label": "the drifting debris cloud"
+    },
+    {
+      "name": "debris_beta",
+      "center": [
+        0.45,
+        -1.1
+      ],
+      "radius": 0.18,
+      "kind": "hazard",
+      "color": [
+        1.0,
+        0.4,
+        0.1
+      ],
+      "label": "the tumbling scrap field"
+    },
+    {
+      "name": "airlock",
+      "center": [
+        1.3,
+        0.6
+      ],
+      "radius": 0.25,
+      "kind": "goal",
+      "color": [
+        0.2,
+        0.9,
+        0.9
+      ],
+      "label": "the airlock chamber"
+    },
+    {
+      "name": "console_spot",
+      "center": [
+        -0.95,
+        1.05
+      ],
+      "radius": 0.18,
+      "kind": "goal",
+      "color": [
+        0.2,
+        0.6,
+        1.0
+      ],
+      "label": "the blue marker by the nav console"
+    },
+    {
+      "name": "obs_deck",
+      "center": [
+        -1.35,
+        -1.15
+      ],
+      "radius": 0.2,
+      "kind": "goal",
+      "color": [
+        0.95,
+        0.8,
+        0.15
+      ],
+      "label": "the yellow observation deck"
+    },
+    {
+      "name": "dock_pad",
+      "center": [
+        0.2,
+        1.3
+      ],
+      "radius": 0.2,
+      "kind": "goal",
+      "color": [
+        0.3,
+        0.9,
+        0.3
+      ],
+      "label": "the green cargo docking pad"
+    },
+    {
+      "name": "greenhouse",
+      "center": [
+        1.3,
+        -1.0
+      ],
+      "radius": 0.22,
+      "kind": "goal",
+      "color": [
+        0.4,
+        0.95,
+        0.4
+      ],
+      "label": "the hydroponics bay"
+    }
+  ],
+  "plates": [
+    {
+      "name": "airlock_plate",
+      "center": [
+        -0.55,
+        1.2
+      ],
+      "size": 0.2,
+      "yaw": 0.0,
+      "opens": "airlock_gate"
+    }
+  ],
+  "gates": {
+    "airlock_gate": {
+      "part": "airlock_gate",
+      "frame": "airlock_gate_frame",
+      "center": [
+        0.9,
+        0.5
+      ],
+      "width": 0.42,
+      "yaw": 0.0,
+      "travel": 0.31,
+      "height": 0.24
+    }
+  },
+  "tasks": [
+    {
+      "name": "cross_the_coolant",
+      "kind": "goto",
+      "start": [
+        0.55,
+        -0.5,
+        2.356194490192345
+      ],
+      "start_jitter": [
+        0.08,
+        0.08,
+        0.4363323129985824
+      ],
+      "avoid": [
+        "debris_alpha",
+        "debris_beta"
+      ],
+      "instruction": "Cross the glowing blue coolant spill nice and slow, then stop on the blue marker in front of the navigation console.",
+      "paraphrases": [
+        "Walk over the slippery glowing spill to the blue marker by the nav console.",
+        "Get across the coolant slick and stop at the console's blue marker.",
+        "Carefully waddle over the shiny blue puddle to the navigation console."
+      ],
+      "goal": "console_spot"
+    },
+    {
+      "name": "up_to_the_stars",
+      "kind": "goto",
+      "start": [
+        0.3,
+        -0.2,
+        3.2288591161895095
+      ],
+      "start_jitter": [
+        0.08,
+        0.08,
+        0.4363323129985824
+      ],
+      "avoid": [
+        "debris_alpha",
+        "debris_beta"
+      ],
+      "instruction": "Climb the yellow ramp onto the raised observation deck in the far corner.",
+      "paraphrases": [
+        "Walk up the yellow ramp and stand on the observation platform.",
+        "Go up onto the corner deck by the little telescope."
+      ],
+      "goal": "obs_deck"
+    },
+    {
+      "name": "cycle_the_airlock",
+      "kind": "gate",
+      "start": [
+        -1.0,
+        0.7,
+        0.7853981633974483
+      ],
+      "start_jitter": [
+        0.08,
+        0.08,
+        0.4363323129985824
+      ],
+      "avoid": [
+        "debris_alpha"
+      ],
+      "instruction": "Step on the orange pressure plate under the porthole to open the airlock gate, then walk through the doorway into the airlock chamber.",
+      "paraphrases": [
+        "Press the orange floor plate to open the white gate, then go into the airlock.",
+        "Stand on the orange plate by the wall and go through the gate it opens.",
+        "Open the airlock with the orange plate and walk inside."
+      ],
+      "plate": "airlock_plate",
+      "gate": "airlock_gate",
+      "goal": "airlock"
+    },
+    {
+      "name": "dock_the_cargo",
+      "kind": "push",
+      "start": [
+        0.3,
+        0.15,
+        1.5707963267948966
+      ],
+      "start_jitter": [
+        0.08,
+        0.08,
+        0.4363323129985824
+      ],
+      "avoid": [
+        "debris_alpha",
+        "debris_beta"
+      ],
+      "instruction": "Shove the white cargo canister straight ahead onto the green docking pad.",
+      "paraphrases": [
+        "Push the white canister forward onto the green pad.",
+        "Nudge the cargo canister up to the green docking marker.",
+        "Slide the white crate onto the green pad by the wall."
+      ],
+      "object": "cargo_canister",
+      "goal": "dock_pad"
+    },
+    {
+      "name": "morning_patrol",
+      "kind": "visit",
+      "start": [
+        0.4,
+        0.2,
+        5.410520681182422
+      ],
+      "start_jitter": [
+        0.08,
+        0.08,
+        0.4363323129985824
+      ],
+      "avoid": [
+        "debris_alpha",
+        "debris_beta"
+      ],
+      "instruction": "Do your rounds: check the green hydroponics bay through the doorway, then the blue marker at the nav console, and finish up on the yellow observation deck.",
+      "paraphrases": [
+        "Visit the hydroponics bay, then the nav console, then climb to the observation deck.",
+        "Patrol to the plant room first, then the console marker, then up the yellow ramp.",
+        "Check the greenhouse, then the console, then end on the deck."
+      ],
+      "goals": [
+        "greenhouse",
+        "console_spot",
+        "obs_deck"
+      ]
+    },
+    {
+      "name": "thread_the_debris",
+      "kind": "goto",
+      "start": [
+        -1.1,
+        0.2,
+        5.846852994181004
+      ],
+      "start_jitter": [
+        0.08,
+        0.08,
+        0.4363323129985824
+      ],
+      "avoid": [
+        "debris_alpha",
+        "debris_beta"
+      ],
+      "instruction": "Cross the module to the hydroponics bay, keeping well clear of both drifting debris fields.",
+      "paraphrases": [
+        "Get to the green plant bay without straying into the floating junk.",
+        "Walk to the hydroponics doorway, steering around the debris clouds.",
+        "Head to the plant shelves past the wall, dodging the tumbling scrap."
+      ],
+      "goal": "greenhouse"
+    }
+  ],
+  "format": "robo_worlds.duck/1",
+  "designer_llm": "moonshotai/Kimi-K3",
+  "gate": {
+    "baseline": {
+      "cross_the_coolant": {
+        "rate": 0.3333333333333333,
+        "failures": [
+          "entered hazard debris_alpha",
+          "entered hazard debris_alpha"
+        ],
+        "max_phase": 1
+      },
+      "up_to_the_stars": {
+        "rate": 0.0,
+        "failures": [
+          "fell",
+          "timeout",
+          "fell"
+        ],
+        "max_phase": 0
+      },
+      "cycle_the_airlock": {
+        "rate": 1.0,
+        "failures": [],
+        "max_phase": 2
+      },
+      "dock_the_cargo": {
+        "rate": 1.0,
+        "failures": [],
+        "max_phase": 1
+      },
+      "morning_patrol": {
+        "rate": 0.0,
+        "failures": [
+          "entered hazard debris_alpha",
+          "timeout",
+          "fell"
+        ],
+        "max_phase": 2
+      },
+      "thread_the_debris": {
+        "rate": 0.6666666666666666,
+        "failures": [
+          "timeout"
+        ],
+        "max_phase": 1
+      }
+    },
+    "notes": {
+      "head_brightness": 90.48322627314815
+    }
+  }
+}

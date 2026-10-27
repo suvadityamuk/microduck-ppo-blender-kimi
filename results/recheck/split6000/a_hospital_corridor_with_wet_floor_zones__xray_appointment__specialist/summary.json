@@ -1,0 +1,13 @@
+{
+  "specialist": {
+    "xray_appointment": {
+      "success": 0.62,
+      "episodes": 100,
+      "failures": {
+        "timeout": 38
+      },
+      "mean_time": 26.15903225806411
+    },
+    "_mean_success": 0.62
+  }
+}

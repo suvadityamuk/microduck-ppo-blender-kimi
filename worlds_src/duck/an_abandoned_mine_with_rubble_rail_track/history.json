@@ -1,0 +1,88 @@
+[
+  {
+    "round": 0,
+    "attempt": 0,
+    "build": {
+      "ok": false,
+      "kind": "design",
+      "error": "body 'timber_frame' already has a geom named 'post'"
+    }
+  },
+  {
+    "round": 0,
+    "attempt": 1,
+    "build": {
+      "ok": false,
+      "kind": "design",
+      "error": "body 'barrel_a' already has a geom named 'band'"
+    }
+  },
+  {
+    "round": 0,
+    "attempt": 2,
+    "build": {
+      "ok": true,
+      "kind": null,
+      "error": null
+    }
+  },
+  {
+    "round": 0,
+    "gate": {
+      "ok": true,
+      "passing": [
+        "ride_the_lift",
+        "ore_to_bay",
+        "seep_crossing",
+        "shaft_watch"
+      ],
+      "feedback": "task 'dock_shift': goal 'dock': no walkable path from (0.00, -1.20) to (-1.25, 1.00) for a robot 0.2 m wide (blocked by walls, edges taller than 2.5 cm, closed gates or hazards); open a passage at least 0.35 m wide, add a ramp, or move the goal\ntask 'inspection_round': visit 'dock': no walkable path from (0.90, 1.15) to (-1.25, 1.00) for a robot 0.2 m wide (blocked by walls, edges taller than 2.5 cm, closed gates or hazards); open a passage at least 0.35 m wide, add a ramp, or move the goal\ntask 'inspection_round': visit 'cart_bay': no walkable path from (-1.25, 1.00) to (-0.35, -1.25) for a robot 0.2 m wide (blocked by walls, edges taller than 2.5 cm, closed gates or hazards); open a passage at least 0.35 m wide, add a ramp, or move the goal",
+      "notes": {
+        "head_brightness": 52.849157986111116
+      },
+      "baseline": {
+        "dock_shift": {
+          "rate": 0.0,
+          "failures": [
+            "timeout",
+            "timeout",
+            "timeout"
+          ],
+          "max_phase": 0
+        },
+        "ride_the_lift": {
+          "rate": 1.0,
+          "failures": [],
+          "max_phase": 2
+        },
+        "ore_to_bay": {
+          "rate": 1.0,
+          "failures": [],
+          "max_phase": 1
+        },
+        "inspection_round": {
+          "rate": 0.0,
+          "failures": [
+            "fell",
+            "fell",
+            "fell"
+          ],
+          "max_phase": 0
+        },
+        "seep_crossing": {
+          "rate": 0.3333333333333333,
+          "failures": [
+            "timeout",
+            "timeout"
+          ],
+          "max_phase": 1
+        },
+        "shaft_watch": {
+          "rate": 1.0,
+          "failures": [],
+          "max_phase": 1
+        }
+      }
+    }
+  }
+]

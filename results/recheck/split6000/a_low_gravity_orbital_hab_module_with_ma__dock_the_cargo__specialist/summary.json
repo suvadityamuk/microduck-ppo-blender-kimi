@@ -1,0 +1,15 @@
+{
+  "specialist": {
+    "dock_the_cargo": {
+      "success": 0.57,
+      "episodes": 100,
+      "failures": {
+        "fell": 26,
+        "entered": 14,
+        "timeout": 3
+      },
+      "mean_time": 11.421403508772002
+    },
+    "_mean_success": 0.57
+  }
+}

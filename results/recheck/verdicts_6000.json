@@ -1,0 +1,161 @@
+[
+ {
+  "world": "a_low_gravity_orbital_hab_module_with_ma",
+  "task": "dock_the_cargo",
+  "flag": "regressed",
+  "stock": 0.95,
+  "stock_n": 100,
+  "stock_fail": {
+   "timeout": 3,
+   "fell": 2
+  },
+  "specialist": 0.57,
+  "specialist_n": 100,
+  "specialist_fail": {
+   "fell": 26,
+   "entered": 14,
+   "timeout": 3
+  },
+  "diff": -0.38,
+  "se": 0.054,
+  "verdict": "persists"
+ },
+ {
+  "world": "a_circus_ring_with_a_sawdust_floor_a_tig",
+  "task": "grand_parade",
+  "flag": "regressed",
+  "stock": 0.42,
+  "stock_n": 100,
+  "stock_fail": {
+   "fell": 58
+  },
+  "specialist": 0.01,
+  "specialist_n": 100,
+  "specialist_fail": {
+   "fell": 99
+  },
+  "diff": -0.41,
+  "se": 0.05,
+  "verdict": "persists"
+ },
+ {
+  "world": "a_hospital_corridor_with_wet_floor_zones",
+  "task": "scrub_in",
+  "flag": "no gain",
+  "stock": 0.01,
+  "stock_n": 100,
+  "stock_fail": {
+   "fell": 93,
+   "entered": 6
+  },
+  "specialist": 0.02,
+  "specialist_n": 100,
+  "specialist_fail": {
+   "fell": 88,
+   "entered": 6,
+   "timeout": 4
+  },
+  "diff": 0.01,
+  "se": 0.017,
+  "verdict": "not reproduced"
+ },
+ {
+  "world": "a_hospital_corridor_with_wet_floor_zones",
+  "task": "nurse_rounds",
+  "flag": "no gain",
+  "stock": 0.0,
+  "stock_n": 100,
+  "stock_fail": {
+   "fell": 100
+  },
+  "specialist": 0.0,
+  "specialist_n": 100,
+  "specialist_fail": {
+   "fell": 75,
+   "entered": 25
+  },
+  "diff": 0.0,
+  "se": 0.0,
+  "verdict": "persists"
+ },
+ {
+  "world": "a_low_gravity_orbital_hab_module_with_ma",
+  "task": "morning_patrol",
+  "flag": "no gain",
+  "stock": 0.0,
+  "stock_n": 100,
+  "stock_fail": {
+   "fell": 57,
+   "entered": 16,
+   "timeout": 27
+  },
+  "specialist": 0.0,
+  "specialist_n": 100,
+  "specialist_fail": {
+   "fell": 97,
+   "timeout": 3
+  },
+  "diff": 0.0,
+  "se": 0.0,
+  "verdict": "persists"
+ },
+ {
+  "world": "a_frozen_lake_ice_fishing_village_where",
+  "task": "climb_the_lookout",
+  "flag": "no gain",
+  "stock": 0.0,
+  "stock_n": 100,
+  "stock_fail": {
+   "timeout": 100
+  },
+  "specialist": 0.0,
+  "specialist_n": 100,
+  "specialist_fail": {
+   "timeout": 96,
+   "fell": 4
+  },
+  "diff": 0.0,
+  "se": 0.0,
+  "verdict": "persists"
+ },
+ {
+  "world": "a_hospital_corridor_with_wet_floor_zones",
+  "task": "xray_appointment",
+  "flag": "dropped",
+  "stock": 0.01,
+  "stock_n": 100,
+  "stock_fail": {
+   "timeout": 99
+  },
+  "specialist": 0.62,
+  "specialist_n": 100,
+  "specialist_fail": {
+   "timeout": 38
+  },
+  "diff": 0.61,
+  "se": 0.05,
+  "verdict": "gain"
+ },
+ {
+  "world": "an_abandoned_mine_with_rubble_rail_track",
+  "task": "ore_to_bay",
+  "flag": "dropped",
+  "stock": 0.36,
+  "stock_n": 100,
+  "stock_fail": {
+   "fell": 28,
+   "timeout": 33,
+   "entered": 3
+  },
+  "specialist": 0.31,
+  "specialist_n": 100,
+  "specialist_fail": {
+   "fell": 50,
+   "timeout": 17,
+   "entered": 2
+  },
+  "diff": -0.05,
+  "se": 0.067,
+  "verdict": "no difference"
+ }
+]

@@ -1,0 +1,7 @@
+{
+  "world": "/code/worlds_duck/a_low_gravity_orbital_hab_module_with_ma",
+  "iters": 1500,
+  "num_envs": 4096,
+  "warm": "checkpoints_cache/duck/policies/velstand.onnx",
+  "seed": 1
+}

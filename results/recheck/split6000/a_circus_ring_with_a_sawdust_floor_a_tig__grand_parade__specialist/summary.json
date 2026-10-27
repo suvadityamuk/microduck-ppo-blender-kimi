@@ -1,0 +1,13 @@
+{
+  "specialist": {
+    "grand_parade": {
+      "success": 0.01,
+      "episodes": 100,
+      "failures": {
+        "fell": 99
+      },
+      "mean_time": 86.37999999999995
+    },
+    "_mean_success": 0.01
+  }
+}

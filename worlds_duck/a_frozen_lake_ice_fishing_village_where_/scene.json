@@ -1,0 +1,4266 @@
+{
+  "name": "a_frozen_lake_ice_fishing_village_where",
+  "description": "A frozen-lake ice-fishing village: red and blue huts on glare ice, dark fishing holes, a wooden dock with a lookout ramp, and a smokehouse yard behind a sluice gate.",
+  "theme": "a frozen-lake ice-fishing village where the robot crosses glare ice between huts",
+  "env": {
+    "sky": {
+      "top": [
+        0.32,
+        0.48,
+        0.7
+      ],
+      "bottom": [
+        0.88,
+        0.82,
+        0.72
+      ]
+    },
+    "light": {
+      "color": [
+        1.0,
+        0.86,
+        0.68
+      ],
+      "azimuth_deg": 210.0,
+      "elevation_deg": 34.0,
+      "ambient": 0.45
+    },
+    "floor": "snow",
+    "gravity": 9.81
+  },
+  "room": {
+    "size": [
+      3.6,
+      3.4
+    ],
+    "wall_height": 0.3
+  },
+  "materials": {
+    "blue_hut_boards": {
+      "name": "blue_hut_boards",
+      "rgba": [
+        0.15,
+        0.34,
+        0.6,
+        1.0
+      ],
+      "color2": [
+        0.09,
+        0.22,
+        0.42
+      ],
+      "pattern": "wood",
+      "texture": "textures/blue_hut_boards.png",
+      "roughness": 0.6,
+      "metallic": 0.0,
+      "emission": 0.0,
+      "friction": 1.0,
+      "surface": false
+    },
+    "brass": {
+      "name": "brass",
+      "rgba": [
+        0.86,
+        0.66,
+        0.28,
+        1.0
+      ],
+      "color2": [
+        0.6,
+        0.44,
+        0.16
+      ],
+      "pattern": "brushed",
+      "texture": "textures/brass.png",
+      "roughness": 0.35,
+      "metallic": 1.0,
+      "emission": 0.0,
+      "friction": 1.0,
+      "surface": false
+    },
+    "crate_pine": {
+      "name": "crate_pine",
+      "rgba": [
+        0.76,
+        0.6,
+        0.38,
+        1.0
+      ],
+      "color2": [
+        0.56,
+        0.42,
+        0.24
+      ],
+      "pattern": "wood",
+      "texture": "textures/crate_pine.png",
+      "roughness": 0.7,
+      "metallic": 0.0,
+      "emission": 0.0,
+      "friction": 0.7,
+      "surface": false
+    },
+    "dock_planks": {
+      "name": "dock_planks",
+      "rgba": [
+        0.6,
+        0.44,
+        0.27,
+        1.0
+      ],
+      "color2": [
+        0.42,
+        0.28,
+        0.14
+      ],
+      "pattern": "wood",
+      "texture": "textures/dock_planks.png",
+      "roughness": 0.7,
+      "metallic": 0.0,
+      "emission": 0.0,
+      "friction": 0.8,
+      "surface": true
+    },
+    "fish_silver": {
+      "name": "fish_silver",
+      "rgba": [
+        0.78,
+        0.82,
+        0.86,
+        1.0
+      ],
+      "color2": [
+        0.52,
+        0.56,
+        0.62
+      ],
+      "pattern": "brushed",
+      "texture": "textures/fish_silver.png",
+      "roughness": 0.35,
+      "metallic": 0.7,
+      "emission": 0.0,
+      "friction": 1.0,
+      "surface": false
+    },
+    "flag_red": {
+      "name": "flag_red",
+      "rgba": [
+        0.92,
+        0.1,
+        0.08,
+        1.0
+      ],
+      "color2": [
+        0.552,
+        0.06,
+        0.048
+      ],
+      "pattern": "flat",
+      "texture": null,
+      "roughness": 0.5,
+      "metallic": 0.0,
+      "emission": 0.0,
+      "friction": 1.0,
+      "surface": false
+    },
+    "glare_ice": {
+      "name": "glare_ice",
+      "rgba": [
+        0.58,
+        0.8,
+        0.93,
+        1.0
+      ],
+      "color2": [
+        0.88,
+        0.96,
+        1.0
+      ],
+      "pattern": "marble",
+      "texture": "textures/glare_ice.png",
+      "roughness": 0.04,
+      "metallic": 0.0,
+      "emission": 0.0,
+      "friction": 0.08,
+      "surface": true
+    },
+    "grit_path": {
+      "name": "grit_path",
+      "rgba": [
+        0.7,
+        0.68,
+        0.62,
+        1.0
+      ],
+      "color2": [
+        0.5,
+        0.47,
+        0.4
+      ],
+      "pattern": "concrete",
+      "texture": "textures/grit_path.png",
+      "roughness": 0.9,
+      "metallic": 0.0,
+      "emission": 0.0,
+      "friction": 1.5,
+      "surface": true
+    },
+    "ochre_hut_boards": {
+      "name": "ochre_hut_boards",
+      "rgba": [
+        0.84,
+        0.58,
+        0.16,
+        1.0
+      ],
+      "color2": [
+        0.62,
+        0.4,
+        0.09
+      ],
+      "pattern": "wood",
+      "texture": "textures/ochre_hut_boards.png",
+      "roughness": 0.6,
+      "metallic": 0.0,
+      "emission": 0.0,
+      "friction": 1.0,
+      "surface": false
+    },
+    "packed_snowball": {
+      "name": "packed_snowball",
+      "rgba": [
+        0.95,
+        0.97,
+        1.0,
+        1.0
+      ],
+      "color2": [
+        0.85,
+        0.89,
+        0.96
+      ],
+      "pattern": "noise",
+      "texture": "textures/packed_snowball.png",
+      "roughness": 0.55,
+      "metallic": 0.0,
+      "emission": 0.0,
+      "friction": 0.5,
+      "surface": false
+    },
+    "red_hut_boards": {
+      "name": "red_hut_boards",
+      "rgba": [
+        0.7,
+        0.13,
+        0.09,
+        1.0
+      ],
+      "color2": [
+        0.5,
+        0.08,
+        0.05
+      ],
+      "pattern": "wood",
+      "texture": "textures/red_hut_boards.png",
+      "roughness": 0.6,
+      "metallic": 0.0,
+      "emission": 0.0,
+      "friction": 1.0,
+      "surface": false
+    },
+    "roof_shingles": {
+      "name": "roof_shingles",
+      "rgba": [
+        0.22,
+        0.24,
+        0.28,
+        1.0
+      ],
+      "color2": [
+        0.12,
+        0.13,
+        0.16
+      ],
+      "pattern": "tiles",
+      "texture": "textures/roof_shingles.png",
+      "roughness": 0.8,
+      "metallic": 0.0,
+      "emission": 0.0,
+      "friction": 1.0,
+      "surface": false
+    },
+    "snow": {
+      "name": "snow",
+      "rgba": [
+        0.9,
+        0.93,
+        0.98,
+        1.0
+      ],
+      "color2": [
+        0.76,
+        0.83,
+        0.94
+      ],
+      "pattern": "noise",
+      "texture": "textures/snow.png",
+      "roughness": 0.95,
+      "metallic": 0.0,
+      "emission": 0.0,
+      "friction": 1.1,
+      "surface": true
+    },
+    "snow_banks": {
+      "name": "snow_banks",
+      "rgba": [
+        0.87,
+        0.91,
+        0.97,
+        1.0
+      ],
+      "color2": [
+        0.7,
+        0.78,
+        0.9
+      ],
+      "pattern": "noise",
+      "texture": "textures/snow_banks.png",
+      "roughness": 0.95,
+      "metallic": 0.0,
+      "emission": 0.0,
+      "friction": 1.0,
+      "surface": true
+    },
+    "stovepipe_steel": {
+      "name": "stovepipe_steel",
+      "rgba": [
+        0.3,
+        0.32,
+        0.36,
+        1.0
+      ],
+      "color2": [
+        0.18,
+        0.19,
+        0.22
+      ],
+      "pattern": "brushed",
+      "texture": "textures/stovepipe_steel.png",
+      "roughness": 0.4,
+      "metallic": 0.9,
+      "emission": 0.0,
+      "friction": 1.0,
+      "surface": false
+    },
+    "tarred_boards": {
+      "name": "tarred_boards",
+      "rgba": [
+        0.14,
+        0.12,
+        0.1,
+        1.0
+      ],
+      "color2": [
+        0.06,
+        0.05,
+        0.05
+      ],
+      "pattern": "wood",
+      "texture": "textures/tarred_boards.png",
+      "roughness": 0.85,
+      "metallic": 0.0,
+      "emission": 0.0,
+      "friction": 1.0,
+      "surface": false
+    },
+    "warm_lamplight": {
+      "name": "warm_lamplight",
+      "rgba": [
+        1.0,
+        0.72,
+        0.3,
+        1.0
+      ],
+      "color2": [
+        0.6,
+        0.432,
+        0.18
+      ],
+      "pattern": "flat",
+      "texture": null,
+      "roughness": 0.3,
+      "metallic": 0.0,
+      "emission": 0.9,
+      "friction": 1.0,
+      "surface": false
+    }
+  },
+  "bodies": [
+    {
+      "name": "room_walls",
+      "kind": "fixture",
+      "role": "wall",
+      "parent": null,
+      "pos": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "yaw": 0.0,
+      "joint": null,
+      "geoms": [
+        {
+          "kind": "box",
+          "size": [
+            1.86,
+            0.03,
+            0.15
+          ],
+          "name": "north",
+          "pos": [
+            0.0,
+            1.73,
+            0.15
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "snow_banks",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            1.86,
+            0.03,
+            0.15
+          ],
+          "name": "south",
+          "pos": [
+            0.0,
+            -1.73,
+            0.15
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "snow_banks",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.03,
+            1.7,
+            0.15
+          ],
+          "name": "east",
+          "pos": [
+            1.83,
+            0.0,
+            0.15
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "snow_banks",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.03,
+            1.7,
+            0.15
+          ],
+          "name": "west",
+          "pos": [
+            -1.83,
+            0.0,
+            0.15
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "snow_banks",
+          "collision": true
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "glare_ice_sheet",
+      "kind": "fixture",
+      "role": "patch",
+      "parent": null,
+      "pos": [
+        0.05,
+        0.0,
+        0.0
+      ],
+      "yaw": 0.0,
+      "joint": null,
+      "geoms": [
+        {
+          "kind": "box",
+          "size": [
+            1.25,
+            0.95,
+            0.001
+          ],
+          "name": "surface",
+          "pos": [
+            0.0,
+            0.0,
+            0.001
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "glare_ice",
+          "collision": true
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "dock_boards",
+      "kind": "fixture",
+      "role": "patch",
+      "parent": null,
+      "pos": [
+        0.0,
+        -1.42,
+        0.0
+      ],
+      "yaw": 0.0,
+      "joint": null,
+      "geoms": [
+        {
+          "kind": "box",
+          "size": [
+            1.8,
+            0.28,
+            0.001
+          ],
+          "name": "surface",
+          "pos": [
+            0.0,
+            0.0,
+            0.001
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "dock_planks",
+          "collision": true
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "grit_path_east",
+      "kind": "fixture",
+      "role": "patch",
+      "parent": null,
+      "pos": [
+        1.55,
+        -0.02,
+        0.0
+      ],
+      "yaw": 0.0,
+      "joint": null,
+      "geoms": [
+        {
+          "kind": "box",
+          "size": [
+            0.25,
+            1.12,
+            0.001
+          ],
+          "name": "surface",
+          "pos": [
+            0.0,
+            0.0,
+            0.001
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "grit_path",
+          "collision": true
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "grit_path_west",
+      "kind": "fixture",
+      "role": "patch",
+      "parent": null,
+      "pos": [
+        -1.55,
+        -0.295,
+        0.0
+      ],
+      "yaw": 0.0,
+      "joint": null,
+      "geoms": [
+        {
+          "kind": "box",
+          "size": [
+            0.25,
+            0.845,
+            0.001
+          ],
+          "name": "surface",
+          "pos": [
+            0.0,
+            0.0,
+            0.001
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "grit_path",
+          "collision": true
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "smoke_fence_east",
+      "kind": "fixture",
+      "role": "wall",
+      "parent": null,
+      "pos": [
+        -1.15,
+        1.7,
+        0.0
+      ],
+      "yaw": -1.5707963267948966,
+      "joint": null,
+      "geoms": [
+        {
+          "kind": "box",
+          "size": [
+            0.0625,
+            0.02,
+            0.15
+          ],
+          "name": "seg0",
+          "pos": [
+            0.0625,
+            0.0,
+            0.15
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "dock_planks",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.062499999999999944,
+            0.02,
+            0.15
+          ],
+          "name": "seg1",
+          "pos": [
+            0.5874999999999999,
+            0.0,
+            0.15
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "dock_planks",
+          "collision": true
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "smoke_fence_south",
+      "kind": "fixture",
+      "role": "wall",
+      "parent": null,
+      "pos": [
+        -1.8,
+        1.05,
+        0.0
+      ],
+      "yaw": 0.0,
+      "joint": null,
+      "geoms": [
+        {
+          "kind": "box",
+          "size": [
+            0.32500000000000007,
+            0.02,
+            0.15
+          ],
+          "name": "seg0",
+          "pos": [
+            0.32500000000000007,
+            0.0,
+            0.15
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "dock_planks",
+          "collision": true
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "smoke_gate_frame",
+      "kind": "fixture",
+      "role": "gate_frame",
+      "parent": null,
+      "pos": [
+        -1.15,
+        1.375,
+        0.0
+      ],
+      "yaw": 0.0,
+      "joint": null,
+      "geoms": [
+        {
+          "kind": "box",
+          "size": [
+            0.025,
+            0.02,
+            0.28500000000000003
+          ],
+          "name": "postl",
+          "pos": [
+            0.0,
+            -0.22,
+            0.28500000000000003
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "brass",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.025,
+            0.02,
+            0.28500000000000003
+          ],
+          "name": "postr",
+          "pos": [
+            0.0,
+            0.22,
+            0.28500000000000003
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "brass",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.025,
+            0.24000000000000002,
+            0.02
+          ],
+          "name": "lintel",
+          "pos": [
+            0.0,
+            0.0,
+            0.5900000000000001
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "brass",
+          "collision": true
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "smoke_gate",
+      "kind": "part",
+      "role": "gate",
+      "parent": "smoke_gate_frame",
+      "pos": [
+        0.0,
+        0.0,
+        0.003
+      ],
+      "yaw": 0.0,
+      "joint": {
+        "type": "slide",
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "range": [
+          0.0,
+          0.31
+        ],
+        "damping": 5.0,
+        "stiffness": 0.0,
+        "frictionloss": 0.0,
+        "springref": 0.0
+      },
+      "geoms": [
+        {
+          "kind": "box",
+          "size": [
+            0.0125,
+            0.2,
+            0.12
+          ],
+          "name": "panel",
+          "pos": [
+            0.0,
+            0.0,
+            0.12
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "tarred_boards",
+          "collision": true
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "smoke_plate",
+      "kind": "fixture",
+      "role": "plate",
+      "parent": null,
+      "pos": [
+        -0.88,
+        1.32,
+        0.0
+      ],
+      "yaw": 0.0,
+      "joint": null,
+      "geoms": [
+        {
+          "kind": "box",
+          "size": [
+            0.1,
+            0.1,
+            0.003
+          ],
+          "name": "pad",
+          "pos": [
+            0.0,
+            0.0,
+            0.003
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "brass",
+          "collision": true
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "lookout_platform",
+      "kind": "fixture",
+      "role": "platform",
+      "parent": null,
+      "pos": [
+        -1.45,
+        -1.42,
+        0.0
+      ],
+      "yaw": 0.0,
+      "joint": null,
+      "geoms": [
+        {
+          "kind": "box",
+          "size": [
+            0.3,
+            0.25,
+            0.025
+          ],
+          "name": "deck",
+          "pos": [
+            0.0,
+            0.0,
+            0.025
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "dock_planks",
+          "collision": true
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "lookout_ramp",
+      "kind": "fixture",
+      "role": "ramp",
+      "parent": null,
+      "pos": [
+        -0.9,
+        -1.42,
+        0.0
+      ],
+      "yaw": 3.141592653589793,
+      "joint": null,
+      "geoms": [
+        {
+          "name": "wedge",
+          "kind": "mesh",
+          "material": "dock_planks",
+          "collision": true,
+          "uv_scale": 0.4,
+          "pos": [
+            0.125,
+            0.0,
+            0.02500000037252903
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/lookout_ramp__wedge.obj",
+          "bbox": [
+            [
+              0.0,
+              -0.20000000298023224,
+              0.0
+            ],
+            [
+              0.25,
+              0.20000000298023224,
+              0.05000000074505806
+            ]
+          ]
+        }
+      ],
+      "mass": null,
+      "spawn": null,
+      "ramp": {
+        "start": [
+          -0.9,
+          -1.42
+        ],
+        "end": [
+          -1.15,
+          -1.42
+        ],
+        "width": 0.4,
+        "rise": 0.05
+      }
+    },
+    {
+      "name": "snow_lumps",
+      "kind": "fixture",
+      "role": "bumps",
+      "parent": null,
+      "pos": [
+        0.0,
+        1.58,
+        0.0
+      ],
+      "yaw": 0.0,
+      "joint": null,
+      "geoms": [
+        {
+          "kind": "box",
+          "size": [
+            0.01885710608307599,
+            0.037467503809805174,
+            0.004326293102018101
+          ],
+          "name": "b0",
+          "pos": [
+            -0.8483597849304998,
+            -0.07041478308450881,
+            0.004326293102018101
+          ],
+          "quat": [
+            0.1125270277261734,
+            0.0,
+            0.0,
+            0.9936486482620239
+          ],
+          "material": "snow",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.017112617284625903,
+            0.02083982772296841,
+            0.005782979503825455
+          ],
+          "name": "b1",
+          "pos": [
+            0.2193904670334891,
+            -0.026201375254041804,
+            0.005782979503825455
+          ],
+          "quat": [
+            0.6943431496620178,
+            0.0,
+            0.0,
+            0.7196440696716309
+          ],
+          "material": "snow",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.03488528857550398,
+            0.027388896709250817,
+            0.0023794659060412124
+          ],
+          "name": "b2",
+          "pos": [
+            0.5184712701071854,
+            0.03407211682049676,
+            0.0023794659060412124
+          ],
+          "quat": [
+            0.6932206153869629,
+            0.0,
+            0.0,
+            0.7207254767417908
+          ],
+          "material": "snow",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.039502093079089744,
+            0.039708387099151185,
+            0.005919837285048682
+          ],
+          "name": "b3",
+          "pos": [
+            -0.5318829696059192,
+            0.010746072573045563,
+            0.005919837285048682
+          ],
+          "quat": [
+            0.7250592112541199,
+            0.0,
+            0.0,
+            0.6886864900588989
+          ],
+          "material": "snow",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.025598245651813442,
+            0.04162178867770695,
+            0.002788265173003838
+          ],
+          "name": "b4",
+          "pos": [
+            0.5439648308012702,
+            0.07346671036848294,
+            0.002788265173003838
+          ],
+          "quat": [
+            0.9796160459518433,
+            0.0,
+            0.0,
+            0.2008790820837021
+          ],
+          "material": "snow",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.029012196202148132,
+            0.027471520164016695,
+            0.0021490913904880183
+          ],
+          "name": "b5",
+          "pos": [
+            0.7126997548506616,
+            -0.014010261590432928,
+            0.0021490913904880183
+          ],
+          "quat": [
+            0.9732100963592529,
+            0.0,
+            0.0,
+            0.2299175262451172
+          ],
+          "material": "snow",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.03520087071827732,
+            0.024099721250461715,
+            0.005586010530490342
+          ],
+          "name": "b6",
+          "pos": [
+            -0.5091331366466493,
+            -0.09338506252451427,
+            0.005586010530490342
+          ],
+          "quat": [
+            0.9506825804710388,
+            0.0,
+            0.0,
+            0.31016552448272705
+          ],
+          "material": "snow",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.025372436212669186,
+            0.03610086735401181,
+            0.005605764223361355
+          ],
+          "name": "b7",
+          "pos": [
+            0.35524995972533596,
+            -0.03213586785151095,
+            0.005605764223361355
+          ],
+          "quat": [
+            0.9996486306190491,
+            0.0,
+            0.0,
+            0.026507562026381493
+          ],
+          "material": "snow",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.019794710823149427,
+            0.059839614399285174,
+            0.003730807115551375
+          ],
+          "name": "b8",
+          "pos": [
+            0.3438718493737667,
+            -0.0890663877196324,
+            0.003730807115551375
+          ],
+          "quat": [
+            0.9985699653625488,
+            0.0,
+            0.0,
+            0.05346055328845978
+          ],
+          "material": "snow",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.04037670319335172,
+            0.04145468733000872,
+            0.00309658092145916
+          ],
+          "name": "b9",
+          "pos": [
+            -0.3287220510935926,
+            -0.08215254911645026,
+            0.00309658092145916
+          ],
+          "quat": [
+            0.9634424448013306,
+            0.0,
+            0.0,
+            0.2679154872894287
+          ],
+          "material": "snow",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.01573758322395559,
+            0.05276061817677517,
+            0.0037584734282532935
+          ],
+          "name": "b10",
+          "pos": [
+            -0.6710347510946453,
+            0.04784937480673841,
+            0.0037584734282532935
+          ],
+          "quat": [
+            0.9531444311141968,
+            0.0,
+            0.0,
+            0.30251553654670715
+          ],
+          "material": "snow",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.016857607054453577,
+            0.041927644829581716,
+            0.005562182557313383
+          ],
+          "name": "b11",
+          "pos": [
+            -0.851501859507535,
+            0.06102719797833385,
+            0.005562182557313383
+          ],
+          "quat": [
+            0.9557144641876221,
+            0.0,
+            0.0,
+            0.2942955791950226
+          ],
+          "material": "snow",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.017787042649096415,
+            0.015808291604365025,
+            0.0030304952814507605
+          ],
+          "name": "b12",
+          "pos": [
+            0.40880113916745264,
+            -0.0013642097983766145,
+            0.0030304952814507605
+          ],
+          "quat": [
+            0.22898289561271667,
+            0.0,
+            0.0,
+            0.9734304547309875
+          ],
+          "material": "snow",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.021516339105644707,
+            0.029183223621454424,
+            0.0028841915777892708
+          ],
+          "name": "b13",
+          "pos": [
+            0.8609420471655905,
+            0.08820119893028698,
+            0.0028841915777892708
+          ],
+          "quat": [
+            0.8601928353309631,
+            0.0,
+            0.0,
+            0.5099688768386841
+          ],
+          "material": "snow",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.02808004510776993,
+            0.02914438329167338,
+            0.004935337452682724
+          ],
+          "name": "b14",
+          "pos": [
+            -0.8279764154042576,
+            -0.08651221338159479,
+            0.004935337452682724
+          ],
+          "quat": [
+            0.8052728772163391,
+            0.0,
+            0.0,
+            0.5929043889045715
+          ],
+          "material": "snow",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.02235282153342192,
+            0.053035124176555204,
+            0.0049155898051962185
+          ],
+          "name": "b15",
+          "pos": [
+            0.08242916854132214,
+            0.03229510286270012,
+            0.0049155898051962185
+          ],
+          "quat": [
+            0.4647628962993622,
+            0.0,
+            0.0,
+            0.885435163974762
+          ],
+          "material": "snow",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.03843164470195026,
+            0.05673761687020572,
+            0.002428887729908478
+          ],
+          "name": "b16",
+          "pos": [
+            0.2270342839416867,
+            -0.07127571137732898,
+            0.002428887729908478
+          ],
+          "quat": [
+            0.7673690319061279,
+            0.0,
+            0.0,
+            0.6412057280540466
+          ],
+          "material": "snow",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.038588543658711956,
+            0.05526140071587654,
+            0.004988758247323024
+          ],
+          "name": "b17",
+          "pos": [
+            -0.8362652326531314,
+            -0.02811758471324466,
+            0.004988758247323024
+          ],
+          "quat": [
+            0.9673779010772705,
+            0.0,
+            0.0,
+            0.2533378303050995
+          ],
+          "material": "snow",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.04496407462897205,
+            0.02148069109335168,
+            0.0028261206599552286
+          ],
+          "name": "b18",
+          "pos": [
+            -0.2570045169968514,
+            -0.08782265941816242,
+            0.0028261206599552286
+          ],
+          "quat": [
+            0.20219522714614868,
+            0.0,
+            0.0,
+            0.9793452620506287
+          ],
+          "material": "snow",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.034090842655893724,
+            0.022188670798128897,
+            0.0038927279423927106
+          ],
+          "name": "b19",
+          "pos": [
+            -0.7583944344570763,
+            0.022195957471979135,
+            0.0038927279423927106
+          ],
+          "quat": [
+            0.9345173835754395,
+            0.0,
+            0.0,
+            0.3559175729751587
+          ],
+          "material": "snow",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.016159167985942753,
+            0.020185687666225614,
+            0.0041321030150049285
+          ],
+          "name": "b20",
+          "pos": [
+            0.24656509972472787,
+            -0.03503987057316058,
+            0.0041321030150049285
+          ],
+          "quat": [
+            0.5312400460243225,
+            0.0,
+            0.0,
+            0.8472213745117188
+          ],
+          "material": "snow",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.02556198299725838,
+            0.020879655305560473,
+            0.003123883184078142
+          ],
+          "name": "b21",
+          "pos": [
+            -0.18851719274312487,
+            0.08252776694061897,
+            0.003123883184078142
+          ],
+          "quat": [
+            0.98354172706604,
+            0.0,
+            0.0,
+            0.18068107962608337
+          ],
+          "material": "snow",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.017584916717017604,
+            0.040267591218227074,
+            0.005846249711573269
+          ],
+          "name": "b22",
+          "pos": [
+            0.7330592272622272,
+            0.040048811556914976,
+            0.005846249711573269
+          ],
+          "quat": [
+            0.9945080876350403,
+            0.0,
+            0.0,
+            0.10465981066226959
+          ],
+          "material": "snow",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.039192042728426676,
+            0.04575186318219709,
+            0.002404507004853899
+          ],
+          "name": "b23",
+          "pos": [
+            -0.06310129315073161,
+            -0.09013546892409319,
+            0.002404507004853899
+          ],
+          "quat": [
+            0.3062131106853485,
+            0.0,
+            0.0,
+            0.9519630074501038
+          ],
+          "material": "snow",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.036559026515648484,
+            0.051208264496312376,
+            0.004993745690604744
+          ],
+          "name": "b24",
+          "pos": [
+            -0.41893636146714475,
+            0.057948102898702225,
+            0.004993745690604744
+          ],
+          "quat": [
+            0.9243772625923157,
+            0.0,
+            0.0,
+            0.38147953152656555
+          ],
+          "material": "snow",
+          "collision": true
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "red_ice_hut",
+      "kind": "fixture",
+      "role": null,
+      "parent": null,
+      "pos": [
+        -0.3,
+        1.38,
+        0.0
+      ],
+      "yaw": 0.0,
+      "joint": null,
+      "geoms": [
+        {
+          "kind": "box",
+          "size": [
+            0.25,
+            0.225,
+            0.17
+          ],
+          "name": "body",
+          "pos": [
+            0.0,
+            0.0,
+            0.17
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "red_hut_boards",
+          "collision": true
+        },
+        {
+          "name": "roof",
+          "kind": "mesh",
+          "material": "roof_shingles",
+          "collision": true,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            -3.715468044340753e-09,
+            0.4249999928868311
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/red_ice_hut__roof.obj",
+          "bbox": [
+            [
+              -0.30000001192092896,
+              -0.26499999312582134,
+              0.3399999804092441
+            ],
+            [
+              0.30000001192092896,
+              0.26499998569488525,
+              0.510000005364418
+            ]
+          ]
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.035,
+            0.275,
+            0.0125
+          ],
+          "name": "snow_ridge",
+          "pos": [
+            0.0,
+            0.0,
+            0.515
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "snow",
+          "collision": false
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.075,
+            0.0125,
+            0.11
+          ],
+          "name": "door",
+          "pos": [
+            -0.04,
+            -0.229,
+            0.11
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "tarred_boards",
+          "collision": false
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.055,
+            0.01,
+            0.05
+          ],
+          "name": "window",
+          "pos": [
+            0.14,
+            -0.228,
+            0.2
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "warm_lamplight",
+          "collision": false
+        },
+        {
+          "kind": "cylinder",
+          "size": [
+            0.018,
+            0.08
+          ],
+          "name": "stovepipe",
+          "pos": [
+            0.13,
+            0.08,
+            0.55
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "stovepipe_steel",
+          "collision": false
+        },
+        {
+          "kind": "cylinder",
+          "size": [
+            0.028,
+            0.0075
+          ],
+          "name": "pipe_cap",
+          "pos": [
+            0.13,
+            0.08,
+            0.635
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "stovepipe_steel",
+          "collision": false
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "blue_ice_hut",
+      "kind": "fixture",
+      "role": null,
+      "parent": null,
+      "pos": [
+        0.75,
+        1.35,
+        0.0
+      ],
+      "yaw": 0.0,
+      "joint": null,
+      "geoms": [
+        {
+          "kind": "box",
+          "size": [
+            0.275,
+            0.25,
+            0.19
+          ],
+          "name": "body",
+          "pos": [
+            0.0,
+            0.0,
+            0.19
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "blue_hut_boards",
+          "collision": true
+        },
+        {
+          "name": "roof",
+          "kind": "mesh",
+          "material": "roof_shingles",
+          "collision": true,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            -3.934025105678529e-09,
+            0.4699999861316049
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/blue_ice_hut__roof.obj",
+          "bbox": [
+            [
+              -0.3199999928474426,
+              -0.28999999952339994,
+              0.37999996987902396
+            ],
+            [
+              0.3199999928474426,
+              0.28999999165534973,
+              0.5600000023841858
+            ]
+          ]
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.035,
+            0.3,
+            0.0125
+          ],
+          "name": "snow_ridge",
+          "pos": [
+            0.0,
+            0.0,
+            0.5650000000000001
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "snow",
+          "collision": false
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.075,
+            0.0125,
+            0.11
+          ],
+          "name": "door",
+          "pos": [
+            -0.04,
+            -0.254,
+            0.11
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "tarred_boards",
+          "collision": false
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.055,
+            0.01,
+            0.05
+          ],
+          "name": "window",
+          "pos": [
+            0.14,
+            -0.253,
+            0.2
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "warm_lamplight",
+          "collision": false
+        },
+        {
+          "kind": "cylinder",
+          "size": [
+            0.018,
+            0.08
+          ],
+          "name": "stovepipe",
+          "pos": [
+            0.13,
+            0.08,
+            0.6000000000000001
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "stovepipe_steel",
+          "collision": false
+        },
+        {
+          "kind": "cylinder",
+          "size": [
+            0.028,
+            0.0075
+          ],
+          "name": "pipe_cap",
+          "pos": [
+            0.13,
+            0.08,
+            0.685
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "stovepipe_steel",
+          "collision": false
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "ochre_ice_hut",
+      "kind": "fixture",
+      "role": null,
+      "parent": null,
+      "pos": [
+        1.2,
+        -0.6,
+        0.0
+      ],
+      "yaw": 3.141592653589793,
+      "joint": null,
+      "geoms": [
+        {
+          "kind": "box",
+          "size": [
+            0.225,
+            0.21,
+            0.15
+          ],
+          "name": "body",
+          "pos": [
+            0.0,
+            0.0,
+            0.15
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "ochre_hut_boards",
+          "collision": true
+        },
+        {
+          "name": "roof",
+          "kind": "mesh",
+          "material": "roof_shingles",
+          "collision": true,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            -3.0597971933943313e-09,
+            0.37000000172821923
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/ochre_ice_hut__roof.obj",
+          "bbox": [
+            [
+              -0.25,
+              -0.24000000075517636,
+              0.29999999093946306
+            ],
+            [
+              0.25,
+              0.23999999463558197,
+              0.4400000125169754
+            ]
+          ]
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.035,
+            0.25,
+            0.0125
+          ],
+          "name": "snow_ridge",
+          "pos": [
+            0.0,
+            0.0,
+            0.445
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "snow",
+          "collision": false
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.075,
+            0.0125,
+            0.11
+          ],
+          "name": "door",
+          "pos": [
+            -0.04,
+            -0.214,
+            0.11
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "tarred_boards",
+          "collision": false
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.055,
+            0.01,
+            0.05
+          ],
+          "name": "window",
+          "pos": [
+            0.14,
+            -0.213,
+            0.2
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "warm_lamplight",
+          "collision": false
+        },
+        {
+          "kind": "cylinder",
+          "size": [
+            0.018,
+            0.08
+          ],
+          "name": "stovepipe",
+          "pos": [
+            0.13,
+            0.08,
+            0.48
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "stovepipe_steel",
+          "collision": false
+        },
+        {
+          "kind": "cylinder",
+          "size": [
+            0.028,
+            0.0075
+          ],
+          "name": "pipe_cap",
+          "pos": [
+            0.13,
+            0.08,
+            0.565
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "stovepipe_steel",
+          "collision": false
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "smokehouse",
+      "kind": "fixture",
+      "role": null,
+      "parent": null,
+      "pos": [
+        -1.66,
+        1.56,
+        0.0
+      ],
+      "yaw": 0.0,
+      "joint": null,
+      "geoms": [
+        {
+          "kind": "box",
+          "size": [
+            0.11,
+            0.11,
+            0.15
+          ],
+          "name": "body",
+          "pos": [
+            0.0,
+            0.0,
+            0.15
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "tarred_boards",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.13,
+            0.13,
+            0.015
+          ],
+          "name": "roof_slab",
+          "pos": [
+            0.0,
+            0.0,
+            0.315
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "roof_shingles",
+          "collision": true
+        },
+        {
+          "kind": "cylinder",
+          "size": [
+            0.028,
+            0.11
+          ],
+          "name": "chimney",
+          "pos": [
+            0.05,
+            0.05,
+            0.4
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "stovepipe_steel",
+          "collision": false
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.03,
+            0.01,
+            0.025
+          ],
+          "name": "vent_glow",
+          "pos": [
+            0.0,
+            -0.105,
+            0.18
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "warm_lamplight",
+          "collision": false
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "dock_lantern",
+      "kind": "decor",
+      "role": null,
+      "parent": null,
+      "pos": [
+        0.9,
+        -1.6,
+        0.0
+      ],
+      "yaw": 0.0,
+      "joint": null,
+      "geoms": [
+        {
+          "name": "post",
+          "kind": "mesh",
+          "material": "stovepipe_steel",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            0.0,
+            0.2199999988079071
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/dock_lantern__post.obj",
+          "bbox": [
+            [
+              -0.04500000178813934,
+              -0.04500000178813934,
+              0.0
+            ],
+            [
+              0.04500000178813934,
+              0.04500000178813934,
+              0.4399999976158142
+            ]
+          ]
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.035,
+            0.035,
+            0.0425
+          ],
+          "name": "lamp_head",
+          "pos": [
+            0.0,
+            0.0,
+            0.49
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "brass",
+          "collision": false
+        },
+        {
+          "kind": "sphere",
+          "size": [
+            0.028
+          ],
+          "name": "bulb",
+          "pos": [
+            0.0,
+            0.0,
+            0.49
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "warm_lamplight",
+          "collision": false
+        },
+        {
+          "name": "cap",
+          "kind": "mesh",
+          "material": "brass",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            0.0,
+            0.5549999475479126
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/dock_lantern__cap.obj",
+          "bbox": [
+            [
+              -0.054999999701976776,
+              -0.054999999701976776,
+              0.5349999666213989
+            ],
+            [
+              0.054999999701976776,
+              0.054999999701976776,
+              0.5749999284744263
+            ]
+          ]
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "west_path_lantern",
+      "kind": "decor",
+      "role": null,
+      "parent": null,
+      "pos": [
+        -1.6,
+        0.72,
+        0.0
+      ],
+      "yaw": 0.0,
+      "joint": null,
+      "geoms": [
+        {
+          "name": "post",
+          "kind": "mesh",
+          "material": "stovepipe_steel",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            0.0,
+            0.2199999988079071
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/west_path_lantern__post.obj",
+          "bbox": [
+            [
+              -0.04500000178813934,
+              -0.04500000178813934,
+              0.0
+            ],
+            [
+              0.04500000178813934,
+              0.04500000178813934,
+              0.4399999976158142
+            ]
+          ]
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.035,
+            0.035,
+            0.0425
+          ],
+          "name": "lamp_head",
+          "pos": [
+            0.0,
+            0.0,
+            0.49
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "brass",
+          "collision": false
+        },
+        {
+          "kind": "sphere",
+          "size": [
+            0.028
+          ],
+          "name": "bulb",
+          "pos": [
+            0.0,
+            0.0,
+            0.49
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "warm_lamplight",
+          "collision": false
+        },
+        {
+          "name": "cap",
+          "kind": "mesh",
+          "material": "brass",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            0.0,
+            0.5549999475479126
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/west_path_lantern__cap.obj",
+          "bbox": [
+            [
+              -0.054999999701976776,
+              -0.054999999701976776,
+              0.5349999666213989
+            ],
+            [
+              0.054999999701976776,
+              0.054999999701976776,
+              0.5749999284744263
+            ]
+          ]
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "north_lantern",
+      "kind": "decor",
+      "role": null,
+      "parent": null,
+      "pos": [
+        1.5,
+        1.45,
+        0.0
+      ],
+      "yaw": 0.0,
+      "joint": null,
+      "geoms": [
+        {
+          "name": "post",
+          "kind": "mesh",
+          "material": "stovepipe_steel",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            0.0,
+            0.2199999988079071
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/north_lantern__post.obj",
+          "bbox": [
+            [
+              -0.04500000178813934,
+              -0.04500000178813934,
+              0.0
+            ],
+            [
+              0.04500000178813934,
+              0.04500000178813934,
+              0.4399999976158142
+            ]
+          ]
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.035,
+            0.035,
+            0.0425
+          ],
+          "name": "lamp_head",
+          "pos": [
+            0.0,
+            0.0,
+            0.49
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "brass",
+          "collision": false
+        },
+        {
+          "kind": "sphere",
+          "size": [
+            0.028
+          ],
+          "name": "bulb",
+          "pos": [
+            0.0,
+            0.0,
+            0.49
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "warm_lamplight",
+          "collision": false
+        },
+        {
+          "name": "cap",
+          "kind": "mesh",
+          "material": "brass",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            0.0,
+            0.5549999475479126
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/north_lantern__cap.obj",
+          "bbox": [
+            [
+              -0.054999999701976776,
+              -0.054999999701976776,
+              0.5349999666213989
+            ],
+            [
+              0.054999999701976776,
+              0.054999999701976776,
+              0.5749999284744263
+            ]
+          ]
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "fish_rack",
+      "kind": "decor",
+      "role": null,
+      "parent": null,
+      "pos": [
+        1.55,
+        0.45,
+        0.0
+      ],
+      "yaw": 0.0,
+      "joint": null,
+      "geoms": [
+        {
+          "kind": "cylinder",
+          "size": [
+            0.016,
+            0.21
+          ],
+          "name": "post_l",
+          "pos": [
+            -0.21,
+            0.0,
+            0.21
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "dock_planks",
+          "collision": true
+        },
+        {
+          "kind": "cylinder",
+          "size": [
+            0.016,
+            0.21
+          ],
+          "name": "post_r",
+          "pos": [
+            0.21,
+            0.0,
+            0.21
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "dock_planks",
+          "collision": true
+        },
+        {
+          "kind": "cylinder",
+          "size": [
+            0.012,
+            0.24
+          ],
+          "name": "crossbar",
+          "pos": [
+            0.0,
+            0.0,
+            0.4
+          ],
+          "quat": [
+            0.7071067690849304,
+            0.0,
+            0.7071067690849304,
+            0.0
+          ],
+          "material": "dock_planks",
+          "collision": true
+        },
+        {
+          "name": "fish_0",
+          "kind": "mesh",
+          "material": "fish_silver",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            -0.15000000596046448,
+            -0.006000000052154064,
+            0.33500000808238195
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/fish_rack__fish_0.obj",
+          "bbox": [
+            [
+              -0.19500000774860382,
+              -0.012000000978535874,
+              0.31500000826714847
+            ],
+            [
+              -0.10500000417232513,
+              8.742277461942453e-10,
+              0.35500000789761543
+            ]
+          ]
+        },
+        {
+          "kind": "cylinder",
+          "size": [
+            0.003,
+            0.025
+          ],
+          "name": "string_0",
+          "pos": [
+            -0.15,
+            0.0,
+            0.372
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "tarred_boards",
+          "collision": false
+        },
+        {
+          "name": "fish_1",
+          "kind": "mesh",
+          "material": "fish_silver",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            -0.05000000074505806,
+            -0.006000000052154064,
+            0.33500000808238195
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/fish_rack__fish_1.obj",
+          "bbox": [
+            [
+              -0.0950000025331974,
+              -0.012000000978535874,
+              0.31500000826714847
+            ],
+            [
+              -0.004999998956918716,
+              8.742277461942453e-10,
+              0.35500000789761543
+            ]
+          ]
+        },
+        {
+          "kind": "cylinder",
+          "size": [
+            0.003,
+            0.025
+          ],
+          "name": "string_1",
+          "pos": [
+            -0.05,
+            0.0,
+            0.372
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "tarred_boards",
+          "collision": false
+        },
+        {
+          "name": "fish_2",
+          "kind": "mesh",
+          "material": "fish_silver",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.05000000074505806,
+            -0.006000000052154064,
+            0.33500000808238195
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/fish_rack__fish_2.obj",
+          "bbox": [
+            [
+              0.004999998956918716,
+              -0.012000000978535874,
+              0.31500000826714847
+            ],
+            [
+              0.0950000025331974,
+              8.742277461942453e-10,
+              0.35500000789761543
+            ]
+          ]
+        },
+        {
+          "kind": "cylinder",
+          "size": [
+            0.003,
+            0.025
+          ],
+          "name": "string_2",
+          "pos": [
+            0.05,
+            0.0,
+            0.372
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "tarred_boards",
+          "collision": false
+        },
+        {
+          "name": "fish_3",
+          "kind": "mesh",
+          "material": "fish_silver",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.15000000596046448,
+            -0.006000000052154064,
+            0.33500000808238195
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/fish_rack__fish_3.obj",
+          "bbox": [
+            [
+              0.10500000417232513,
+              -0.012000000978535874,
+              0.31500000826714847
+            ],
+            [
+              0.19500000774860382,
+              8.742277461942453e-10,
+              0.35500000789761543
+            ]
+          ]
+        },
+        {
+          "kind": "cylinder",
+          "size": [
+            0.003,
+            0.025
+          ],
+          "name": "string_3",
+          "pos": [
+            0.15,
+            0.0,
+            0.372
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "tarred_boards",
+          "collision": false
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "dock_pile",
+      "kind": "decor",
+      "role": null,
+      "parent": null,
+      "pos": [
+        1.55,
+        -1.52,
+        0.0
+      ],
+      "yaw": -0.08726646259971647,
+      "joint": null,
+      "geoms": [
+        {
+          "name": "barrel",
+          "kind": "mesh",
+          "material": "dock_planks",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.05999999865889549,
+            -0.019999999552965164,
+            0.11999999731779099
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/dock_pile__barrel.obj",
+          "bbox": [
+            [
+              -0.03500000014901161,
+              -0.11499999836087227,
+              0.0
+            ],
+            [
+              0.1549999974668026,
+              0.07499999925494194,
+              0.23999999463558197
+            ]
+          ]
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.1,
+            0.1,
+            0.06
+          ],
+          "name": "crate_a",
+          "pos": [
+            -0.1,
+            0.03,
+            0.06
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "crate_pine",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.08,
+            0.08,
+            0.05
+          ],
+          "name": "crate_b",
+          "pos": [
+            -0.1,
+            0.03,
+            0.17
+          ],
+          "quat": [
+            0.9945219159126282,
+            0.0,
+            0.0,
+            0.10452846437692642
+          ],
+          "material": "crate_pine",
+          "collision": false
+        },
+        {
+          "name": "rope_coil",
+          "kind": "mesh",
+          "material": "grit_path",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.07000000029802322,
+            0.11999999731779099,
+            0.019999999552965164
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/dock_pile__rope_coil.obj",
+          "bbox": [
+            [
+              -0.00299999862909317,
+              0.04699999839067459,
+              0.0020000003278255463
+            ],
+            [
+              0.14299999922513962,
+              0.19299999624490738,
+              0.03799999877810478
+            ]
+          ]
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "sled",
+      "kind": "decor",
+      "role": null,
+      "parent": null,
+      "pos": [
+        -0.55,
+        -1.58,
+        0.0
+      ],
+      "yaw": 0.13962634015954636,
+      "joint": null,
+      "geoms": [
+        {
+          "kind": "box",
+          "size": [
+            0.2,
+            0.015,
+            0.025
+          ],
+          "name": "runner_l",
+          "pos": [
+            0.0,
+            -0.085,
+            0.025
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "dock_planks",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.2,
+            0.015,
+            0.025
+          ],
+          "name": "runner_r",
+          "pos": [
+            0.0,
+            0.085,
+            0.025
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "dock_planks",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.045,
+            0.115,
+            0.01
+          ],
+          "name": "slat_0",
+          "pos": [
+            -0.13,
+            0.0,
+            0.06
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "crate_pine",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.045,
+            0.115,
+            0.01
+          ],
+          "name": "slat_1",
+          "pos": [
+            0.0,
+            0.0,
+            0.06
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "crate_pine",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.045,
+            0.115,
+            0.01
+          ],
+          "name": "slat_2",
+          "pos": [
+            0.13,
+            0.0,
+            0.06
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "crate_pine",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.1,
+            0.08,
+            0.035
+          ],
+          "name": "bedroll",
+          "pos": [
+            0.03,
+            0.0,
+            0.105
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "flag_red",
+          "collision": false
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "wood_pile",
+      "kind": "decor",
+      "role": null,
+      "parent": null,
+      "pos": [
+        -1.6,
+        0.92,
+        0.0
+      ],
+      "yaw": 0.0,
+      "joint": null,
+      "geoms": [
+        {
+          "kind": "cylinder",
+          "size": [
+            0.035,
+            0.21
+          ],
+          "name": "log_0",
+          "pos": [
+            0.0,
+            -0.045,
+            0.035
+          ],
+          "quat": [
+            0.7071067690849304,
+            0.0,
+            0.7071067690849304,
+            0.0
+          ],
+          "material": "dock_planks",
+          "collision": true
+        },
+        {
+          "kind": "cylinder",
+          "size": [
+            0.035,
+            0.21
+          ],
+          "name": "log_1",
+          "pos": [
+            0.0,
+            0.045,
+            0.035
+          ],
+          "quat": [
+            0.7071067690849304,
+            0.0,
+            0.7071067690849304,
+            0.0
+          ],
+          "material": "dock_planks",
+          "collision": true
+        },
+        {
+          "kind": "cylinder",
+          "size": [
+            0.035,
+            0.21
+          ],
+          "name": "log_2",
+          "pos": [
+            0.0,
+            0.0,
+            0.095
+          ],
+          "quat": [
+            0.7071067690849304,
+            0.0,
+            0.7071067690849304,
+            0.0
+          ],
+          "material": "dock_planks",
+          "collision": true
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "tipup_north",
+      "kind": "decor",
+      "role": null,
+      "parent": null,
+      "pos": [
+        -0.18,
+        0.55,
+        0.0
+      ],
+      "yaw": 0.3490658503988659,
+      "joint": null,
+      "geoms": [
+        {
+          "kind": "box",
+          "size": [
+            0.09,
+            0.01,
+            0.0075
+          ],
+          "name": "stick_a",
+          "pos": [
+            0.0,
+            0.0,
+            0.02
+          ],
+          "quat": [
+            0.9238795042037964,
+            0.0,
+            0.0,
+            0.3826834559440613
+          ],
+          "material": "dock_planks",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.09,
+            0.01,
+            0.0075
+          ],
+          "name": "stick_b",
+          "pos": [
+            0.0,
+            0.0,
+            0.035
+          ],
+          "quat": [
+            0.9238795042037964,
+            0.0,
+            0.0,
+            -0.3826834559440613
+          ],
+          "material": "dock_planks",
+          "collision": true
+        },
+        {
+          "kind": "cylinder",
+          "size": [
+            0.006,
+            0.07
+          ],
+          "name": "spindle",
+          "pos": [
+            0.0,
+            0.0,
+            0.09
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "stovepipe_steel",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.03,
+            0.0025,
+            0.02
+          ],
+          "name": "flag",
+          "pos": [
+            0.035,
+            0.0,
+            0.14
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "flag_red",
+          "collision": false
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "tipup_mid",
+      "kind": "decor",
+      "role": null,
+      "parent": null,
+      "pos": [
+        0.36,
+        0.05,
+        0.0
+      ],
+      "yaw": -0.6108652381980153,
+      "joint": null,
+      "geoms": [
+        {
+          "kind": "box",
+          "size": [
+            0.09,
+            0.01,
+            0.0075
+          ],
+          "name": "stick_a",
+          "pos": [
+            0.0,
+            0.0,
+            0.02
+          ],
+          "quat": [
+            0.9238795042037964,
+            0.0,
+            0.0,
+            0.3826834559440613
+          ],
+          "material": "dock_planks",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.09,
+            0.01,
+            0.0075
+          ],
+          "name": "stick_b",
+          "pos": [
+            0.0,
+            0.0,
+            0.035
+          ],
+          "quat": [
+            0.9238795042037964,
+            0.0,
+            0.0,
+            -0.3826834559440613
+          ],
+          "material": "dock_planks",
+          "collision": true
+        },
+        {
+          "kind": "cylinder",
+          "size": [
+            0.006,
+            0.07
+          ],
+          "name": "spindle",
+          "pos": [
+            0.0,
+            0.0,
+            0.09
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "stovepipe_steel",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.03,
+            0.0025,
+            0.02
+          ],
+          "name": "flag",
+          "pos": [
+            0.035,
+            0.0,
+            0.14
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "flag_red",
+          "collision": false
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "tipup_south",
+      "kind": "decor",
+      "role": null,
+      "parent": null,
+      "pos": [
+        -0.6,
+        -0.48,
+        0.0
+      ],
+      "yaw": 1.2217304763960306,
+      "joint": null,
+      "geoms": [
+        {
+          "kind": "box",
+          "size": [
+            0.09,
+            0.01,
+            0.0075
+          ],
+          "name": "stick_a",
+          "pos": [
+            0.0,
+            0.0,
+            0.02
+          ],
+          "quat": [
+            0.9238795042037964,
+            0.0,
+            0.0,
+            0.3826834559440613
+          ],
+          "material": "dock_planks",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.09,
+            0.01,
+            0.0075
+          ],
+          "name": "stick_b",
+          "pos": [
+            0.0,
+            0.0,
+            0.035
+          ],
+          "quat": [
+            0.9238795042037964,
+            0.0,
+            0.0,
+            -0.3826834559440613
+          ],
+          "material": "dock_planks",
+          "collision": true
+        },
+        {
+          "kind": "cylinder",
+          "size": [
+            0.006,
+            0.07
+          ],
+          "name": "spindle",
+          "pos": [
+            0.0,
+            0.0,
+            0.09
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "stovepipe_steel",
+          "collision": true
+        },
+        {
+          "kind": "box",
+          "size": [
+            0.03,
+            0.0025,
+            0.02
+          ],
+          "name": "flag",
+          "pos": [
+            0.035,
+            0.0,
+            0.14
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "flag_red",
+          "collision": false
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "fishing_stool",
+      "kind": "decor",
+      "role": null,
+      "parent": null,
+      "pos": [
+        -0.64,
+        0.4,
+        0.0
+      ],
+      "yaw": 0.2617993877991494,
+      "joint": null,
+      "geoms": [
+        {
+          "kind": "cylinder",
+          "size": [
+            0.055,
+            0.0125
+          ],
+          "name": "seat",
+          "pos": [
+            0.0,
+            0.0,
+            0.085
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "dock_planks",
+          "collision": true
+        },
+        {
+          "kind": "cylinder",
+          "size": [
+            0.008,
+            0.04
+          ],
+          "name": "leg_0",
+          "pos": [
+            -0.035,
+            -0.035,
+            0.04
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "dock_planks",
+          "collision": true
+        },
+        {
+          "kind": "cylinder",
+          "size": [
+            0.008,
+            0.04
+          ],
+          "name": "leg_1",
+          "pos": [
+            0.035,
+            -0.035,
+            0.04
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "dock_planks",
+          "collision": true
+        },
+        {
+          "kind": "cylinder",
+          "size": [
+            0.008,
+            0.04
+          ],
+          "name": "leg_2",
+          "pos": [
+            0.0,
+            0.045,
+            0.04
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "dock_planks",
+          "collision": true
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "buoy_south",
+      "kind": "decor",
+      "role": null,
+      "parent": null,
+      "pos": [
+        -1.05,
+        -0.98,
+        0.0
+      ],
+      "yaw": 0.0,
+      "joint": null,
+      "geoms": [
+        {
+          "name": "body",
+          "kind": "mesh",
+          "material": "flag_red",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            0.0,
+            0.14499999582767487
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/buoy_south__body.obj",
+          "bbox": [
+            [
+              -0.054999999701976776,
+              -0.054999999701976776,
+              0.0
+            ],
+            [
+              0.054999999701976776,
+              0.054999999701976776,
+              0.28999999165534973
+            ]
+          ]
+        },
+        {
+          "kind": "sphere",
+          "size": [
+            0.02
+          ],
+          "name": "top",
+          "pos": [
+            0.0,
+            0.0,
+            0.27
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "packed_snowball",
+          "collision": false
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "buoy_east",
+      "kind": "decor",
+      "role": null,
+      "parent": null,
+      "pos": [
+        1.36,
+        0.75,
+        0.0
+      ],
+      "yaw": 0.0,
+      "joint": null,
+      "geoms": [
+        {
+          "name": "body",
+          "kind": "mesh",
+          "material": "flag_red",
+          "collision": false,
+          "uv_scale": 0.25,
+          "pos": [
+            0.0,
+            0.0,
+            0.14499999582767487
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "file": "meshes/buoy_east__body.obj",
+          "bbox": [
+            [
+              -0.054999999701976776,
+              -0.054999999701976776,
+              0.0
+            ],
+            [
+              0.054999999701976776,
+              0.054999999701976776,
+              0.28999999165534973
+            ]
+          ]
+        },
+        {
+          "kind": "sphere",
+          "size": [
+            0.02
+          ],
+          "name": "top",
+          "pos": [
+            0.0,
+            0.0,
+            0.27
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "packed_snowball",
+          "collision": false
+        }
+      ],
+      "mass": null,
+      "spawn": null
+    },
+    {
+      "name": "snowball",
+      "kind": "object",
+      "role": "ball",
+      "parent": null,
+      "pos": [
+        0.6,
+        -0.5,
+        0.06
+      ],
+      "yaw": 0.0,
+      "joint": null,
+      "geoms": [
+        {
+          "kind": "sphere",
+          "size": [
+            0.06
+          ],
+          "name": "ball",
+          "pos": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "packed_snowball",
+          "collision": true
+        }
+      ],
+      "mass": 0.05,
+      "spawn": {
+        "jitter": [
+          0.05,
+          0.05
+        ],
+        "yaw_jitter": 3.141592653589793
+      }
+    },
+    {
+      "name": "fish_crate",
+      "kind": "object",
+      "role": "crate",
+      "parent": null,
+      "pos": [
+        -1.0,
+        -0.7,
+        0.04
+      ],
+      "yaw": 0.0,
+      "joint": null,
+      "geoms": [
+        {
+          "kind": "box",
+          "size": [
+            0.06,
+            0.05,
+            0.04
+          ],
+          "name": "box",
+          "pos": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": "crate_pine",
+          "collision": true
+        }
+      ],
+      "mass": 0.06,
+      "spawn": {
+        "jitter": [
+          0.04,
+          0.04
+        ],
+        "yaw_jitter": 0.3490658503988659
+      }
+    }
+  ],
+  "zones": [
+    {
+      "name": "hole_north",
+      "center": [
+        -0.45,
+        0.5
+      ],
+      "radius": 0.16,
+      "kind": "hazard",
+      "color": [
+        0.02,
+        0.08,
+        0.16
+      ],
+      "label": "the north fishing hole"
+    },
+    {
+      "name": "hole_mid",
+      "center": [
+        0.1,
+        0.1
+      ],
+      "radius": 0.17,
+      "kind": "hazard",
+      "color": [
+        0.02,
+        0.08,
+        0.16
+      ],
+      "label": "the middle fishing hole"
+    },
+    {
+      "name": "hole_south",
+      "center": [
+        -0.35,
+        -0.55
+      ],
+      "radius": 0.15,
+      "kind": "hazard",
+      "color": [
+        0.02,
+        0.08,
+        0.16
+      ],
+      "label": "the south fishing hole"
+    },
+    {
+      "name": "smokehouse",
+      "center": [
+        -1.38,
+        1.26
+      ],
+      "radius": 0.2,
+      "kind": "goal",
+      "color": [
+        0.95,
+        0.6,
+        0.2
+      ],
+      "label": "the smokehouse yard"
+    },
+    {
+      "name": "lookout_deck",
+      "center": [
+        -1.45,
+        -1.42
+      ],
+      "radius": 0.18,
+      "kind": "goal",
+      "color": [
+        0.4,
+        0.8,
+        0.5
+      ],
+      "label": "the lookout deck"
+    },
+    {
+      "name": "hut_door_red",
+      "center": [
+        -0.3,
+        0.93
+      ],
+      "radius": 0.16,
+      "kind": "goal",
+      "color": [
+        0.9,
+        0.2,
+        0.15
+      ],
+      "label": "the red hut's door"
+    },
+    {
+      "name": "hut_door_blue",
+      "center": [
+        0.75,
+        0.93
+      ],
+      "radius": 0.16,
+      "kind": "goal",
+      "color": [
+        0.2,
+        0.45,
+        0.95
+      ],
+      "label": "the blue hut's door"
+    },
+    {
+      "name": "dock_spot",
+      "center": [
+        0.9,
+        -1.42
+      ],
+      "radius": 0.2,
+      "kind": "goal",
+      "color": [
+        0.95,
+        0.85,
+        0.25
+      ],
+      "label": "the lantern on the dock"
+    },
+    {
+      "name": "fish_rack_spot",
+      "center": [
+        1.55,
+        0.15
+      ],
+      "radius": 0.18,
+      "kind": "goal",
+      "color": [
+        0.95,
+        0.5,
+        0.15
+      ],
+      "label": "the fish-drying rack"
+    }
+  ],
+  "plates": [
+    {
+      "name": "smoke_plate",
+      "center": [
+        -0.88,
+        1.32
+      ],
+      "size": 0.2,
+      "yaw": 0.0,
+      "opens": "smoke_gate"
+    }
+  ],
+  "gates": {
+    "smoke_gate": {
+      "part": "smoke_gate",
+      "frame": "smoke_gate_frame",
+      "center": [
+        -1.15,
+        1.375
+      ],
+      "width": 0.4,
+      "yaw": 0.0,
+      "travel": 0.31,
+      "height": 0.24
+    }
+  },
+  "tasks": [
+    {
+      "name": "cross_the_glare_ice",
+      "kind": "goto",
+      "start": [
+        0.9,
+        -1.42,
+        1.5707963267948966
+      ],
+      "start_jitter": [
+        0.08,
+        0.08,
+        0.4363323129985824
+      ],
+      "avoid": [
+        "hole_north",
+        "hole_mid",
+        "hole_south"
+      ],
+      "instruction": "Cross the glare ice to the little red hut's door, and keep well clear of the dark open fishing holes.",
+      "paraphrases": [
+        "Walk over the shiny ice to the red hut, minding the holes.",
+        "Make your way across the frozen lake to the red hut's doorway without stepping in a fishing hole."
+      ],
+      "goal": "hut_door_red"
+    },
+    {
+      "name": "climb_the_lookout",
+      "kind": "goto",
+      "start": [
+        0.35,
+        -1.42,
+        3.141592653589793
+      ],
+      "start_jitter": [
+        0.08,
+        0.08,
+        0.4363323129985824
+      ],
+      "avoid": [
+        "hole_north",
+        "hole_mid",
+        "hole_south"
+      ],
+      "instruction": "Walk west along the wooden dock, go up the little ramp and stand on the lookout deck.",
+      "paraphrases": [
+        "Climb the ramp onto the raised deck at the west end of the dock.",
+        "Go up onto the wooden lookout platform above the dock."
+      ],
+      "goal": "lookout_deck"
+    },
+    {
+      "name": "smokehouse_sluice",
+      "kind": "gate",
+      "start": [
+        -0.9,
+        0.2,
+        0.7853981633974483
+      ],
+      "start_jitter": [
+        0.08,
+        0.08,
+        0.4363323129985824
+      ],
+      "avoid": [
+        "hole_north",
+        "hole_mid",
+        "hole_south"
+      ],
+      "instruction": "Step on the round brass plate by the smokehouse fence to lift the wooden sluice gate, then walk into the smokehouse yard.",
+      "paraphrases": [
+        "Press the brass plate in front of the smokehouse and go through the gate it opens.",
+        "Stand on the shiny plate to raise the sluice gate, then enter the smokehouse yard."
+      ],
+      "plate": "smoke_plate",
+      "gate": "smoke_gate",
+      "goal": "smokehouse"
+    },
+    {
+      "name": "roll_the_snowball",
+      "kind": "push",
+      "start": [
+        0.55,
+        -0.78,
+        1.5707963267948966
+      ],
+      "start_jitter": [
+        0.08,
+        0.08,
+        0.4363323129985824
+      ],
+      "avoid": [
+        "hole_north",
+        "hole_mid",
+        "hole_south"
+      ],
+      "instruction": "Push the big snowball across the ice to the blue hut's door.",
+      "paraphrases": [
+        "Roll the snowball over the glare ice to the blue hut.",
+        "Shove the snowball all the way up to the blue hut's doorway."
+      ],
+      "object": "snowball",
+      "goal": "hut_door_blue"
+    },
+    {
+      "name": "evening_rounds",
+      "kind": "visit",
+      "start": [
+        0.0,
+        -1.42,
+        1.5707963267948966
+      ],
+      "start_jitter": [
+        0.08,
+        0.08,
+        0.4363323129985824
+      ],
+      "avoid": [
+        "hole_north",
+        "hole_mid",
+        "hole_south"
+      ],
+      "instruction": "Do the evening rounds: stop at the red hut's door, then visit the fish-drying rack on the grit path, then finish by the lantern on the dock.",
+      "paraphrases": [
+        "Check the red hut, then the fish rack, then the dock lantern.",
+        "Go to the red hut's door first, then the drying rack, and end by the glowing dock lantern."
+      ],
+      "goals": [
+        "hut_door_red",
+        "fish_rack_spot",
+        "dock_spot"
+      ]
+    },
+    {
+      "name": "crate_to_the_dock",
+      "kind": "push",
+      "start": [
+        -1.05,
+        -0.42,
+        1.5707963267948966
+      ],
+      "start_jitter": [
+        0.08,
+        0.08,
+        0.4363323129985824
+      ],
+      "avoid": [
+        "hole_north",
+        "hole_mid",
+        "hole_south"
+      ],
+      "instruction": "Shove the wooden fish crate off the ice and onto the dock, stopping by the lantern.",
+      "paraphrases": [
+        "Push the fish crate across the ice to the lantern on the dock.",
+        "Slide the crate of fish over the frozen lake to the wooden dock."
+      ],
+      "object": "fish_crate",
+      "goal": "dock_spot"
+    }
+  ],
+  "format": "robo_worlds.duck/1",
+  "designer_llm": "moonshotai/Kimi-K3",
+  "gate": {
+    "baseline": {
+      "cross_the_glare_ice": {
+        "rate": 0.0,
+        "failures": [
+          "fell",
+          "fell",
+          "fell"
+        ],
+        "max_phase": 0
+      },
+      "climb_the_lookout": {
+        "rate": 0.0,
+        "failures": [
+          "timeout",
+          "timeout",
+          "timeout"
+        ],
+        "max_phase": 0
+      },
+      "smokehouse_sluice": {
+        "rate": 0.0,
+        "failures": [
+          "fell",
+          "fell",
+          "fell"
+        ],
+        "max_phase": 0
+      },
+      "roll_the_snowball": {
+        "rate": 0.0,
+        "failures": [
+          "fell",
+          "fell",
+          "fell"
+        ],
+        "max_phase": 0
+      },
+      "evening_rounds": {
+        "rate": 0.0,
+        "failures": [
+          "fell",
+          "fell",
+          "fell"
+        ],
+        "max_phase": 0
+      },
+      "crate_to_the_dock": {
+        "rate": 0.0,
+        "failures": [
+          "fell",
+          "fell",
+          "fell"
+        ],
+        "max_phase": 0
+      }
+    },
+    "notes": {
+      "head_brightness": 131.77113136574073
+    }
+  }
+}

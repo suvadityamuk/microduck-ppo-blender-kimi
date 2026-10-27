@@ -1,0 +1,111 @@
+{
+  "stock": {
+    "wet_round_to_reception": {
+      "success": 0.0,
+      "episodes": 20,
+      "failures": {
+        "fell": 20
+      },
+      "mean_time": null
+    },
+    "xray_appointment": {
+      "success": 0.0,
+      "episodes": 20,
+      "failures": {
+        "timeout": 20
+      },
+      "mean_time": null
+    },
+    "restock_supply_room": {
+      "success": 0.7,
+      "episodes": 20,
+      "failures": {
+        "timeout": 5,
+        "entered": 1
+      },
+      "mean_time": 25.262857142856696
+    },
+    "scrub_in": {
+      "success": 0.0,
+      "episodes": 20,
+      "failures": {
+        "fell": 19,
+        "entered": 1
+      },
+      "mean_time": null
+    },
+    "deliver_supplies": {
+      "success": 0.25,
+      "episodes": 20,
+      "failures": {
+        "fell": 15
+      },
+      "mean_time": 15.879999999999749
+    },
+    "nurse_rounds": {
+      "success": 0.0,
+      "episodes": 20,
+      "failures": {
+        "fell": 20
+      },
+      "mean_time": null
+    },
+    "_mean_success": 0.15833333333333333
+  },
+  "specialist": {
+    "wet_round_to_reception": {
+      "success": 0.05,
+      "episodes": 20,
+      "failures": {
+        "timeout": 1,
+        "fell": 17,
+        "entered": 1
+      },
+      "mean_time": 30.779999999999433
+    },
+    "xray_appointment": {
+      "success": 0.65,
+      "episodes": 20,
+      "failures": {
+        "timeout": 7
+      },
+      "mean_time": 25.301538461538012
+    },
+    "restock_supply_room": {
+      "success": 0.95,
+      "episodes": 20,
+      "failures": {
+        "timeout": 1
+      },
+      "mean_time": 23.464210526315384
+    },
+    "scrub_in": {
+      "success": 0.1,
+      "episodes": 20,
+      "failures": {
+        "fell": 15,
+        "entered": 2,
+        "timeout": 1
+      },
+      "mean_time": 34.889999999999965
+    },
+    "deliver_supplies": {
+      "success": 0.2,
+      "episodes": 20,
+      "failures": {
+        "fell": 16
+      },
+      "mean_time": 14.099999999999788
+    },
+    "nurse_rounds": {
+      "success": 0.0,
+      "episodes": 20,
+      "failures": {
+        "entered": 7,
+        "fell": 13
+      },
+      "mean_time": null
+    },
+    "_mean_success": 0.325
+  }
+}

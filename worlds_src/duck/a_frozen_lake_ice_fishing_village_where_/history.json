@@ -1,0 +1,85 @@
+[
+  {
+    "round": 0,
+    "attempt": 0,
+    "build": {
+      "ok": true,
+      "kind": null,
+      "error": null
+    }
+  },
+  {
+    "round": 0,
+    "gate": {
+      "ok": true,
+      "passing": [
+        "cross_the_glare_ice",
+        "climb_the_lookout",
+        "smokehouse_sluice",
+        "roll_the_snowball",
+        "evening_rounds",
+        "crate_to_the_dock"
+      ],
+      "feedback": "",
+      "notes": {
+        "head_brightness": 131.77113136574073
+      },
+      "baseline": {
+        "cross_the_glare_ice": {
+          "rate": 0.0,
+          "failures": [
+            "fell",
+            "fell",
+            "fell"
+          ],
+          "max_phase": 0
+        },
+        "climb_the_lookout": {
+          "rate": 0.0,
+          "failures": [
+            "timeout",
+            "timeout",
+            "timeout"
+          ],
+          "max_phase": 0
+        },
+        "smokehouse_sluice": {
+          "rate": 0.0,
+          "failures": [
+            "fell",
+            "fell",
+            "fell"
+          ],
+          "max_phase": 0
+        },
+        "roll_the_snowball": {
+          "rate": 0.0,
+          "failures": [
+            "fell",
+            "fell",
+            "fell"
+          ],
+          "max_phase": 0
+        },
+        "evening_rounds": {
+          "rate": 0.0,
+          "failures": [
+            "fell",
+            "fell",
+            "fell"
+          ],
+          "max_phase": 0
+        },
+        "crate_to_the_dock": {
+          "rate": 0.0,
+          "failures": [
+            "fell",
+            "fell",
+            "fell"
+          ],
+          "max_phase": 0
+        }
+      }
+    }
+  }
+]

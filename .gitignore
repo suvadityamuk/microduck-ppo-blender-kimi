@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[oc]
+*.egg-info
+build/
+dist/
+.venv/
+
+# Pollen's stack and downloaded policies (see README: Setup)
+third_party/
+checkpoints_cache/
+
+# World meshes and textures are rebuilt from worlds_src/ by scripts/build_worlds.py
+worlds_duck/*/meshes/
+worlds_duck/*/textures/
+worlds_duck/*/nav_paths.npz
+
+# Training runs, job logs, local outputs
+runs/
+data/
+outputs/
+logs/
+results/recheck/logs/
+
+# Rendered media lives on the Hub, not in git
+*.mp4

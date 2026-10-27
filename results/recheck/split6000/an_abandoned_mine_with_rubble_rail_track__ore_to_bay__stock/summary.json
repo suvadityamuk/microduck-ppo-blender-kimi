@@ -1,0 +1,15 @@
+{
+  "stock": {
+    "ore_to_bay": {
+      "success": 0.36,
+      "episodes": 100,
+      "failures": {
+        "fell": 28,
+        "timeout": 33,
+        "entered": 3
+      },
+      "mean_time": 47.76500000000063
+    },
+    "_mean_success": 0.36
+  }
+}

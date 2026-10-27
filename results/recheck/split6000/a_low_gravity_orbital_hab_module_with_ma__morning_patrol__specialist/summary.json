@@ -1,0 +1,14 @@
+{
+  "specialist": {
+    "morning_patrol": {
+      "success": 0.0,
+      "episodes": 100,
+      "failures": {
+        "fell": 97,
+        "timeout": 3
+      },
+      "mean_time": null
+    },
+    "_mean_success": 0.0
+  }
+}

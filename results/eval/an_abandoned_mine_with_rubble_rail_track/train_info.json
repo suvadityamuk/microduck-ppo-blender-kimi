@@ -1,0 +1,7 @@
+{
+  "world": "/code/worlds_duck/an_abandoned_mine_with_rubble_rail_track",
+  "iters": 1500,
+  "num_envs": 4096,
+  "warm": "checkpoints_cache/duck/policies/velstand.onnx",
+  "seed": 1
+}

@@ -1,0 +1,200 @@
+{
+  "probes": {
+    "c100": {
+      "fwd0.3": {
+        "v_fwd": 0.093,
+        "yaw_rate": -0.13,
+        "fell": 0
+      },
+      "fwd+left": {
+        "v_fwd": 0.075,
+        "yaw_rate": 0.32,
+        "fell": 0
+      },
+      "fwd+right": {
+        "v_fwd": 0.08,
+        "yaw_rate": -0.6,
+        "fell": 0
+      },
+      "turnL": {
+        "v_fwd": 0.001,
+        "yaw_rate": 0.02,
+        "fell": 0
+      },
+      "turnR": {
+        "v_fwd": 0.008,
+        "yaw_rate": -0.95,
+        "fell": 0
+      }
+    },
+    "c200": {
+      "fwd0.3": {
+        "v_fwd": 0.003,
+        "yaw_rate": -0.02,
+        "fell": 0
+      },
+      "fwd+left": {
+        "v_fwd": 0.003,
+        "yaw_rate": 0.0,
+        "fell": 0
+      },
+      "fwd+right": {
+        "v_fwd": 0.004,
+        "yaw_rate": -0.04,
+        "fell": 0
+      },
+      "turnL": {
+        "v_fwd": 0.001,
+        "yaw_rate": 0.03,
+        "fell": 0
+      },
+      "turnR": {
+        "v_fwd": 0.001,
+        "yaw_rate": -0.03,
+        "fell": 0
+      }
+    },
+    "c300": {
+      "fwd0.3": {
+        "v_fwd": 0.003,
+        "yaw_rate": -0.03,
+        "fell": 0
+      },
+      "fwd+left": {
+        "v_fwd": 0.002,
+        "yaw_rate": -0.01,
+        "fell": 0
+      },
+      "fwd+right": {
+        "v_fwd": 0.003,
+        "yaw_rate": -0.04,
+        "fell": 0
+      },
+      "turnL": {
+        "v_fwd": 0.0,
+        "yaw_rate": 0.01,
+        "fell": 0
+      },
+      "turnR": {
+        "v_fwd": 0.0,
+        "yaw_rate": -0.03,
+        "fell": 0
+      }
+    },
+    "c600": {
+      "fwd0.3": {
+        "v_fwd": 0.002,
+        "yaw_rate": -0.01,
+        "fell": 0
+      },
+      "fwd+left": {
+        "v_fwd": 0.002,
+        "yaw_rate": -0.01,
+        "fell": 0
+      },
+      "fwd+right": {
+        "v_fwd": 0.002,
+        "yaw_rate": -0.02,
+        "fell": 0
+      },
+      "turnL": {
+        "v_fwd": 0.001,
+        "yaw_rate": 0.01,
+        "fell": 0
+      },
+      "turnR": {
+        "v_fwd": 0.001,
+        "yaw_rate": -0.01,
+        "fell": 0
+      }
+    },
+    "c900": {
+      "fwd0.3": {
+        "v_fwd": 0.065,
+        "yaw_rate": 0.04,
+        "fell": 0
+      },
+      "fwd+left": {
+        "v_fwd": 0.029,
+        "yaw_rate": 0.08,
+        "fell": 0
+      },
+      "fwd+right": {
+        "v_fwd": 0.069,
+        "yaw_rate": -0.15,
+        "fell": 0
+      },
+      "turnL": {
+        "v_fwd": 0.001,
+        "yaw_rate": -0.02,
+        "fell": 0
+      },
+      "turnR": {
+        "v_fwd": 0.001,
+        "yaw_rate": -0.01,
+        "fell": 0
+      }
+    },
+    "c1200": {
+      "fwd0.3": {
+        "v_fwd": 0.073,
+        "yaw_rate": -0.01,
+        "fell": 0
+      },
+      "fwd+left": {
+        "v_fwd": 0.062,
+        "yaw_rate": 0.12,
+        "fell": 0
+      },
+      "fwd+right": {
+        "v_fwd": 0.075,
+        "yaw_rate": -0.12,
+        "fell": 0
+      },
+      "turnL": {
+        "v_fwd": 0.005,
+        "yaw_rate": 0.04,
+        "fell": 0
+      },
+      "turnR": {
+        "v_fwd": 0.001,
+        "yaw_rate": -0.02,
+        "fell": 0
+      }
+    },
+    "final": {
+      "fwd0.3": {
+        "v_fwd": 0.071,
+        "yaw_rate": -0.05,
+        "fell": 0
+      },
+      "fwd+left": {
+        "v_fwd": 0.066,
+        "yaw_rate": 0.04,
+        "fell": 0
+      },
+      "fwd+right": {
+        "v_fwd": 0.062,
+        "yaw_rate": -0.08,
+        "fell": 0
+      },
+      "turnL": {
+        "v_fwd": 0.0,
+        "yaw_rate": 0.27,
+        "fell": 0
+      },
+      "turnR": {
+        "v_fwd": 0.0,
+        "yaw_rate": -0.02,
+        "fell": 0
+      }
+    }
+  },
+  "passed": [
+    "c100"
+  ],
+  "selected": "c100",
+  "selection_success": {
+    "c100": 0.2708333333333333
+  }
+}
